@@ -53,6 +53,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel2.setText("Código de la cuenta:");
 
         cmbNombreCuenta.setEditable(true);
+        cmbNombreCuenta.setMaximumRowCount(10);
         cmbNombreCuenta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jspCodigoCuenta.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
