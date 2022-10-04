@@ -14,6 +14,9 @@ public class LibroMayor {
    List<Cuenta> cuentas;
    List<Asiento> ajustes;
 
+   public LibroMayor(){}
+   
+   
     public LibroMayor(List<Cuenta> cuentas, List<Asiento> ajustes) {
         this.cuentas = cuentas;
         this.ajustes = ajustes;
