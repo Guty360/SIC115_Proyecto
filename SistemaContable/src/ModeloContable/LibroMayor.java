@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author pc
  */
-public class LibroMayor {
+public class LibroMayor extends Serializacion{
    List<Cuenta> cuentas;
    List<LibroDiario> libroDiarios;
    List<Asiento> ajustes;

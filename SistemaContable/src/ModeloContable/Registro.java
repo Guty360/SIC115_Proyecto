@@ -8,7 +8,7 @@ package ModeloContable;
  *
  * @author pc
  */
-public class Registro {
+public class Registro extends Serializacion{
     private Tipo tipo;
     private double valor;
 

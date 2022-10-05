@@ -8,7 +8,7 @@ package ModeloContable;
  *
  * @author pc
  */
-public class Cuenta {
+public class Cuenta extends Serializacion{
     private int codCuenta;
     private String nombre;
     private double totalDebe;

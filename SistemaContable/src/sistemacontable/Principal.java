@@ -13,6 +13,9 @@ import javax.swing.InputVerifier;
 import java.util.List;
 
 import ModeloContable.Tipo;
+import Persistencia.Escritor;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JList;
 import javax.swing.SwingWorker;
 import javax.swing.event.ListSelectionEvent;
@@ -45,11 +48,20 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         //cuentas de prueba
         List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
-                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
+                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
         
         cuentasDis = new ControladorListadoCuentasDisponibles(cuentas);
         lstCuentasDisponibles.setModel(cuentasDis);
         lstCuentasDisponibles.addListSelectionListener(this);
+        
+        Escritor escritor = Escritor.getEscritor();
+        
+        
         
 
         

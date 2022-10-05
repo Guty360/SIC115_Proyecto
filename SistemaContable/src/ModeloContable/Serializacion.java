@@ -2,19 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Persistencia;
+package ModeloContable;
+
+import java.io.Serializable;
+
 /**
  *
  * @author pc
  */
-public class LectorDeArchivos {
-    private String ruta;
-  
-
-    public LectorDeArchivos(String ruta) {
-        this.ruta = ruta;
-       
-    }
+public class Serializacion implements Serializable{
     
- 
 }

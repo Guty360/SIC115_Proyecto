@@ -4,7 +4,17 @@
  */
 package Persistencia;
 
+import ModeloContable.Cuenta;
+import ModeloContable.InformacionContable;
 import ModeloContable.LibroMayor;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.List;
 
 
 /**
@@ -13,7 +23,71 @@ import ModeloContable.LibroMayor;
  * 
  */
 public class Escritor {
+    private String ruta;
+    private InformacionContable contexto;
+    private  static Escritor escritor;
+    
+    private ObjectOutputStream objectOutputStream;
+    private FileOutputStream fileOutputStream;
+    
+    
+    private Escritor(){
+    
+    }
+    
+    public static Escritor getEscritor(){
+        if(escritor==null) escritor = new Escritor();
+        
+        return escritor;
+    }
 
+    public String getRuta() {
+        return ruta;
+    }
+
+    public Escritor setRuta(String ruta) throws FileNotFoundException{
+        this.ruta = ruta;
+        fileOutputStream = new FileOutputStream(new File(ruta));
+        return this;
+    }
+
+    public InformacionContable getContexto() {
+        return contexto;
+    }
+
+    public Escritor setContexto(InformacionContable contexto){
+        this.contexto = contexto;
+        
+        try {
+          objectOutputStream = new ObjectOutputStream(this.fileOutputStream);  
+        } catch (IOException e) {
+            
+        }
+        
+        return this;
+    }
+    
+    /**
+    * @return Devuelve verdadero si los datos se guardaron correctamente 
+    */
+    public boolean guardarDatos(){
+        boolean datosGuardadosCorrectamente = true;
+        try {
+        objectOutputStream.writeObject(contexto);
+        objectOutputStream.flush();
+        objectOutputStream.close();  
+        } catch (IOException e) {
+            datosGuardadosCorrectamente = false;
+        }
+        return datosGuardadosCorrectamente;
+    }
+    
+    
+    //Metodo para probar
+    public void guardarDatosPrueba(String ruta, List<Cuenta> cuentas) throws Exception{
+        ( new ObjectOutputStream( new FileOutputStream(new File(ruta)))).
+                writeObject(cuentas);
+    }
     
     
     

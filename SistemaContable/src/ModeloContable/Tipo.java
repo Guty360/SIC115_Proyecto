@@ -4,13 +4,13 @@
  */
 package ModeloContable;
 
-import javax.security.auth.Destroyable;
+import java.io.Serializable;
 
 /**
  *
  * @author pc
  */
-public enum Tipo {
+public enum Tipo implements Serializable{
     DEBE,HABER,
     ACREEDORA,DEUDORA
 }

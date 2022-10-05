@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * @author pc
  */
-public class Asiento {
+public class Asiento extends Serializacion{
     private Map<Integer,Registro> registros;
     private boolean esAjuste;
     private boolean incluyeIVA;

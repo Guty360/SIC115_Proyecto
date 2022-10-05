@@ -10,7 +10,7 @@ import java.time.LocalDate;
  *
  * @author pc
  */
-public class LibroDiario {
+public class LibroDiario extends Serializacion{
     private List<Asiento> asientos;
     private LocalDate fechaLocal;
 

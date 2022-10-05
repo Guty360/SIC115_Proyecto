@@ -8,7 +8,7 @@ package ModeloContable;
  *
  * @author pc
  */
-public class InformacionContable {
+public class InformacionContable extends Serializacion{
     private final static LibroMayor libroMayor  = new LibroMayor();
     
     private InformacionContable(){}
