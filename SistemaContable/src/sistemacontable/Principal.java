@@ -16,8 +16,6 @@ import javax.swing.InputVerifier;
 import java.util.List;
 
 import ModeloContable.Tipo;
-import Persistencia.Escritor;
-import Persistencia.Lector;
 import java.awt.Dimension;
 import java.awt.GraphicsEnvironment;
 import java.awt.Point;
@@ -51,8 +49,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     List<Cuenta> cuentas;
    
     //Escritura-lectura de archivos
-    Escritor escritor;
-    Lector lector;
+
     
     //componentes graficos auxiliares
     JDialog inicializacionDeDatosDialog;
