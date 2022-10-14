@@ -7,11 +7,11 @@ package Persistencia;
  *
  * @author pc
  */
-public class LectorDeArchivos {
+public class Lector {
     private String ruta;
   
 
-    public LectorDeArchivos(String ruta) {
+    public Lector(String ruta) {
         this.ruta = ruta;
        
     }

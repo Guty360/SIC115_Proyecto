@@ -12,11 +12,9 @@ import java.time.LocalDate;
  */
 public class LibroDiario extends Serializacion{
     private List<Asiento> asientos;
-    private LocalDate fechaLocal;
 
     public LibroDiario(List<Asiento> asientos, LocalDate fechaLocal) {
         this.asientos = asientos;
-        this.fechaLocal = fechaLocal;
     }
 
     public List<Asiento> getAsientos() {
@@ -27,20 +25,12 @@ public class LibroDiario extends Serializacion{
         this.asientos = asientos;
     }
 
-    public LocalDate getFechaLocal() {
-        return fechaLocal;
-    }
-
-    public void setFechaLocal(LocalDate fechaLocal) {
-        this.fechaLocal = fechaLocal;
-    }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("LibroDiario{");
         sb.append("asientos=").append(asientos);
-        sb.append(", fechaLocal=").append(fechaLocal);
         sb.append('}');
         return sb.toString();
     }

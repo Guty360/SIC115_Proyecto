@@ -8,15 +8,27 @@ package sistemacontable;
 
 import Controladores.ControladorListadoCuentasDisponibles;
 import ModeloContable.Cuenta;
+import ModeloContable.InformacionContable;
+import ModeloContable.LibroDiario;
+import ModeloContable.LibroMayor;
 import javax.swing.InputVerifier;
 
 import java.util.List;
 
 import ModeloContable.Tipo;
 import Persistencia.Escritor;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import Persistencia.Lector;
+import java.awt.Dimension;
+import java.awt.GraphicsEnvironment;
+import java.awt.Point;
+import java.awt.Rectangle;
+import javax.swing.BoxLayout;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -28,15 +40,42 @@ import javax.swing.event.ListSelectionListener;
  * @author pc
  */
 public class Principal extends javax.swing.JFrame  implements ListSelectionListener{
+    //controladores
     ControladorListadoCuentasDisponibles cuentasDis;
-   
     
-    class LectorArchivos extends SwingWorker<Object, Object>{
+    
+    //modelos contables
+    InformacionContable informacionContable;
+    LibroMayor libroMayor;
+    List<LibroDiario> librosDiarios;
+    List<Cuenta> cuentas;
+   
+    //Escritura-lectura de archivos
+    Escritor escritor;
+    Lector lector;
+    
+    //componentes graficos auxiliares
+    JDialog inicializacionDeDatosDialog;
+    
+    class LectorArchivos extends SwingWorker<InformacionContable, Integer>{
 
         @Override
-        protected Object doInBackground() throws Exception {
+        protected InformacionContable doInBackground() throws Exception {
+           
+            
+                
             return null;
         }
+        
+        @Override
+        protected void done(){
+            inicializacionDeDatosDialog.dispose();
+            
+            inicializarControladores(informacionContable);
+            //debe ser el ultimo metodo a llamar
+            initComponents();
+        }
+        
         
     }
 
@@ -44,10 +83,38 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
      * Creates new form Principal
      */
     public Principal() {
-        initComponents();
+        
+        //initComponents();
+        
+        SwingUtilities.invokeLater(()->{
+        
+        LectorArchivos lectorArchivos = new LectorArchivos();
+        lectorArchivos.execute();
+        
+        inicializacionDeDatosDialog = new JDialog(this,true);
+        
+        JPanel panelDeCarga = new JPanel(false);
+        
+        //barra de progreso
+        JProgressBar barraDeProgreso = new JProgressBar();
+        barraDeProgreso.setIndeterminate(true);
+        
+        //añadiendo la barra de progreso al panel
+        panelDeCarga.add(barraDeProgreso);
+        
+        
+        inicializacionDeDatosDialog.setSize(new Dimension(400,400));
+        inicializacionDeDatosDialog.setContentPane(panelDeCarga);
+        inicializacionDeDatosDialog.pack();
+        //centra el cuadro de carga
+        inicializacionDeDatosDialog.setLocationRelativeTo(null);
+        inicializacionDeDatosDialog.setVisible(true);
+        
+        });
+        
         
         //cuentas de prueba
-        List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
+        /*List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
                 new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
                 new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
                 new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
@@ -55,16 +122,17 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
                 new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
         
-        cuentasDis = new ControladorListadoCuentasDisponibles(cuentas);
-        lstCuentasDisponibles.setModel(cuentasDis);
-        lstCuentasDisponibles.addListSelectionListener(this);
-        
-        Escritor escritor = Escritor.getEscritor();
+       */ 
         
         
-        
+        //cuentasDis = new ControladorListadoCuentasDisponibles(cuentas);
+        //lstCuentasDisponibles.setModel(cuentasDis);     
 
         
+    }
+    
+    public void inicializarControladores(InformacionContable informacionContable){
+      
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -75,7 +143,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        contenedorPestañas = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -111,7 +179,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         });
         jScrollPane1.setViewportView(lstCuentasDisponibles);
 
-        btnAnadirCuenta.setText("Añadir cuenta");
+        btnAnadirCuenta.setText("Añadir cuentas");
+        btnAnadirCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnadirCuentaActionPerformed(evt);
+            }
+        });
 
         btnModificarCuenta.setText("Modificar cuenta");
 
@@ -164,7 +237,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addContainerGap(287, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Cuentas", jPanel1);
+        contenedorPestañas.addTab("Cuentas", jPanel1);
 
         jLabel4.setText("Transacciones:");
 
@@ -180,9 +253,17 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Fecha", "Cuenta", "Debe", "Haber"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Object.class, java.lang.Double.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         tblTransacciones.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane2.setViewportView(tblTransacciones);
 
@@ -226,7 +307,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGap(51, 51, 51))
         );
 
-        jTabbedPane1.addTab("Libro diario", jPanel2);
+        contenedorPestañas.addTab("Libro diario", jPanel2);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -239,7 +320,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGap(0, 474, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Libro mayor", jPanel3);
+        contenedorPestañas.addTab("Libro mayor", jPanel3);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -252,17 +333,17 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGap(0, 474, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Balance comprobación", jPanel4);
+        contenedorPestañas.addTab("Balance comprobación", jPanel4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(contenedorPestañas)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(contenedorPestañas, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
@@ -272,6 +353,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         RegistroAsiento ra = new RegistroAsiento();
         
     }//GEN-LAST:event_btnAnadirTransaccionActionPerformed
+
+    private void btnAnadirCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirCuentaActionPerformed
+      
+        
+        
+    }//GEN-LAST:event_btnAnadirCuentaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -284,7 +371,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                System.out.println(info.getClassName());
+                if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -317,6 +405,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JButton btnAnadirTransaccion;
     private javax.swing.JButton btnModificarCuenta;
     private javax.swing.JComboBox<String> cmbOrdenTransacciones;
+    private javax.swing.JTabbedPane contenedorPestañas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -328,7 +417,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JList<String> lstCuentasDisponibles;
     private javax.swing.JTable tblTransacciones;
     private javax.swing.JTextField txtCodigoCuenta;

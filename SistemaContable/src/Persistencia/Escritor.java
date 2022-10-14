@@ -4,15 +4,11 @@
  */
 package Persistencia;
 
-import ModeloContable.Cuenta;
 import ModeloContable.InformacionContable;
-import ModeloContable.LibroMayor;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
@@ -25,7 +21,7 @@ import java.util.List;
 public class Escritor {
     private String ruta;
     private InformacionContable contexto;
-    private  static Escritor escritor;
+    private static Escritor escritor;
     
     private ObjectOutputStream objectOutputStream;
     private FileOutputStream fileOutputStream;
@@ -83,12 +79,7 @@ public class Escritor {
     }
     
     
-    //Metodo para probar
-    public void guardarDatosPrueba(String ruta, List<Cuenta> cuentas) throws Exception{
-        ( new ObjectOutputStream( new FileOutputStream(new File(ruta)))).
-                writeObject(cuentas);
-    }
-    
+
     
     
     

@@ -16,12 +16,6 @@ public class Asiento extends Serializacion{
     private boolean incluyeIVA;
     private String descripcion;
 
-    public Asiento(Map<Integer, Registro> registros, boolean esAjuste, boolean incluyeIVA, String descripcion) {
-        this.registros = registros;
-        this.esAjuste = esAjuste;
-        this.incluyeIVA = incluyeIVA;
-        this.descripcion = descripcion;
-    }
 
     public Map<Integer, Registro> getRegistros() {
         return registros;
