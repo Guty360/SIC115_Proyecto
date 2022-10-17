@@ -39,7 +39,7 @@ import javax.swing.event.ListSelectionListener;
  */
 public class Principal extends javax.swing.JFrame  implements ListSelectionListener{
     //controladores
-    ControladorListadoCuentasDisponibles cuentasDis;
+    ControladorListadoCuentasDisponibles ctlrCuentasDisp;
     
     
     //modelos contables
@@ -68,9 +68,21 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         protected void done(){
             inicializacionDeDatosDialog.dispose();
             
-            inicializarControladores(informacionContable);
+            
             //debe ser el ultimo metodo a llamar
             initComponents();
+            
+            //cuentas de prueba
+            List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
+                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
+        
+            
+            
         }
         
         
@@ -110,27 +122,32 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         });
         
         
-        //cuentas de prueba
-        /*List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
-                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
-        
-       */ 
+
         
         
-        //cuentasDis = new ControladorListadoCuentasDisponibles(cuentas);
-        //lstCuentasDisponibles.setModel(cuentasDis);     
+       
+          
 
         
     }
     
-    public void inicializarControladores(InformacionContable informacionContable){
-      
+
+
+    
+    
+    /*
+    * Define el modelo que el JList utilizara para mostrar las cuentas disponibles y
+    * configura los listeners necesarios
+    */
+    
+    public void configurarListViewCuentasDisponibles(List<Cuenta> listadoCuentas){
+        ctlrCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
+        
+        lstCuentasDisponibles.setModel(ctlrCuentasDisp);
+        lstCuentasDisponibles.addListSelectionListener(this);
     }
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
