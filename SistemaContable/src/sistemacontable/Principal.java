@@ -1477,14 +1477,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         if(seleccion == JOptionPane.OK_OPTION)
         {
-        controladorCuentasDisp.añadirNuevaCuenta(new Cuenta(codigoCuenta, nombreCuenta));
-        limpiarTxtPestañaCuentas();
-        }
-        else 
-        {
-            limpiarTxtPestañaCuentas();
+            controladorCuentasDisp.añadirNuevaCuenta(new Cuenta(codigoCuenta, nombreCuenta));
+            
         }
         
+        limpiarTxtPestañaCuentas();
     }//GEN-LAST:event_btnAnadirCuentaActionPerformed
 
     //metodos utilitarios
