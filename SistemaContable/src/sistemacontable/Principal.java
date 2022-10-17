@@ -1677,7 +1677,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     public void valueChanged(ListSelectionEvent e) {
         JList<String> listadoCuentas = (JList) e.getSource();
         int indiceCuentaSeleccionada = listadoCuentas.getSelectedIndex();
-        int codigoCuentaSeleccionada = cuentasDis.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
+        int codigoCuentaSeleccionada = ctlrCuentasDisp.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
         
         txtCodigoCuenta.setText(String.valueOf(codigoCuentaSeleccionada));
         
