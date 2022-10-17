@@ -5,30 +5,34 @@
 package ModeloContable;
 
 import java.util.Map;
+import java.util.Date;
+import java.util.List;
 
 /**
  *
  * @author pc
  */
 public class Asiento extends Serializacion{
-    private Map<Integer,Registro> registros;
+    
+    //Cada lista interna representa un asiento
+    private List<List<Registro>> asientos;
     private boolean esAjuste;
     private boolean incluyeIVA;
     private String descripcion;
+    private Date fechaRegistro;
+    private int numRegistros;
 
 
-    public Map<Integer, Registro> getRegistros() {
-        return registros;
-    }
-
-    public void setRegistros(Map<Integer, Registro> registros) {
-        this.registros = registros;
-    }
 
     public boolean isEsAjuste() {
         return esAjuste;
     }
 
+    public void setFechaRegistro(Date fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
+
+    
     public void setEsAjuste(boolean esAjuste) {
         this.esAjuste = esAjuste;
     }
@@ -49,11 +53,16 @@ public class Asiento extends Serializacion{
         this.descripcion = descripcion;
     }
 
+    public Date getFechaRegistro() {
+        return fechaRegistro;
+    }
+
+    
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Asiento{");
-        sb.append("registros=").append(registros);
         sb.append(", esAjuste=").append(esAjuste);
         sb.append(", incluyeIVA=").append(incluyeIVA);
         sb.append(", descripcion=").append(descripcion);

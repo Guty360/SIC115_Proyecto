@@ -6,23 +6,15 @@ package sistemacontable;
 
 
 
-import Controladores.ControladorListadoCuentasDisponibles;
-import ModeloContable.Cuenta;
-import ModeloContable.InformacionContable;
-import ModeloContable.LibroDiario;
-import ModeloContable.LibroMayor;
-import javax.swing.InputVerifier;
+import Controladores.*;
 
-import java.util.List;
+import ModeloContable.*;
 
 import ModeloContable.Tipo;
 import java.awt.Dimension;
-import java.awt.GraphicsEnvironment;
-import java.awt.Point;
-import java.awt.Rectangle;
-import javax.swing.BoxLayout;
+import java.awt.EventQueue;
+import java.util.ArrayList;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
@@ -30,7 +22,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-
+import java.util.List;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -39,12 +32,14 @@ import javax.swing.event.ListSelectionListener;
  */
 public class Principal extends javax.swing.JFrame  implements ListSelectionListener{
     //controladores
-    ControladorListadoCuentasDisponibles ctlrCuentasDisp;
+    ControladorListadoCuentasDisponibles controladorCuentasDisp;
+    ControladorTablaLibroDiario controladorTablaLibroDiario;
     
     
     //modelos contables
     InformacionContable informacionContable;
     LibroMayor libroMayor;
+    List<Asiento> asientos;
     List<LibroDiario> librosDiarios;
     List<Cuenta> cuentas;
    
@@ -73,14 +68,14 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             initComponents();
             
             //cuentas de prueba
-            List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
-                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
-        
+            
+            ArrayList<Cuenta> cuentas = new ArrayList<>();
+            cuentas.add(new Cuenta(1,"Caja"));
+            cuentas.add(new Cuenta(2,"Inventario"));
+            
+            
+            configurarListViewCuentasDisponibles(cuentas);
+            
             
             
         }
@@ -121,14 +116,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         });
         
-        
-
-        
-        
-       
-          
-
-        
     }
     
 
@@ -141,12 +128,16 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     */
     
     public void configurarListViewCuentasDisponibles(List<Cuenta> listadoCuentas){
-        ctlrCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
+        controladorCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
         
-        lstCuentasDisponibles.setModel(ctlrCuentasDisp);
+        lstCuentasDisponibles.setModel(controladorCuentasDisp);
         lstCuentasDisponibles.addListSelectionListener(this);
     }
     
+    public void configurarTablaLibroDiario(List<Asiento> asientos){
+       // controladorTablaLibroDiario = new ControladorTablaLibroDiario();
+       // tablaLibroDiario.setModel(controladorTablaLibroDiario);
+    }
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -173,7 +164,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel5 = new javax.swing.JLabel();
         cmbOrdenTransacciones = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
-        tblTransacciones = new javax.swing.JTable();
+        tablaLibroDiario = new javax.swing.JTable();
         btnAnadirTransaccion = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -380,7 +371,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         cmbOrdenTransacciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Más recientes", "Más antiguas" }));
 
-        tblTransacciones.setModel(new javax.swing.table.DefaultTableModel(
+        tablaLibroDiario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -399,8 +390,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 return types [columnIndex];
             }
         });
-        tblTransacciones.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jScrollPane2.setViewportView(tblTransacciones);
+        tablaLibroDiario.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane2.setViewportView(tablaLibroDiario);
 
         btnAnadirTransaccion.setText("Añadir asiento.");
         btnAnadirTransaccion.addActionListener(new java.awt.event.ActionListener() {
@@ -1479,10 +1470,30 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
     private void btnAnadirCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirCuentaActionPerformed
       
+        int codigoCuenta = Integer.parseInt(txtCodigoCuenta.getText());
+        String nombreCuenta = txtNombreCuenta.getText();
         
+        int seleccion = JOptionPane.showConfirmDialog(this,"¿Desea agregar esta nueva cuenta?","Agregar cuenta nueva",JOptionPane.OK_CANCEL_OPTION,JOptionPane.INFORMATION_MESSAGE);
+        
+        if(seleccion == JOptionPane.OK_OPTION)
+        {
+        controladorCuentasDisp.añadirNuevaCuenta(new Cuenta(codigoCuenta, nombreCuenta));
+        limpiarTxtPestañaCuentas();
+        }
+        else 
+        {
+            limpiarTxtPestañaCuentas();
+        }
         
     }//GEN-LAST:event_btnAnadirCuentaActionPerformed
 
+    //metodos utilitarios
+    public void limpiarTxtPestañaCuentas(){
+        txtCodigoCuenta.setText("");
+        txtNombreCuenta.setText("");
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -1615,9 +1626,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JList<String> lstCuentasDisponibles;
+    private javax.swing.JTable tablaLibroDiario;
     private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
-    private javax.swing.JTable tblTransacciones;
     private javax.swing.JTable tblUtilidadPerdida;
     private javax.swing.JTextField txtAFP;
     private javax.swing.JTextField txtAguinaldo;
@@ -1671,7 +1682,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     public void valueChanged(ListSelectionEvent e) {
         JList<String> listadoCuentas = (JList) e.getSource();
         int indiceCuentaSeleccionada = listadoCuentas.getSelectedIndex();
-        int codigoCuentaSeleccionada = ctlrCuentasDisp.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
+        int codigoCuentaSeleccionada = controladorCuentasDisp.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
         
         txtCodigoCuenta.setText(String.valueOf(codigoCuentaSeleccionada));
         
