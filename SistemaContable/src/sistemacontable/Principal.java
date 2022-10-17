@@ -777,11 +777,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jTextField7.setEditable(false);
         jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField7.setText("(7 DIAS * SALARIO)");
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
 
         jTextField14.setEditable(false);
         jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -811,11 +806,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtVacacion.setEditable(false);
         txtVacacion.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtVacacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtVacacionActionPerformed(evt);
-            }
-        });
 
         txtSalud.setEditable(false);
         txtSalud.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -952,11 +942,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtTotalDia.setEditable(false);
 
         txtTotalHora.setEditable(false);
-        txtTotalHora.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTotalHoraActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1291,12 +1276,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel41.setText("DIAS PAGADOS PARA VACACIONES:");
 
-        txtHoras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtHorasActionPerformed(evt);
-            }
-        });
-
         jLabel42.setText("Porcentaje de recargo para vacaciones:");
 
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -1359,7 +1338,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE))
+                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtPorcentajeAFP)
@@ -1475,22 +1454,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         
     }//GEN-LAST:event_btnAnadirCuentaActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void txtVacacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVacacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVacacionActionPerformed
-
-    private void txtTotalHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalHoraActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTotalHoraActionPerformed
-
-    private void txtHorasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHorasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtHorasActionPerformed
 
     /**
      * @param args the command line arguments
