@@ -17,6 +17,7 @@ public class Cuenta extends Serializacion{
     private double totalHaber;
     private double saldo;
     private Tipo naturaleza;
+    private Categoria categoria;
 
  
 
@@ -24,6 +25,16 @@ public class Cuenta extends Serializacion{
         this.codCuenta = codCuenta;
         this.nombre = nombre;
     }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+    
+    
 
     public int getCodCuenta() {
         return codCuenta;

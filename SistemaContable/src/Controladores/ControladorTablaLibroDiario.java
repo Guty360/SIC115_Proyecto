@@ -6,9 +6,7 @@ package Controladores;
 
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Locale;
 import javax.swing.table.AbstractTableModel;
 
 /**

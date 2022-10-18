@@ -79,9 +79,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             cuentas.add(new Cuenta(2,"Inventario"));
             
             
-            configurarListViewCuentasDisponibles(cuentas);
+            configurarListViewCategorias(cuentas);
             
-            //regustros de prueba
+            //regustros de prueba-Borra despues
             ArrayList<Registro> registros = new ArrayList<>();
             registros.add(new Registro(LocalDate.now(),cuentas.get(0),Tipo.DEBE,300));
             registros.add(new Registro(LocalDate.now(),cuentas.get(1), Tipo.HABER, 300));
@@ -138,7 +138,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     * configura los listeners necesarios
     */
     
-    public void configurarListViewCuentasDisponibles(List<Cuenta> listadoCuentas){
+    public void configurarListViewCategorias(List<Cuenta> listadoCuentas){
         controladorCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
         
         lstCuentasDisponibles.setModel(controladorCuentasDisp);

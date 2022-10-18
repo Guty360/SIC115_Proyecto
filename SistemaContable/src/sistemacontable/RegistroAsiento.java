@@ -39,6 +39,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
     //Debo usar este tipo aqui ya que no es posible saber si un rdio button ha sido seleccionado
     // al hacer click a cualquier radio button asi se cambiara 
     private Tipo tipoTransaccion;
+    //Contiene el valor del ultimo registro que fue añadido
     private int ultimoNumRegistro;
     
     class VerificadorValorRegistro extends InputVerifier{
@@ -360,7 +361,6 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     private void rbtnCargoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnCargoMouseClicked
         tipoTransaccion = Tipo.DEBE;
-      
     }//GEN-LAST:event_rbtnCargoMouseClicked
 
     private void rbtnAbonoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnAbonoMouseClicked
