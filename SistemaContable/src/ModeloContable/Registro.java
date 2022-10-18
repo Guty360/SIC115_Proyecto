@@ -16,10 +16,6 @@ public class Registro extends Serializacion{
     private Tipo tipo;
     private double valor;
 
-    public Registro(Tipo tipo, double valor) {
-        this.tipo = tipo;
-        this.valor = valor;
-    }
 
     public Tipo getTipo() {
         return tipo;
@@ -36,6 +32,24 @@ public class Registro extends Serializacion{
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    public Date getFechaRegistro() {
+        return fechaRegistro;
+    }
+
+    public void setFechaRegistro(Date fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
+    }
+
+    public Cuenta getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(Cuenta cuenta) {
+        this.cuenta = cuenta;
+    }
+    
+    
 
     @Override
     public String toString() {
