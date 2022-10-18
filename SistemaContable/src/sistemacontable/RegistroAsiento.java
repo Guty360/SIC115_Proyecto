@@ -74,7 +74,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btngTipoTransaccion.add(rbtnCargo);
         txtValor.setInputVerifier( new VerificadorValorRegistro());
         
-        tablaRegistrosNuevos.setModel(controladorTablaRegistro);
+        configurarTablaRegistro();
         
         
     }
@@ -110,6 +110,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
         txtFecha = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtCuentaSeleccionada = new javax.swing.JTextField();
+        btnGuardarTransaccionModificada = new javax.swing.JButton();
+        btnEliminarSeleccion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -187,7 +189,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
         jButton2.setText("Eliminar transacción seleccionada.");
 
-        btnGuardarNuevasTransacciones.setText("Guardar cambios.");
+        btnGuardarNuevasTransacciones.setText("Guardar.");
         btnGuardarNuevasTransacciones.setEnabled(false);
         btnGuardarNuevasTransacciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +201,12 @@ public class RegistroAsiento extends javax.swing.JFrame {
         jButton4.setToolTipText("Click para buscar una cuenta");
 
         jLabel3.setText("Fecha:");
+
+        btnGuardarTransaccionModificada.setText("Guardar modificación.");
+        btnGuardarTransaccionModificada.setEnabled(false);
+
+        btnEliminarSeleccion.setText("Eliminar selección.");
+        btnEliminarSeleccion.setEnabled(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -232,21 +240,28 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(rbtnAbono, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, Short.MAX_VALUE))
+                                        .addGap(0, 89, Short.MAX_VALUE))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(btnAñadirTransaccion)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnGuardarNuevasTransacciones)))
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnAñadirTransaccion)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)
+                        .addGap(28, 28, 28)
+                        .addComponent(btnGuardarTransaccionModificada)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnGuardarNuevasTransacciones)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnEliminarSeleccion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -285,7 +300,9 @@ public class RegistroAsiento extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAñadirTransaccion)
                     .addComponent(jButton2)
-                    .addComponent(btnGuardarNuevasTransacciones))
+                    .addComponent(btnGuardarNuevasTransacciones)
+                    .addComponent(btnGuardarTransaccionModificada)
+                    .addComponent(btnEliminarSeleccion))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
@@ -366,7 +383,33 @@ public class RegistroAsiento extends javax.swing.JFrame {
         txtCuentaSeleccionada.setText(null);
     }
     
-    
+    public final void configurarTablaRegistro(){
+        tablaRegistrosNuevos.setModel(controladorTablaRegistro);
+        tablaRegistrosNuevos.setDragEnabled(false);
+        
+        int numCols = tablaRegistrosNuevos.getColumnCount();
+        
+        for(int i=0;i<numCols;i++){
+            if(i==0){
+                tablaRegistrosNuevos.getColumnModel().getColumn(i).setHeaderValue("Fecha");
+            }
+            if(i==1){
+                tablaRegistrosNuevos.getColumnModel().getColumn(i).setHeaderValue("Cuenta");
+            }
+            if(i==2){
+                tablaRegistrosNuevos.getColumnModel().getColumn(i).setHeaderValue("Descripción");
+            }
+            if(i==3){
+                tablaRegistrosNuevos.getColumnModel().getColumn(i).setHeaderValue("Debe");
+            }
+            if(i==4){
+                tablaRegistrosNuevos.getColumnModel().getColumn(i).setHeaderValue("Haber");
+            }
+            
+        }
+        
+        
+    }
     
     
     class ControladorTablaRegistro extends AbstractTableModel{
@@ -424,7 +467,9 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAñadirTransaccion;
+    private javax.swing.JButton btnEliminarSeleccion;
     private javax.swing.JButton btnGuardarNuevasTransacciones;
+    private javax.swing.JButton btnGuardarTransaccionModificada;
     private javax.swing.ButtonGroup btngTipoTransaccion;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;

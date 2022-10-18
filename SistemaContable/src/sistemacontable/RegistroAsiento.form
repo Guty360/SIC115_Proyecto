@@ -82,27 +82,35 @@
                                               <Component id="rbtnAbono" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
                                               <Component id="jCheckBox1" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="89" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel7" min="-2" pref="122" max="-2" attributes="0"/>
-                                          <EmptySpace pref="108" max="32767" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Component id="jLabel3" min="-2" pref="37" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
-                              <Component id="jLabel2" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btnAñadirTransaccion" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btnGuardarNuevasTransacciones" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel2" min="-2" pref="168" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtFecha" min="-2" pref="126" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="btnAñadirTransaccion" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="btnGuardarTransaccionModificada" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnGuardarNuevasTransacciones" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnEliminarSeleccion" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -153,6 +161,8 @@
                       <Component id="btnAñadirTransaccion" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnGuardarNuevasTransacciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnGuardarTransaccionModificada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnEliminarSeleccion" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
@@ -293,7 +303,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnGuardarNuevasTransacciones">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Guardar cambios."/>
+            <Property name="text" type="java.lang.String" value="Guardar."/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -314,6 +324,18 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCuentaSeleccionada">
+        </Component>
+        <Component class="javax.swing.JButton" name="btnGuardarTransaccionModificada">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Guardar modificaci&#xf3;n."/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnEliminarSeleccion">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Eliminar selecci&#xf3;n."/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
