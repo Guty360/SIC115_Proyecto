@@ -13,7 +13,9 @@ import ModeloContable.*;
 import ModeloContable.Tipo;
 import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.JDialog;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -24,6 +26,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.util.List;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableColumnModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
 
 
 /**
@@ -69,12 +74,18 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             
             //cuentas de prueba
             
-            ArrayList<Cuenta> cuentas = new ArrayList<>();
+            cuentas = new ArrayList<>();
             cuentas.add(new Cuenta(1,"Caja"));
             cuentas.add(new Cuenta(2,"Inventario"));
             
             
             configurarListViewCuentasDisponibles(cuentas);
+            
+            //regustros de prueba
+            ArrayList<Registro> registros = new ArrayList<>();
+            registros.add(new Registro(LocalDate.now(),cuentas.get(0),Tipo.DEBE,300));
+            registros.add(new Registro(LocalDate.now(),cuentas.get(1), Tipo.HABER, 300));
+            configurarTablaLibroDiario(registros);
             
             
             
@@ -135,8 +146,19 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     }
     
     public void configurarTablaLibroDiario(List<Registro> asientos){
-       // controladorTablaLibroDiario = new ControladorTablaLibroDiario();
-       // tablaLibroDiario.setModel(controladorTablaLibroDiario);
+       int numColumnas = tablaLibroDiario.getColumnModel().getColumnCount();
+       
+    
+       
+       controladorTablaLibroDiario = new ControladorTablaLibroDiario(asientos);
+       tablaLibroDiario.setModel(controladorTablaLibroDiario);   
+       
+       for(int a = 0; a< numColumnas;a++){
+           if(a == 0) tablaLibroDiario.getColumnModel().getColumn(a).setHeaderValue("Fecha");
+           if(a == 1) tablaLibroDiario.getColumnModel().getColumn(a).setHeaderValue("Cuenta");
+           if(a == 2) tablaLibroDiario.getColumnModel().getColumn(a).setHeaderValue("Debe");
+           if(a == 3) tablaLibroDiario.getColumnModel().getColumn(a).setHeaderValue("Haber");
+       }
     }
     
     /**
@@ -360,7 +382,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addComponent(btnAnadirCuenta)
                             .addComponent(btnModificarCuenta)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(624, Short.MAX_VALUE))
+                .addContainerGap(371, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Cuentas", jPanel1);
@@ -391,6 +413,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             }
         });
         tablaLibroDiario.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tablaLibroDiario.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(tablaLibroDiario);
 
         btnAnadirTransaccion.setText("Añadir asiento.");
@@ -428,9 +451,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addComponent(cmbOrdenTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 409, Short.MAX_VALUE)
+                .addGap(110, 110, 110)
                 .addComponent(btnAnadirTransaccion)
-                .addGap(51, 51, 51))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Libro diario", jPanel2);
@@ -468,7 +491,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(450, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Libro mayor", jPanel3);
@@ -556,7 +579,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addComponent(txtHaber2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(27, 27, 27)
                 .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(313, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Balance comprobación", jPanel4);
@@ -654,7 +677,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(356, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Estado de resultado", jPanel5);
@@ -667,7 +690,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 811, Short.MAX_VALUE)
+            .addGap(0, 558, Short.MAX_VALUE)
         );
 
         contenedorPestañas.addTab("CIF", jPanel7);
@@ -759,7 +782,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addComponent(jLabel46)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(594, Short.MAX_VALUE))
+                .addContainerGap(341, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Costo total", jPanel8);
@@ -1427,7 +1450,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                     .addComponent(txtPorcentajeEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addComponent(txtDiasVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addGap(18, 18, 18)
@@ -1457,16 +1480,13 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(contenedorPestañas, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(contenedorPestañas, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAnadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirTransaccionActionPerformed
-        RegistroAsiento ra = new RegistroAsiento();
-        
-    }//GEN-LAST:event_btnAnadirTransaccionActionPerformed
 
     private void btnAnadirCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirCuentaActionPerformed
       
@@ -1483,6 +1503,15 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         limpiarTxtPestañaCuentas();
     }//GEN-LAST:event_btnAnadirCuentaActionPerformed
+
+    private void btnAnadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirTransaccionActionPerformed
+        RegistroAsiento ra = new RegistroAsiento();
+        asientos = new ArrayList<>();
+        asientos.add(new Registro(LocalDate.now(),cuentas.get(0),Tipo.HABER,514));
+        asientos.add(new Registro(LocalDate.now(),cuentas.get(1),Tipo.DEBE,514));
+        controladorTablaLibroDiario.añadirRegistros(asientos);
+
+    }//GEN-LAST:event_btnAnadirTransaccionActionPerformed
 
     //metodos utilitarios
     public void limpiarTxtPestañaCuentas(){

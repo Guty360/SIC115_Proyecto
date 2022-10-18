@@ -12,6 +12,7 @@ import java.time.LocalDate;
  */
 public class LibroDiario extends Serializacion{
     private List<Registro> asientos;
+    private LocalDate fecha;
 
     public LibroDiario(List<Registro> asientos, LocalDate fechaLocal) {
         this.asientos = asientos;

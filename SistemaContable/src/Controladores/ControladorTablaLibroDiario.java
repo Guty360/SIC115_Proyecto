@@ -6,18 +6,23 @@ package Controladores;
 
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
-import java.util.HashMap;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.List;
-import java.util.Map;
+import java.util.Locale;
 import javax.swing.table.AbstractTableModel;
-import sistemacontable.RegistroAsiento;
 
 /**
  *
  * @author pc
  */
-public class ControladorTablaLibroDiario extends AbstractTableModel {
+public class ControladorTablaLibroDiario extends AbstractTableModel{
     private List<Registro> registros;
+
+    public ControladorTablaLibroDiario(List<Registro> registros) {
+        this.registros = registros;
+        
+    }
     
     
 
@@ -41,7 +46,7 @@ public class ControladorTablaLibroDiario extends AbstractTableModel {
         
         switch(columnIndex){
             case 0:
-                return registro.getFechaRegistro().toString();
+                return registro.getFechaRegistro().format(DateTimeFormatter.ofPattern("dd/MM/YYYY", Locale.FRENCH));
             case 1:
                 return registro.getCuenta().getNombre();
             case 2:
@@ -52,6 +57,17 @@ public class ControladorTablaLibroDiario extends AbstractTableModel {
                 return null;
             
         }
+    }
+    
+    
+    /***
+     * Añade uno o mas registros al modelo y notifica a la tabla de los cambios
+     * @param nuevosRegistros 
+     */
+    public void añadirRegistros(List<Registro> nuevosRegistros){
+        registros.addAll(registros);
+        fireTableDataChanged();
+        
     }
     
 }

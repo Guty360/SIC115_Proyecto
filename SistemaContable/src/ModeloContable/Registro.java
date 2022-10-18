@@ -4,6 +4,7 @@
  */
 package ModeloContable;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -11,11 +12,28 @@ import java.util.Date;
  * @author pc
  */
 public class Registro extends Serializacion{
-    private Date fechaRegistro;
+    private LocalDate fechaRegistro;
     private Cuenta cuenta;
     private Tipo tipo;
     private double valor;
 
+    public Registro(){}
+
+    /***
+     * 
+     * @param fechaRegistro
+     * @param cuenta
+     * @param tipo
+     * @param valor 
+     */
+    public Registro(LocalDate fechaRegistro, Cuenta cuenta, Tipo tipo, double valor) {
+        this.fechaRegistro = fechaRegistro;
+        this.cuenta = cuenta;
+        this.tipo = tipo;
+        this.valor = valor;
+    }
+    
+    
 
     public Tipo getTipo() {
         return tipo;
@@ -33,11 +51,11 @@ public class Registro extends Serializacion{
         this.valor = valor;
     }
 
-    public Date getFechaRegistro() {
+    public LocalDate getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
+    public void setFechaRegistro(LocalDate fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
 
