@@ -39,7 +39,7 @@ import javax.swing.event.ListSelectionListener;
  */
 public class Principal extends javax.swing.JFrame  implements ListSelectionListener{
     //controladores
-    ControladorListadoCuentasDisponibles ctlrCuentasDisp;
+    ControladorListadoCuentasDisponibles cuentasDis;
     
     
     //modelos contables
@@ -68,21 +68,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         protected void done(){
             inicializacionDeDatosDialog.dispose();
             
-            
+            inicializarControladores(informacionContable);
             //debe ser el ultimo metodo a llamar
             initComponents();
-            
-            //cuentas de prueba
-            List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
-                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
-                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
-        
-            
-            
         }
         
         
@@ -122,32 +110,27 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         });
         
         
-
+        //cuentas de prueba
+        /*List<Cuenta> cuentas = List.of(new Cuenta(1,"Activo",0,0,0,Tipo.DEUDORA),
+                new Cuenta(2,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(3,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(4,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(5,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(6,"Pasivo", 0, 0, 0, Tipo.ACREEDORA),
+                new Cuenta(7,"Pasivo", 0, 0, 0, Tipo.ACREEDORA));
+        
+       */ 
         
         
-       
-          
+        //cuentasDis = new ControladorListadoCuentasDisponibles(cuentas);
+        //lstCuentasDisponibles.setModel(cuentasDis);     
 
         
     }
     
-
-
-    
-    
-    /*
-    * Define el modelo que el JList utilizara para mostrar las cuentas disponibles y
-    * configura los listeners necesarios
-    */
-    
-    public void configurarListViewCuentasDisponibles(List<Cuenta> listadoCuentas){
-        ctlrCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
-        
-        lstCuentasDisponibles.setModel(ctlrCuentasDisp);
-        lstCuentasDisponibles.addListSelectionListener(this);
+    public void inicializarControladores(InformacionContable informacionContable){
+      
     }
-    
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -176,9 +159,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         tblTransacciones = new javax.swing.JTable();
         btnAnadirTransaccion = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton6 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblComprobacion = new javax.swing.JTable();
@@ -213,7 +193,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jPanel9 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -221,12 +200,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
         txtSeptimo = new javax.swing.JTextField();
         txtAguinaldo = new javax.swing.JTextField();
         txtVacacion = new javax.swing.JTextField();
@@ -278,8 +251,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnCalcularManoDeObra = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
@@ -298,6 +271,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtPorcentajeSeguro = new javax.swing.JTextField();
         txtPorcentajeEficiencia = new javax.swing.JTextField();
         txtPorcentajeAFP = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        txtPorcentajeINSAFORP = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -348,7 +323,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(986, Short.MAX_VALUE))
+                .addContainerGap(1184, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -425,7 +400,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addGap(18, 18, 18)
                             .addComponent(cmbOrdenTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(889, Short.MAX_VALUE))
+                .addContainerGap(1087, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -444,40 +419,15 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         contenedorPestañas.addTab("Libro diario", jPanel2);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "Código", "Cuenta", "Fecha", "N° De Transacción", "Debe", "Haber"
-            }
-        ));
-        jScrollPane6.setViewportView(jTable1);
-
-        jButton6.setText("Generar Libro Mayor");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 655, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(818, Short.MAX_VALUE))
+            .addGap(0, 1915, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(450, Short.MAX_VALUE))
+            .addGap(0, 811, Short.MAX_VALUE)
         );
 
         contenedorPestañas.addTab("Libro mayor", jPanel3);
@@ -542,7 +492,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtHaber, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtHaber2, javax.swing.GroupLayout.DEFAULT_SIZE, 1000, Short.MAX_VALUE)
+                        .addComponent(txtHaber2, javax.swing.GroupLayout.DEFAULT_SIZE, 1198, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtHaber1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
@@ -647,7 +597,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 656, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 1043, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 1241, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -672,7 +622,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1717, Short.MAX_VALUE)
+            .addGap(0, 1915, Short.MAX_VALUE)
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -759,7 +709,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(231, 231, 231)
                         .addComponent(jLabel46)))
-                .addContainerGap(1064, Short.MAX_VALUE))
+                .addContainerGap(1262, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -780,51 +730,19 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel9.setText("SALARIOS-PRESTACIONES");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel10.setText("SEPTIMO DIA");
-
-        jLabel11.setText("VALOR");
 
         jLabel12.setText("TOTAL(SEMANAL)");
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel13.setText("VACACION SEMANAL");
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel14.setText("AGUINALDO SEMANAL");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel15.setText("SALUD SEMANAL");
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel16.setText("INSAFORP SEMANAL");
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel17.setText("AFP SEMANAL");
-
-        jTextField7.setEditable(false);
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setText("(7 DIAS * SALARIO)");
-
-        jTextField14.setEditable(false);
-        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField14.setText("((DIAS DE VACACION * SALARIO DIARIO) + (RECARGO DE VACACION))/52");
-
-        jTextField13.setEditable(false);
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField13.setText("(DIAS DE AGUINALDO * SALARIO DIARIO)/52");
-
-        jTextField15.setEditable(false);
-        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField15.setText("( SEPTIMO + VACACIONES) * % SEGURO SOCIAL");
-
-        jTextField16.setEditable(false);
-        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField16.setText("( SEPTIMO + VACACIONES) * % AFP");
-
-        jTextField17.setEditable(false);
-        jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField17.setText("( SEPTIMO + VACACIONES) * 1%");
 
         txtSeptimo.setEditable(false);
         txtSeptimo.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -834,6 +752,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtVacacion.setEditable(false);
         txtVacacion.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtVacacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtVacacionActionPerformed(evt);
+            }
+        });
 
         txtSalud.setEditable(false);
         txtSalud.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -849,52 +772,32 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(16, 16, 16)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE)
-                    .addComponent(jTextField13)
-                    .addComponent(jTextField15)
-                    .addComponent(jTextField16)
-                    .addComponent(jTextField17)
-                    .addComponent(jTextField7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtSeptimo, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-                    .addComponent(txtAguinaldo)
-                    .addComponent(txtVacacion)
-                    .addComponent(txtSalud)
-                    .addComponent(txtAFP)
-                    .addComponent(txtINSAFORP))
-                .addContainerGap())
+                    .addComponent(txtINSAFORP, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAFP, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtSalud, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtSeptimo, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSeptimo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtSeptimo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSalud, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtSalud, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAFP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtINSAFORP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(txtAFP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtINSAFORP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -906,11 +809,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(194, 194, 194)
-                        .addComponent(jLabel12)
-                        .addGap(39, 39, 39))
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel12))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -923,15 +823,14 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -970,23 +869,28 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtTotalDia.setEditable(false);
 
         txtTotalHora.setEditable(false);
+        txtTotalHora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTotalHoraActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(479, 479, 479)
+                .addGap(26, 26, 26)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtTotal, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
-                    .addComponent(txtTotalDia)
+                .addGap(28, 28, 28)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(txtTotalDia, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                    .addComponent(txtTotal, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtTotalHora))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1114,7 +1018,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
+                        .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel27)
                         .addGap(52, 52, 52)
@@ -1187,24 +1091,20 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtHoraEficiencia)
-                    .addComponent(txtSemanaEficiencia)
-                    .addComponent(txtDiaEficiencia))
+                    .addComponent(txtDiaEficiencia)
+                    .addComponent(txtSemanaEficiencia))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addComponent(txtSalarioDiaEficiencia, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtFactorDiaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtSalarioHoraEficiencia, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
-                            .addComponent(txtSalarioSemanaEficiencia))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtFactorHoraEficiencia)
-                            .addComponent(txtFactorSemanaEficiencia, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE))))
+                    .addComponent(txtSalarioHoraEficiencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(txtSalarioDiaEficiencia, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtSalarioSemanaEficiencia))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtFactorDiaEficiencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                    .addComponent(txtFactorHoraEficiencia, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtFactorSemanaEficiencia, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
@@ -1217,15 +1117,20 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addComponent(txtFactorDiaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtSalarioHoraEficiencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtHoraEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtFactorHoraEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSalarioSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFactorSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtFactorHoraEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSalarioHoraEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtHoraEficiencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtFactorSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtSalarioSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(txtSemanaEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(14, 14, 14))
         );
 
@@ -1250,24 +1155,23 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                        .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(52, 52, 52)
                         .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel35)
-                        .addGap(47, 47, 47))))
+                        .addGap(37, 37, 37))))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel29)
-                        .addComponent(jLabel35))
-                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel34)))
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel34))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel14Layout.createSequentialGroup()
@@ -1284,11 +1188,16 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel36.setText("FACTOR DE RECARGO CON EFICIENCIA DIA, HORA, SEMANA");
 
-        jButton2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jButton2.setText("CALCULAR MANO DE OBRA REAL");
+        btnCalcularManoDeObra.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnCalcularManoDeObra.setText("CALCULAR MANO DE OBRA REAL");
+        btnCalcularManoDeObra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularManoDeObraActionPerformed(evt);
+            }
+        });
 
-        jButton3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jButton3.setText("LIMPIAR");
+        btnLimpiar.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnLimpiar.setText("LIMPIAR");
 
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel37.setText("SALARIO:");
@@ -1304,6 +1213,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel41.setText("DIAS PAGADOS PARA VACACIONES:");
 
+        txtHoras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtHorasActionPerformed(evt);
+            }
+        });
+
         jLabel42.setText("Porcentaje de recargo para vacaciones:");
 
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -1314,6 +1229,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel45.setText("Porcentaje de eficiencia del empleado:");
 
+        jLabel50.setText("Porcentaje de recargo para INSAFORP:");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -1321,138 +1238,132 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
-                                .addGap(205, 205, 205)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtDiasAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtDiasTrabajado, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtHoras, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(jLabel41)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtDiasVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel36)
-                        .addGap(252, 252, 252))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtPorcentajeAFP)
-                            .addComponent(txtPorcentajeEficiencia, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(217, 217, 217)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtPorcentajeSeguro, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPorcentajeVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel21)
+                                        .addGap(244, 244, 244))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel36)
+                                        .addGap(187, 187, 187))))
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(281, 281, 281)
-                                .addComponent(jLabel21)))
-                        .addGap(46, 46, 46))))
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addGap(399, 399, 399)
+                                        .addComponent(jLabel50))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel41, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(txtDiasAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtDiasVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(txtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtHoras, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtDiasTrabajado, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(29, 29, 29)
+                                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel42)
+                                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(39, 39, 39)
+                                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(txtPorcentajeSeguro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(txtPorcentajeVacacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(txtPorcentajeINSAFORP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(txtPorcentajeAFP, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txtPorcentajeEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addGap(122, 122, 122)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCalcularManoDeObra, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel8)))
+                .addGap(124, 595, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel41)
-                        .addGap(60, 60, 60))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(96, 96, 96)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtPorcentajeVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(6, 6, 6)
+                                .addComponent(txtPorcentajeSeguro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(4, 4, 4)
+                                .addComponent(txtPorcentajeAFP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)
+                                .addComponent(txtPorcentajeEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel37)
                                     .addComponent(txtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel42)
-                                    .addComponent(txtPorcentajeVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                    .addComponent(jLabel37)
+                                    .addComponent(jLabel50)
+                                    .addComponent(txtPorcentajeINSAFORP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(6, 6, 6)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel38)
                                     .addComponent(txtHoras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel43)
-                                    .addComponent(txtPorcentajeSeguro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                    .addComponent(jLabel38)
+                                    .addComponent(jLabel42))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel39)
                                     .addComponent(txtDiasTrabajado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel44)
-                                    .addComponent(txtPorcentajeAFP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
+                                    .addComponent(jLabel39)
+                                    .addComponent(jLabel43))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel40)
                                     .addComponent(txtDiasAguinaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel45)
-                                    .addComponent(txtPorcentajeEficiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addComponent(txtDiasVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)))
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel40)
+                                    .addComponent(jLabel44))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtDiasVacacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel41)
+                                    .addComponent(jLabel45))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel36)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCalcularManoDeObra, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel36)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(160, 160, 160))
         );
 
@@ -1483,6 +1394,122 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
     }//GEN-LAST:event_btnAnadirCuentaActionPerformed
 
+    private void txtVacacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVacacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVacacionActionPerformed
+
+    private void txtTotalHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalHoraActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTotalHoraActionPerformed
+
+    private void txtHorasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHorasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHorasActionPerformed
+
+    private void btnCalcularManoDeObraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularManoDeObraActionPerformed
+        //Se obtienen los datos introducidos en los textbox
+        double salario;
+        int horasTrabajadas, diasAguinaldo, diasVacacion, diasTrabajados;
+        float recargoVacacion, recargoSeguro, recargoAFP, eficienciaEmpleado, recargoINSAFORP;
+        
+        salario = Double.parseDouble(txtSalario.getText());
+        horasTrabajadas = Integer.parseInt(txtHoras.getText());
+        diasAguinaldo = Integer.parseInt(txtDiasAguinaldo.getText());
+        diasVacacion = Integer.parseInt(txtDiasVacacion.getText());
+        diasTrabajados = Integer.parseInt(txtDiasTrabajado.getText());
+        recargoVacacion = Float.parseFloat(txtPorcentajeVacacion.getText());
+        recargoSeguro = Float.parseFloat(txtPorcentajeSeguro.getText());
+        recargoAFP = Float.parseFloat(txtPorcentajeAFP.getText());
+        recargoINSAFORP = Float.parseFloat(txtPorcentajeINSAFORP.getText());
+        eficienciaEmpleado = Float.parseFloat(txtPorcentajeEficiencia.getText());
+        
+        //Respectivas salidas
+        //Var de proceso de la primera tabla
+        double septimoDia, aguinaldo, vacacion, salud, afp, totalDia, totalHora, total, insaforp;
+        //Var de proceso de tabla SIN eficiencia
+        double factorDia, factorHora, factorSemana, factorSalarioDia, factorSalarioHora, factorSalarioSemana, totalDiaS, totalHoraS, totalSemanaS;
+        //Var de proceso de tabla con eficiencia
+        double factorDiaE, factorHoraE, factorSemanaE, factorSalarioDiaE, factorSalarioHoraE, factorSalarioSemanaE, totalDiaSE, totalHoraSE, totalSemanaSE;
+        
+        //calculos
+        //PRIMERA TABLA
+        septimoDia = 7*salario;
+        vacacion = ((salario*diasVacacion*(1 + convierte(recargoVacacion))+ (salario*diasVacacion*convierte(recargoAFP)) + (salario*diasVacacion*convierte(recargoSeguro))))/52;
+        aguinaldo = (salario*diasAguinaldo)/52;
+        salud = (septimoDia + vacacion)*(convierte(recargoSeguro));
+        afp = (septimoDia + vacacion)*(convierte(recargoAFP));
+        insaforp = (septimoDia + vacacion)*(convierte(recargoINSAFORP));
+        total = septimoDia + vacacion + aguinaldo + salud + afp + insaforp;
+        totalDia = total/5;
+        totalHora = totalDia/8;
+        
+        //TABLA SIN EFICIENCIA
+        //Columna derecha
+        factorSemana = (total)/(salario*5);
+        factorDia = totalDia/salario;
+        factorHora = (totalHora)/(salario/8);
+        //columna del medio
+        factorSalarioDia = salario;
+        factorSalarioHora = salario/8;
+        factorSalarioSemana = salario*diasTrabajados;
+        //columna izquierda
+        totalDiaS = factorSalarioDia*factorSemana;
+        totalHoraS = factorSalarioHora*factorHora;
+        totalSemanaS = factorSalarioSemana*factorSemana;
+        
+        //TABLA CON EFICIENCIA
+        //columna derecha
+        factorDiaE = (totalDia/(salario*(convierte(eficienciaEmpleado))));
+        factorHoraE = (totalHora)/(salario*(convierte(eficienciaEmpleado))/8);
+        factorSemanaE = (total)/(salario*5*(convierte(eficienciaEmpleado)));
+        //columna izquierda
+        totalDiaSE = totalDiaS;
+        totalHoraSE = totalHoraS;
+        totalSemanaSE = totalSemanaS;
+        //columna del medio
+        factorSalarioDiaE = totalDiaSE/factorDiaE;
+        factorSalarioHoraE = totalHoraSE/factorHoraE;
+        factorSalarioSemanaE = totalSemanaSE/factorSemanaE;
+        
+        //Impresion en los txtBox de la primera tabla
+        txtVacacion.setText(""+vacacion);
+        txtSeptimo.setText(""+septimoDia);
+        txtAguinaldo.setText(""+aguinaldo);
+        txtSalud.setText(""+ salud);
+        txtAFP.setText(""+afp);
+        txtINSAFORP.setText(""+insaforp);
+        txtTotal.setText(""+total);
+        txtTotalDia.setText(""+totalDia);
+        txtTotalHora.setText(""+totalHora);
+        
+        //Impresion en los txtBox de la tabla SIN EFICIENCIA
+        txtFactorDia.setText("" + factorDia);
+        txtFactorHora.setText("" + factorHora);
+        txtFactorSemana.setText("" + factorSemana);
+        txtSalarioDia.setText("" + factorSalarioDia);
+        txtSalarioHora.setText("" + factorSalarioHora);
+        txtSalarioSemana.setText("" + factorSalarioSemana);
+        txtDia.setText("" + totalDiaS);
+        txtHora.setText("" + totalHoraS);
+        txtSemana.setText("" + totalSemanaS);
+        
+        //Impresion de los txtBox en la tabal CON EFICIENCIA
+        txtFactorDiaEficiencia.setText("" + factorDiaE);
+        txtFactorHoraEficiencia.setText("" + factorHoraE);
+        txtFactorSemanaEficiencia.setText("" + factorSemanaE);
+        txtSalarioDiaEficiencia.setText("" + factorSalarioDiaE);
+        txtSalarioHoraEficiencia.setText("" + factorSalarioHoraE);
+        txtSalarioSemanaEficiencia.setText("" + factorSalarioSemanaE);
+        txtDiaEficiencia.setText("" + totalDiaSE);
+        txtHoraEficiencia.setText("" + totalHoraSE);
+        txtSemanaEficiencia.setText("" + totalSemanaSE);
+    }//GEN-LAST:event_btnCalcularManoDeObraActionPerformed
+    public double convierte(float porcentaje){
+        double numero;
+        
+        numero = porcentaje/100;
+        return numero;
+    }
     /**
      * @param args the command line arguments
      */
@@ -1527,18 +1554,16 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnAnadirCuenta;
     private javax.swing.JButton btnAnadirTransaccion;
+    private javax.swing.JButton btnCalcularManoDeObra;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnModificarCuenta;
     private javax.swing.JComboBox<String> cmbOrdenTransacciones;
     private javax.swing.JTabbedPane contenedorPestañas;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -1581,6 +1606,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1606,14 +1632,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JList<String> lstCuentasDisponibles;
     private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
@@ -1647,6 +1665,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtNombreCuenta;
     private javax.swing.JTextField txtPorcentajeAFP;
     private javax.swing.JTextField txtPorcentajeEficiencia;
+    private javax.swing.JTextField txtPorcentajeINSAFORP;
     private javax.swing.JTextField txtPorcentajeSeguro;
     private javax.swing.JTextField txtPorcentajeVacacion;
     private javax.swing.JTextField txtResultado;
@@ -1671,7 +1690,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     public void valueChanged(ListSelectionEvent e) {
         JList<String> listadoCuentas = (JList) e.getSource();
         int indiceCuentaSeleccionada = listadoCuentas.getSelectedIndex();
-        int codigoCuentaSeleccionada = ctlrCuentasDisp.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
+        int codigoCuentaSeleccionada = cuentasDis.getListadoCuentas().get(indiceCuentaSeleccionada).getCodCuenta();
         
         txtCodigoCuenta.setText(String.valueOf(codigoCuentaSeleccionada));
         
