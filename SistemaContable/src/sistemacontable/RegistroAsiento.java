@@ -39,6 +39,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
     //Debo usar este tipo aqui ya que no es posible saber si un rdio button ha sido seleccionado
     // al hacer click a cualquier radio button asi se cambiara 
     private Tipo tipoTransaccion;
+    private int ultimoNumRegistro;
     
     class VerificadorValorRegistro extends InputVerifier{
 
@@ -69,7 +70,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         this.controladorTablaLibroDiario = controladorTablaLibroDiario;
         this.cuentasDisp = cuentasDisp;
         
-        
+        ultimoNumRegistro = Registro.getContadorRegistros();
         btngTipoTransaccion.add(rbtnAbono);
         btngTipoTransaccion.add(rbtnCargo);
         txtValor.setInputVerifier( new VerificadorValorRegistro());
@@ -99,7 +100,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         rbtnCargo = new javax.swing.JRadioButton();
         rbtnAbono = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        tieneIVA = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtDescripcion = new javax.swing.JTextArea();
@@ -172,7 +173,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
         jLabel1.setText("Incluye IVA:");
 
-        jCheckBox1.setText("IVA");
+        tieneIVA.setText("IVA");
 
         jLabel2.setText("Descripción de la transacción:");
 
@@ -239,7 +240,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                         .addGap(28, 28, 28)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(rbtnAbono, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(tieneIVA, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(0, 89, Short.MAX_VALUE))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -286,7 +287,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jCheckBox1)))
+                            .addComponent(tieneIVA)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -328,7 +329,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     private void btnAñadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAñadirTransaccionActionPerformed
         Registro registroNuevo = new Registro();
-        
+        double valor = Double.parseDouble(txtValor.getText());
        
         
         boolean camposVacios = txtValor.getText().isBlank()
@@ -341,14 +342,19 @@ public class RegistroAsiento extends javax.swing.JFrame {
             return;
         }
         
+        if(tieneIVA.isSelected()){
+            nuevosRegistros.add(crearRegistroConIVA(0.13,valor));
+        }
         
+        registroNuevo.setNumRegistro(ultimoNumRegistro+1);
         registroNuevo.setCuenta(null);
         registroNuevo.setTipo(tipoTransaccion);
-        registroNuevo.setValor(Double.parseDouble(txtValor.getText()));
+        registroNuevo.setValor(valor);
         registroNuevo.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
         registroNuevo.getDescripcion().append(txtDescripcion.getText());
         nuevosRegistros.add(registroNuevo);
         
+        //Actualiza el contador de registros
         
     }//GEN-LAST:event_btnAñadirTransaccionActionPerformed
 
@@ -364,14 +370,40 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     private void btnGuardarNuevasTransaccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarNuevasTransaccionesActionPerformed
        controladorTablaLibroDiario.añadirRegistros(nuevosRegistros);
-        
+       Registro.setContadorRegistros(ultimoNumRegistro+1);
+       dispose();
         
     }//GEN-LAST:event_btnGuardarNuevasTransaccionesActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-
+    
+    public Registro crearRegistroConIVA(double porcentajeIVA,double valor){
+        Cuenta cuentaIVA ;
+        
+        if(tipoTransaccion.equals(Tipo.DEBE)){
+            cuentaIVA = cuentasDisp.stream()
+                            .filter(cuenta -> cuenta.getNombre().equals("IVA credito fiscal"))
+                            .findFirst()
+                            .get();
+        }else{
+            cuentaIVA = cuentasDisp.stream()
+                    .filter(cuenta -> cuenta.getNombre().contains("IVA debito fiscal"))
+                    .findFirst()
+                    .get();
+        }
+        
+        
+        Registro registroIVA = new Registro();
+        
+        registroIVA.setNumRegistro(ultimoNumRegistro+1);
+        registroIVA.setCuenta(cuentaIVA);
+        registroIVA.setTipo(tipoTransaccion);
+        registroIVA.setValor(porcentajeIVA*valor);
+        registroIVA.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
+        registroIVA.getDescripcion().append(txtDescripcion.getText());
+        
+        return registroIVA;
+    }
+   
     /***
      * Limpia todos los parametros a rellenar en la interfaz para crear una transaccion
      */
@@ -473,7 +505,6 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btngTipoTransaccion;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -486,6 +517,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbtnAbono;
     private javax.swing.JRadioButton rbtnCargo;
     private javax.swing.JTable tablaRegistrosNuevos;
+    private javax.swing.JCheckBox tieneIVA;
     private javax.swing.JTextField txtCuentaSeleccionada;
     private javax.swing.JTextArea txtDescripcion;
     private javax.swing.JTextField txtFecha;
