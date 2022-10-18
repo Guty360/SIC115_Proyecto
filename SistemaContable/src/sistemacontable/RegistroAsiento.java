@@ -10,12 +10,34 @@ import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 
 
+import Controladores.ControladorTablaLibroDiario;
+import ModeloContable.Cuenta;
+import ModeloContable.Registro;
+import ModeloContable.Tipo;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JRadioButton;
+import javax.swing.table.AbstractTableModel;
+
 /**
  *
  * @author pc
  */
 public class RegistroAsiento extends javax.swing.JFrame {
-
+    private ControladorTablaLibroDiario controladorTablaLibroDiario;
+    private List<Registro> nuevosRegistros;
+    private List<Cuenta> cuentasDisp;
+    private Cuenta cuentaSeleccionada;
+    
+    //variables auxiliares 
+    private double totalDebe;
+    private double totalHaber;
+    
+    //Debo usar este tipo aqui ya que no es posible saber si un rdio button ha sido seleccionado
+    // al hacer click a cualquier radio button asi se cambiara 
+    private Tipo tipoTransaccion;
     
     class VerificadorValorRegistro extends InputVerifier{
 
@@ -37,12 +59,18 @@ public class RegistroAsiento extends javax.swing.JFrame {
     /**
      * Creates new form RegistroAsiento
      */
-    public RegistroAsiento() {
-       this.setVisible(rootPaneCheckingEnabled);
+    public RegistroAsiento(ControladorTablaLibroDiario controladorTablaLibroDiario,List<Cuenta> cuentasDisp) {
+        this.setVisible(rootPaneCheckingEnabled);
         initComponents();
-       btngTipoTransaccion.add(rbtnAbono);
-       btngTipoTransaccion.add(rbtnCargo);
-       txtValor.setInputVerifier( new VerificadorValorRegistro());
+       
+        this.nuevosRegistros = new ArrayList<>();
+        this.controladorTablaLibroDiario = controladorTablaLibroDiario;
+        this.cuentasDisp = cuentasDisp;
+        
+        
+        btngTipoTransaccion.add(rbtnAbono);
+        btngTipoTransaccion.add(rbtnCargo);
+        txtValor.setInputVerifier( new VerificadorValorRegistro());
     }
 
     /**
@@ -57,9 +85,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btngTipoTransaccion = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        tablaRegistrosNuevos = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         txtValor = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -69,13 +96,14 @@ public class RegistroAsiento extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        txtDescripcion = new javax.swing.JTextArea();
+        btnAñadirTransaccion = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         txtFecha = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        txtCuentaSeleccionada = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -85,7 +113,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
             }
         });
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        tablaRegistrosNuevos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -111,21 +139,28 @@ public class RegistroAsiento extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable2.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jScrollPane2.setViewportView(jTable2);
+        tablaRegistrosNuevos.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane2.setViewportView(tablaRegistrosNuevos);
 
         jLabel5.setText("Cuenta:");
-
-        jComboBox2.setEditable(true);
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel6.setText("Valor:");
 
         jLabel7.setText("Tipo de movimiento:");
 
         rbtnCargo.setText("Cargo");
+        rbtnCargo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbtnCargoMouseClicked(evt);
+            }
+        });
 
         rbtnAbono.setText("Abono");
+        rbtnAbono.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rbtnAbonoMouseClicked(evt);
+            }
+        });
 
         jLabel1.setText("Incluye IVA:");
 
@@ -133,11 +168,16 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
         jLabel2.setText("Descripción de la transacción:");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtDescripcion.setColumns(20);
+        txtDescripcion.setRows(5);
+        jScrollPane1.setViewportView(txtDescripcion);
 
-        jButton1.setText("Añadir transacción.");
+        btnAñadirTransaccion.setText("Añadir transacción.");
+        btnAñadirTransaccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAñadirTransaccionActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Eliminar transacción seleccionada.");
 
@@ -168,8 +208,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtCuentaSeleccionada, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
                                         .addComponent(jButton4)))
                                 .addGap(22, 22, 22)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -180,16 +220,15 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                         .addGap(28, 28, 28)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(rbtnAbono, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, Short.MAX_VALUE))))
+                                            .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(btnAñadirTransaccion)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton2)
                                 .addGap(18, 18, 18)
@@ -209,11 +248,11 @@ public class RegistroAsiento extends javax.swing.JFrame {
                         .addGap(29, 29, 29)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)
                             .addComponent(jButton4)
                             .addComponent(jLabel3)
-                            .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCuentaSeleccionada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(5, 5, 5)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rbtnCargo)
@@ -233,7 +272,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(btnAñadirTransaccion)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
                 .addContainerGap(26, Short.MAX_VALUE))
@@ -259,19 +298,120 @@ public class RegistroAsiento extends javax.swing.JFrame {
         
     }//GEN-LAST:event_formWindowClosed
 
+    private void btnAñadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAñadirTransaccionActionPerformed
+        Registro registroNuevo = new Registro();
+        
+       
+        
+        boolean camposVacios = txtValor.getText().isBlank()
+                & txtCuentaSeleccionada.getText().isBlank()
+                & txtFecha.getText().isBlank()
+                & (tipoTransaccion==null);
+        
+        if (camposVacios){
+            JOptionPane.showInternalMessageDialog(rootPane,"Ingrese todos los datos necesarios","Error",JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        
+        registroNuevo.setCuenta(null);
+        registroNuevo.setTipo(tipoTransaccion);
+        registroNuevo.setValor(Double.parseDouble(txtValor.getText()));
+        registroNuevo.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
+        registroNuevo.getDescripcion().append(txtDescripcion.getText());
+        nuevosRegistros.add(registroNuevo);
+        
+        
+    }//GEN-LAST:event_btnAñadirTransaccionActionPerformed
+
+    private void rbtnCargoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnCargoMouseClicked
+        tipoTransaccion = Tipo.DEBE;
+      
+    }//GEN-LAST:event_rbtnCargoMouseClicked
+
+    private void rbtnAbonoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnAbonoMouseClicked
+       tipoTransaccion = Tipo.HABER;
+        
+    }//GEN-LAST:event_rbtnAbonoMouseClicked
+
     /**
      * @param args the command line arguments
      */
 
+    /***
+     * Limpia todos los parametros a rellenar en la interfaz para crear una transaccion
+     */
+    public void limpiarParametros(){
+        btngTipoTransaccion.clearSelection();
+        txtDescripcion.setText(null);
+        txtFecha.setText(null);
+        txtValor.setText(null);
+        txtCuentaSeleccionada.setText(null);
+    }
+    
+    
+    
+    
+    class ControladorTablaRegistro extends AbstractTableModel{
+
+        @Override
+        public int getRowCount() {
+            return (nuevosRegistros!=null)?nuevosRegistros.size():0;
+        }
+
+        @Override
+        public int getColumnCount() {
+            return 5;
+        }
+
+        @Override
+        public Object getValueAt(int rowIndex, int columnIndex) {
+            Registro registro = nuevosRegistros.get(rowIndex);
+            
+            double debe = (registro.getTipo().equals(Tipo.DEBE))?registro.getValor():0;
+            double haber = (registro.getTipo().equals(Tipo.HABER))?registro.getValor():0;
+            
+            totalDebe += debe;
+            totalHaber += haber;
+            
+            
+            if(rowIndex == getRowCount()+1 && columnIndex == 0){
+                return "Total";
+            }
+            
+            switch(columnIndex){
+                case 0:
+                    return registro.getFechaRegistroFormateada();
+                case 1:
+                    return registro.getCuenta().getNombre();
+                case 2:
+                    return registro.getDescripcion().toString();
+                case 3:
+                    return (debe==0)?"":debe;
+                case 4:
+                    return (haber==0)?"":haber;
+                default:
+                    return null;
+                
+            }
+            
+            
+        }
+        
+        public void añadirNuevosRegistros(List<Registro> nuevos){
+            nuevosRegistros.addAll(nuevos);
+            fireTableDataChanged();
+        }
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAñadirTransaccion;
     private javax.swing.ButtonGroup btngTipoTransaccion;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -281,10 +421,11 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JRadioButton rbtnAbono;
     private javax.swing.JRadioButton rbtnCargo;
+    private javax.swing.JTable tablaRegistrosNuevos;
+    private javax.swing.JTextField txtCuentaSeleccionada;
+    private javax.swing.JTextArea txtDescripcion;
     private javax.swing.JTextField txtFecha;
     private javax.swing.JTextField txtValor;
     // End of variables declaration//GEN-END:variables

@@ -5,7 +5,8 @@
 package ModeloContable;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 /**
  *
@@ -16,6 +17,9 @@ public class Registro extends Serializacion{
     private Cuenta cuenta;
     private Tipo tipo;
     private double valor;
+    private StringBuilder descripcion = new StringBuilder();
+    private int numRegistro;
+    private static int contadorRegistros;
 
     public Registro(){}
 
@@ -31,6 +35,22 @@ public class Registro extends Serializacion{
         this.cuenta = cuenta;
         this.tipo = tipo;
         this.valor = valor;
+    }
+
+    public int getNumRegistro() {
+        return numRegistro;
+    }
+
+    public void setNumRegistro(int numRegistro) {
+        this.numRegistro = numRegistro;
+    }
+
+    public static int getContadorRegistros() {
+        return contadorRegistros;
+    }
+
+    public static void setContadorRegistros(int contadorRegistros) {
+        Registro.contadorRegistros = contadorRegistros;
     }
     
     
@@ -54,6 +74,10 @@ public class Registro extends Serializacion{
     public LocalDate getFechaRegistro() {
         return fechaRegistro;
     }
+    
+    public String getFechaRegistroFormateada(){
+        return fechaRegistro.format(DateTimeFormatter.ofPattern("dd/MM/YYYY", Locale.FRENCH));
+    }
 
     public void setFechaRegistro(LocalDate fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
@@ -65,6 +89,14 @@ public class Registro extends Serializacion{
 
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
+    }
+
+    public StringBuilder getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(StringBuilder descripcion) {
+        this.descripcion = descripcion;
     }
     
     

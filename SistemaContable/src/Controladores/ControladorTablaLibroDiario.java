@@ -7,7 +7,6 @@ package Controladores;
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.List;
 import java.util.Locale;
 import javax.swing.table.AbstractTableModel;
@@ -46,7 +45,7 @@ public class ControladorTablaLibroDiario extends AbstractTableModel{
         
         switch(columnIndex){
             case 0:
-                return registro.getFechaRegistro().format(DateTimeFormatter.ofPattern("dd/MM/YYYY", Locale.FRENCH));
+                return registro.getFechaRegistroFormateada();
             case 1:
                 return registro.getCuenta().getNombre();
             case 2:
@@ -65,7 +64,7 @@ public class ControladorTablaLibroDiario extends AbstractTableModel{
      * @param nuevosRegistros 
      */
     public void añadirRegistros(List<Registro> nuevosRegistros){
-        registros.addAll(registros);
+        registros.addAll(nuevosRegistros);
         fireTableDataChanged();
         
     }
