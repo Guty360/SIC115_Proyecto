@@ -105,7 +105,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         txtDescripcion = new javax.swing.JTextArea();
         btnAñadirTransaccion = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnGuardarNuevasTransacciones = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         txtFecha = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -187,8 +187,13 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
         jButton2.setText("Eliminar transacción seleccionada.");
 
-        jButton3.setText("Guardar cambios.");
-        jButton3.setEnabled(false);
+        btnGuardarNuevasTransacciones.setText("Guardar cambios.");
+        btnGuardarNuevasTransacciones.setEnabled(false);
+        btnGuardarNuevasTransacciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarNuevasTransaccionesActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Q");
         jButton4.setToolTipText("Click para buscar una cuenta");
@@ -238,7 +243,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton2)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton3)))
+                                .addComponent(btnGuardarNuevasTransacciones)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)))
@@ -280,7 +285,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAñadirTransaccion)
                     .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(btnGuardarNuevasTransacciones))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
@@ -339,6 +344,12 @@ public class RegistroAsiento extends javax.swing.JFrame {
        tipoTransaccion = Tipo.HABER;
         
     }//GEN-LAST:event_rbtnAbonoMouseClicked
+
+    private void btnGuardarNuevasTransaccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarNuevasTransaccionesActionPerformed
+       controladorTablaLibroDiario.añadirRegistros(nuevosRegistros);
+        
+        
+    }//GEN-LAST:event_btnGuardarNuevasTransaccionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -413,9 +424,9 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAñadirTransaccion;
+    private javax.swing.JButton btnGuardarNuevasTransacciones;
     private javax.swing.ButtonGroup btngTipoTransaccion;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
