@@ -4,9 +4,10 @@
  */
 package Controladores;
 
-import ModeloContable.Asiento;
 import ModeloContable.Registro;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.swing.table.AbstractTableModel;
 
 /**
@@ -14,20 +15,13 @@ import javax.swing.table.AbstractTableModel;
  * @author pc
  */
 public class ControladorTablaLibroDiario extends AbstractTableModel {
-    private List<Asiento> asientos;
-    private List<List<Registro>> listadoTotalDeRegistros; 
-    
-    public ControladorTablaLibroDiario(List<List<Registro>> asientos) {
-        this.listadoTotalDeRegistros = asientos;
-    }
+
     
     
 
     @Override
     public int getRowCount() {
-        return listadoTotalDeRegistros.parallelStream()
-                .mapToInt(registros -> registros.size())
-                .sum();
+        return 0;
     }
     
     
@@ -40,7 +34,7 @@ public class ControladorTablaLibroDiario extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         
-     
+        
         
         return null;
     }

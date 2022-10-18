@@ -39,7 +39,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     //modelos contables
     InformacionContable informacionContable;
     LibroMayor libroMayor;
-    List<Asiento> asientos;
+    List<Registro> asientos;
     List<LibroDiario> librosDiarios;
     List<Cuenta> cuentas;
    
@@ -134,7 +134,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         lstCuentasDisponibles.addListSelectionListener(this);
     }
     
-    public void configurarTablaLibroDiario(List<Asiento> asientos){
+    public void configurarTablaLibroDiario(List<Registro> asientos){
        // controladorTablaLibroDiario = new ControladorTablaLibroDiario();
        // tablaLibroDiario.setModel(controladorTablaLibroDiario);
     }

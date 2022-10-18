@@ -4,11 +4,15 @@
  */
 package ModeloContable;
 
+import java.util.Date;
+
 /**
  *
  * @author pc
  */
 public class Registro extends Serializacion{
+    private Date fechaRegistro;
+    private Cuenta cuenta;
     private Tipo tipo;
     private double valor;
 

@@ -13,12 +13,12 @@ import java.util.List;
 public class LibroMayor extends Serializacion{
    List<Cuenta> cuentas;
    List<LibroDiario> libroDiarios;
-   List<Asiento> ajustes;
+   List<Registro> ajustes;
 
    public LibroMayor(){}
    
    
-    public LibroMayor(List<Cuenta> cuentas, List<Asiento> ajustes,List<LibroDiario> librosDiarios) {
+    public LibroMayor(List<Cuenta> cuentas, List<Registro> ajustes,List<LibroDiario> librosDiarios) {
         this.cuentas = cuentas;
         this.ajustes = ajustes;
         this.libroDiarios = librosDiarios;
@@ -32,13 +32,7 @@ public class LibroMayor extends Serializacion{
         this.cuentas = cuentas;
     }
 
-    public List<Asiento> getAjustes() {
-        return ajustes;
-    }
 
-    public void setAjustes(List<Asiento> ajustes) {
-        this.ajustes = ajustes;
-    }
 
     public List<LibroDiario> getLibroDiarios() {
         return libroDiarios;
