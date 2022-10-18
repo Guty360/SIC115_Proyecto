@@ -27,6 +27,7 @@ import javax.swing.table.AbstractTableModel;
  */
 public class RegistroAsiento extends javax.swing.JFrame {
     private ControladorTablaLibroDiario controladorTablaLibroDiario;
+    private ControladorTablaRegistro controladorTablaRegistro;
     private List<Registro> nuevosRegistros;
     private List<Cuenta> cuentasDisp;
     private Cuenta cuentaSeleccionada;
@@ -62,6 +63,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
     public RegistroAsiento(ControladorTablaLibroDiario controladorTablaLibroDiario,List<Cuenta> cuentasDisp) {
         this.setVisible(rootPaneCheckingEnabled);
         initComponents();
+        controladorTablaRegistro = new ControladorTablaRegistro();
        
         this.nuevosRegistros = new ArrayList<>();
         this.controladorTablaLibroDiario = controladorTablaLibroDiario;
@@ -71,6 +73,10 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btngTipoTransaccion.add(rbtnAbono);
         btngTipoTransaccion.add(rbtnCargo);
         txtValor.setInputVerifier( new VerificadorValorRegistro());
+        
+        tablaRegistrosNuevos.setModel(controladorTablaRegistro);
+        
+        
     }
 
     /**

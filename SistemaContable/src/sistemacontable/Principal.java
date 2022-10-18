@@ -1508,6 +1508,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
     private void btnAnadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirTransaccionActionPerformed
         RegistroAsiento ra = new RegistroAsiento(controladorTablaLibroDiario,cuentas);
+        
+        //REGISTROS DE PRUEBA-BORRAR DESPUES
         asientos = new ArrayList<>();
         asientos.add(new Registro(LocalDate.now(),cuentas.get(0),Tipo.HABER,514));
         asientos.add(new Registro(LocalDate.now(),cuentas.get(1),Tipo.DEBE,514));
