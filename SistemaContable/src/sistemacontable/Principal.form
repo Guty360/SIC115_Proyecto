@@ -2803,7 +2803,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel20" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="28" max="32767" attributes="0"/>
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3051,69 +3051,69 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jTextField11" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                  <Component id="txtServicioPrivadoAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField10" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtImpuestosAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtServicioPublicoAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField13" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField14" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtCalidadAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtInsumoAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField15" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField16" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtMantenimientoSoftAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtInfraestructuraAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField4" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtManoAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtMaterialAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField1" max="32767" attributes="0"/>
-                                                      <Component id="jTextField2" pref="85" max="32767" attributes="0"/>
+                                                      <Component id="txtSalarioSupAnalisisProductivo" max="32767" attributes="0"/>
+                                                      <Component id="txtSalarioOfiAnalisisProductivo" pref="85" max="32767" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField5" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField6" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtSumiAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtHerraAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField7" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField8" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtOtrosAnalisisProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtDepreciacionAnalisisProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="jTextField153" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                  <Component id="txtTotalAnalisis" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jTextField20" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                  <Component id="txtServicioPrivadoDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField12" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField18" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtImpuestosDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtServicioPublicoDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField23" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField25" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtCalidadDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtInsumoDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField29" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtMantenimientoSoftDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtInfraestructuraDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField21" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField22" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtManoDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtMaterialDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField17" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField19" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtSalarioSupDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtSalarioOfiDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField24" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField26" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtSumiDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtHerraDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField28" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField30" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtOtrosDisenoProductivo" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtDepreciacionDisenoProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="jTextField154" min="-2" pref="85" max="-2" attributes="0"/>
+                                                  <Component id="txtTotalDiseno" min="-2" pref="85" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
@@ -3128,68 +3128,68 @@
                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jTextField35" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPrivadoDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField31" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField33" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtImpuestosDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtServicioPublicoDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField38" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField40" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtCalidadDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtInsumoDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField42" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField44" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtMantenimientoSoftDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtInfraestructuraDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField36" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField37" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtManoDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtMaterialDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField32" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField34" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtSalarioSupDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtSalarioOfiDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField39" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField41" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtSumiDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtHerraDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField43" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField45" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtOtrosDesarrolloProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtDepreciacionDesarrolloProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jTextField48" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPrivadoPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField59" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField46" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtImpuestosPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtServicioPublicoPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField51" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField53" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtCalidadPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtInsumoPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField55" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField57" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtMantenimientoSoftPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtInfraestructuraPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField49" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField50" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtManoPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtMaterialPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField60" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField47" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtSalarioSupPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtSalarioOfiPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField52" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField54" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtSumiPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtHerraPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                          <Component id="jTextField56" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField58" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtOtrosPruebaProductivo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtDepreciacionPruebaProductivo" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                       </Group>
-                                                      <Component id="jTextField156" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                      <Component id="txtTotalPrueba" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                               </Group>
@@ -3201,28 +3201,28 @@
                                               </Group>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField155" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="txtTotalDesarrollo" min="-2" pref="85" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="jLabel117" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField75" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField62" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField64" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField65" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField67" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField69" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField71" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField73" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField74" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField61" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField63" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField66" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField68" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField70" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField72" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jTextField157" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtSalarioSupMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtSalarioOfiMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtManoManteniminetoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtMaterialMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtSumiMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtHerraMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtOtrosMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtDepreciacionMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtImpuestosMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtServicioPublicoMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtServicioPrivadoMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtCalidadMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtInsumoMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtMantenimientoSoftMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtInfraestructuraMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtTotalMantenimiento" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -3244,181 +3244,185 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel117" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField75" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtSalarioSupMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField62" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtSalarioOfiMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField64" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtManoManteniminetoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField65" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtMaterialMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField67" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtSumiMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField69" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtHerraMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField71" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtOtrosMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField73" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtDepreciacionMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField74" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtImpuestosMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField61" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtServicioPublicoMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField63" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtServicioPrivadoMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                      <Component id="jTextField66" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtCalidadMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField68" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtInsumoMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField70" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField72" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtMantenimientoSoftMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jLabel95" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel96" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel112" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel113" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabel95" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel112" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel113" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField5" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField6" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField7" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField8" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField13" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField14" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField15" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField16" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInfraestructuraAnalisisProductivo" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField17" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField19" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField21" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField22" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField24" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField26" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField28" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField30" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField12" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField18" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField20" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField23" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField25" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField27" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField29" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInfraestructuraDisenoProductivo" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField32" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField34" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField36" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField37" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField39" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField41" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField43" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField45" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField31" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField33" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField35" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField38" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField40" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField42" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField44" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInfraestructuraDesarrolloProductivo" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
-                                              <Component id="jTextField60" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField47" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField49" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField50" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField52" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField54" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField56" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField58" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField59" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField46" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField48" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField51" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField53" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField55" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftPruebaProductivo" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField57" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="txtInfraestructuraPruebaProductivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txtInfraestructuraMantenimientoProductivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField153" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField154" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField155" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField156" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField157" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalAnalisis" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalDiseno" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalDesarrollo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalPrueba" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalMantenimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="29" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -3440,227 +3444,227 @@
                         <Property name="text" type="java.lang.String" value="AN&#xc1;LISIS"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField1">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField2">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField3">
+                    <Component class="javax.swing.JTextField" name="txtManoAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField4">
+                    <Component class="javax.swing.JTextField" name="txtMaterialAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField5">
+                    <Component class="javax.swing.JTextField" name="txtSumiAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField6">
+                    <Component class="javax.swing.JTextField" name="txtHerraAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField7">
+                    <Component class="javax.swing.JTextField" name="txtOtrosAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField8">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField9">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField10">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField11">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField13">
+                    <Component class="javax.swing.JTextField" name="txtCalidadAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField14">
+                    <Component class="javax.swing.JTextField" name="txtInsumoAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField15">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField16">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraAnalisisProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField12">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField17">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField18">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField19">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField20">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField21">
+                    <Component class="javax.swing.JTextField" name="txtManoDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField22">
+                    <Component class="javax.swing.JTextField" name="txtMaterialDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField23">
+                    <Component class="javax.swing.JTextField" name="txtCalidadDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField24">
+                    <Component class="javax.swing.JTextField" name="txtSumiDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField25">
+                    <Component class="javax.swing.JTextField" name="txtInsumoDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField26">
+                    <Component class="javax.swing.JTextField" name="txtHerraDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField27">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField28">
+                    <Component class="javax.swing.JTextField" name="txtOtrosDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField29">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField30">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionDisenoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField31">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField32">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField33">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField34">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField35">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField36">
+                    <Component class="javax.swing.JTextField" name="txtManoDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField37">
+                    <Component class="javax.swing.JTextField" name="txtMaterialDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField38">
+                    <Component class="javax.swing.JTextField" name="txtCalidadDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField39">
+                    <Component class="javax.swing.JTextField" name="txtSumiDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField40">
+                    <Component class="javax.swing.JTextField" name="txtInsumoDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField41">
+                    <Component class="javax.swing.JTextField" name="txtHerraDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField42">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField43">
+                    <Component class="javax.swing.JTextField" name="txtOtrosDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField44">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField45">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionDesarrolloProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -3670,152 +3674,152 @@
                         <Property name="text" type="java.lang.String" value="DESARROLLO"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField46">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField47">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField48">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField49">
+                    <Component class="javax.swing.JTextField" name="txtManoPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField50">
+                    <Component class="javax.swing.JTextField" name="txtMaterialPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField51">
+                    <Component class="javax.swing.JTextField" name="txtCalidadPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField52">
+                    <Component class="javax.swing.JTextField" name="txtSumiPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField53">
+                    <Component class="javax.swing.JTextField" name="txtInsumoPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField54">
+                    <Component class="javax.swing.JTextField" name="txtHerraPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField55">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField56">
+                    <Component class="javax.swing.JTextField" name="txtOtrosPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField57">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField58">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField59">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField60">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupPruebaProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField61">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField62">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField63">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField64">
+                    <Component class="javax.swing.JTextField" name="txtManoManteniminetoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField65">
+                    <Component class="javax.swing.JTextField" name="txtMaterialMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField66">
+                    <Component class="javax.swing.JTextField" name="txtCalidadMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField67">
+                    <Component class="javax.swing.JTextField" name="txtSumiMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField68">
+                    <Component class="javax.swing.JTextField" name="txtInsumoMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField69">
+                    <Component class="javax.swing.JTextField" name="txtHerraMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField70">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField71">
+                    <Component class="javax.swing.JTextField" name="txtOtrosMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField72">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField73">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField74">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField75">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -3830,27 +3834,27 @@
                         <Property name="text" type="java.lang.String" value="MANTENIMIENTO"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField153">
+                    <Component class="javax.swing.JTextField" name="txtTotalAnalisis">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField154">
+                    <Component class="javax.swing.JTextField" name="txtTotalDiseno">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField155">
+                    <Component class="javax.swing.JTextField" name="txtTotalDesarrollo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField156">
+                    <Component class="javax.swing.JTextField" name="txtTotalPrueba">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField157">
+                    <Component class="javax.swing.JTextField" name="txtTotalMantenimiento">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -4226,51 +4230,54 @@
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jTextField158" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <Component id="txtTotalVCalidad" min="-2" pref="85" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextField152" alignment="1" max="32767" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="jTextField152" min="-2" pref="93" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="1" attributes="0">
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
-                                                      <Component id="jTextField159" min="-2" pref="119" max="-2" attributes="0"/>
+                                                      <Component id="txtTotalVInsumo" min="-2" pref="119" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" attributes="0">
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jTextField86" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                          <Component id="txtServicioPrivadoCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField84" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField85" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtImpuestosCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtServicioPublicoCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField87" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField88" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtCalidadCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtInsumoCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField89" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField90" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtMantenimientoSoftCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtInfraestructuraCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField78" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField79" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtManoCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtMaterialCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField76" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField77" alignment="0" pref="85" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioSupCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioOfiCalidadServicio" alignment="0" pref="85" max="32767" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField80" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField81" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtSumiCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtHerraCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField82" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField83" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                                              <Component id="txtOtrosCalidadServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtDepreciacionCalidadServicio" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="102" alignment="0" attributes="0">
                                                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
@@ -4281,23 +4288,23 @@
                                                       <Group type="103" groupAlignment="1" attributes="0">
                                                           <Component id="jLabel133" min="-2" pref="136" max="-2" attributes="0"/>
                                                           <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField93" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField91" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField105" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField103" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField101" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField99" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField97" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField96" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField94" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField92" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField95" alignment="1" pref="119" max="32767" attributes="0"/>
+                                                              <Component id="txtServicioPublicoInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtImpuestosInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtDepreciacionInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtOtrosInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtHerraInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtSumiInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtMaterialInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtManoInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioOfiInsumosServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioSupInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtServicioPrivadoInsumoServicio" alignment="1" pref="119" max="32767" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField104" alignment="1" pref="119" max="32767" attributes="0"/>
-                                                              <Component id="jTextField102" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField100" alignment="1" max="32767" attributes="0"/>
-                                                              <Component id="jTextField98" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtInfraestructuraInsumoServicio" alignment="1" pref="119" max="32767" attributes="0"/>
+                                                              <Component id="txtMantenimientoSoftInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtInsumoInsumoServicio" alignment="1" max="32767" attributes="0"/>
+                                                              <Component id="txtCalidadInsumoServicio" alignment="1" max="32767" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                   </Group>
@@ -4308,79 +4315,79 @@
                                                       <Group type="103" groupAlignment="0" attributes="0">
                                                           <Group type="102" attributes="0">
                                                               <Group type="103" groupAlignment="1" attributes="0">
-                                                                  <Component id="jTextField107" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField109" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField108" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField106" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField120" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField118" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField116" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField110" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField112" alignment="0" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField111" alignment="1" max="32767" attributes="0"/>
-                                                                  <Component id="jTextField114" alignment="1" max="32767" attributes="0"/>
-                                                                  <Component id="jLabel135" alignment="0" pref="139" max="32767" attributes="0"/>
+                                                                  <Component id="txtSalarioSupMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtSalarioOfiMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtServicioPublicoMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtImpuestosMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtDepreciacionMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtOtrosMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtHerraMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtServicioPrivadoMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtMaterialMantenimientoSoftServicio" alignment="0" max="32767" attributes="0"/>
+                                                                  <Component id="txtManoMantenimientoSoftServicio" alignment="1" max="32767" attributes="0"/>
+                                                                  <Component id="txtSumiMantenimientoSoftServicio" alignment="1" max="32767" attributes="0"/>
+                                                                  <Component id="jLabel135" alignment="0" pref="140" max="32767" attributes="0"/>
                                                               </Group>
                                                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="102" attributes="0">
-                                                              <Component id="jTextField162" max="32767" attributes="0"/>
+                                                              <Component id="txtTotalVManteniemintoSoft" max="32767" attributes="0"/>
                                                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jTextField161" min="-2" pref="103" max="-2" attributes="0"/>
+                                                          <Component id="txtTotalVInfraestructura" min="-2" pref="103" max="-2" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                              <Component id="jTextField123" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField134" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField121" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField126" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField128" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField130" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField132" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField124" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField125" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField135" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField122" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField127" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField129" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField131" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="jTextField133" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtServicioPrivadoInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtImpuestosInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtServicioPublicoInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtCalidadInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtInsumoInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtMantenimientoSoftInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtInfraestructuraInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtManoInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtMaterialInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioSupInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtSalarioOfiInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtSumiInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtHerraInfraestrucutraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtOtrosInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtDepreciacionInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="jLabel136" alignment="0" max="32767" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
                                                           <Component id="jLabel137" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField140" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField142" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField144" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField146" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField148" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField149" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField136" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField138" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField141" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField143" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField145" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField147" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField137" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="jTextField139" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalMaterial" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalSumi" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalHerra" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalOtros" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalDepreciacion" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalImpuesto" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalServicioPublico" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalServicioPrivado" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalCalidad" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalInsumo" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalMantenimientoSoft" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalInfraestructura" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalSalarioOfi" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="txtTotalMano" alignment="0" max="32767" attributes="0"/>
                                                           <Group type="102" attributes="0">
                                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                                  <Component id="jTextField160" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
-                                                                  <Component id="jTextField150" min="-2" pref="92" max="-2" attributes="0"/>
+                                                                  <Component id="txtTotalTotal" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                                                                  <Component id="txtTotalSalarioSup" min="-2" pref="92" max="-2" attributes="0"/>
                                                               </Group>
-                                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                              <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
                                                           </Group>
                                                       </Group>
                                                   </Group>
                                                   <Group type="102" attributes="0">
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jTextField115" min="-2" pref="134" max="-2" attributes="0"/>
-                                                          <Component id="jTextField117" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
-                                                          <Component id="jTextField119" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
-                                                          <Component id="jTextField113" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                                          <Component id="txtInsumoMantenimientoSoftServicio" min="-2" pref="134" max="-2" attributes="0"/>
+                                                          <Component id="txtMantenimientoSoftMantenimientoSoftServicio" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                                          <Component id="txtInfraestructuraMantenimientoSoftServicio" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                                          <Component id="txtCalidadMantenimientoSoftServicio" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                   </Group>
@@ -4403,37 +4410,37 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel137" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField150" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalSalarioSup" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField137" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalSalarioOfi" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField139" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalMano" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField140" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalMaterial" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField142" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalSumi" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField144" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalHerra" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField146" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalOtros" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField148" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalDepreciacion" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField149" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalImpuesto" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField136" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalServicioPublico" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField138" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalServicioPrivado" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jTextField152" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                      <Component id="jTextField141" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalCalidad" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField143" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalInsumo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField145" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalMantenimientoSoft" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField147" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalInfraestructura" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
@@ -4447,132 +4454,132 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField76" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField77" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField78" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField79" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField80" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField81" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField82" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField83" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField84" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField85" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField86" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField87" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField88" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField89" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftCalidadServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField90" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInfraestructuraCalidadServicio" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jTextField92" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioSupInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField94" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSalarioOfiInsumosServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField96" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtManoInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField97" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaterialInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField99" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSumiInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField101" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtHerraInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField103" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtOtrosInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField105" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtDepreciacionInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField91" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtImpuestosInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField93" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPublicoInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField95" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtServicioPrivadoInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                              <Component id="jTextField98" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtCalidadInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField100" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInsumoInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField102" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMantenimientoSoftInsumoServicio" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField104" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtInfraestructuraInsumoServicio" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="jTextField107" max="32767" attributes="0"/>
-                                                  <Component id="jTextField135" max="32767" attributes="0"/>
+                                                  <Component id="txtSalarioSupMantenimientoSoftServicio" max="32767" attributes="0"/>
+                                                  <Component id="txtSalarioSupInfraestructuraServicio" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField122" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtSalarioOfiInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField124" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtManoInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField125" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtMaterialInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField127" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtSumiInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField129" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtHerraInfraestrucutraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField131" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtOtrosInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField133" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtDepreciacionInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField134" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtImpuestosInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField121" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPublicoInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField123" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPrivadoInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                                      <Component id="jTextField126" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtCalidadInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField128" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtInsumoInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField130" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtMantenimientoSoftInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField132" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtInfraestructuraInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="1" attributes="0">
                                                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                                      <Component id="jTextField109" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtSalarioOfiMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField111" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtManoMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField112" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtMaterialMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField114" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtSumiMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField116" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtHerraMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField118" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtOtrosMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField120" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtDepreciacionMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField106" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtImpuestosMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField108" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPublicoMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField110" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtServicioPrivadoMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                                      <Component id="jTextField113" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtCalidadMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField115" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtInsumoMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField117" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtMantenimientoSoftMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="jTextField119" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtInfraestructuraMantenimientoSoftServicio" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -4581,11 +4588,11 @@
                               </Group>
                               <EmptySpace pref="27" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField158" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField159" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField160" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField161" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField162" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalVCalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalVInsumo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalVInfraestructura" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalVManteniemintoSoft" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
@@ -4609,227 +4616,227 @@
                         <Property name="text" type="java.lang.String" value="CALIDAD"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField76">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField77">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField78">
+                    <Component class="javax.swing.JTextField" name="txtManoCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField79">
+                    <Component class="javax.swing.JTextField" name="txtMaterialCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField80">
+                    <Component class="javax.swing.JTextField" name="txtSumiCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField81">
+                    <Component class="javax.swing.JTextField" name="txtHerraCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField82">
+                    <Component class="javax.swing.JTextField" name="txtOtrosCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField83">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField84">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField85">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField86">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField87">
+                    <Component class="javax.swing.JTextField" name="txtCalidadCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField88">
+                    <Component class="javax.swing.JTextField" name="txtInsumoCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField89">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField90">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraCalidadServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField91">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField92">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField93">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField94">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiInsumosServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField95">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField96">
+                    <Component class="javax.swing.JTextField" name="txtManoInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField97">
+                    <Component class="javax.swing.JTextField" name="txtMaterialInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField98">
+                    <Component class="javax.swing.JTextField" name="txtCalidadInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField99">
+                    <Component class="javax.swing.JTextField" name="txtSumiInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField100">
+                    <Component class="javax.swing.JTextField" name="txtInsumoInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField101">
+                    <Component class="javax.swing.JTextField" name="txtHerraInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField102">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField103">
+                    <Component class="javax.swing.JTextField" name="txtOtrosInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField104">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField105">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionInsumoServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField106">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField107">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField108">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField109">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField110">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField111">
+                    <Component class="javax.swing.JTextField" name="txtManoMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField112">
+                    <Component class="javax.swing.JTextField" name="txtMaterialMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField113">
+                    <Component class="javax.swing.JTextField" name="txtCalidadMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField114">
+                    <Component class="javax.swing.JTextField" name="txtSumiMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField115">
+                    <Component class="javax.swing.JTextField" name="txtInsumoMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField116">
+                    <Component class="javax.swing.JTextField" name="txtHerraMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField117">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField118">
+                    <Component class="javax.swing.JTextField" name="txtOtrosMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField119">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField120">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionMantenimientoSoftServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -4839,152 +4846,152 @@
                         <Property name="text" type="java.lang.String" value="MANTENIMI.. SOFTWARE"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField121">
+                    <Component class="javax.swing.JTextField" name="txtServicioPublicoInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField122">
+                    <Component class="javax.swing.JTextField" name="txtSalarioOfiInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField123">
+                    <Component class="javax.swing.JTextField" name="txtServicioPrivadoInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField124">
+                    <Component class="javax.swing.JTextField" name="txtManoInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField125">
+                    <Component class="javax.swing.JTextField" name="txtMaterialInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField126">
+                    <Component class="javax.swing.JTextField" name="txtCalidadInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField127">
+                    <Component class="javax.swing.JTextField" name="txtSumiInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField128">
+                    <Component class="javax.swing.JTextField" name="txtInsumoInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField129">
+                    <Component class="javax.swing.JTextField" name="txtHerraInfraestrucutraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField130">
+                    <Component class="javax.swing.JTextField" name="txtMantenimientoSoftInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField131">
+                    <Component class="javax.swing.JTextField" name="txtOtrosInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField132">
+                    <Component class="javax.swing.JTextField" name="txtInfraestructuraInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField133">
+                    <Component class="javax.swing.JTextField" name="txtDepreciacionInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField134">
+                    <Component class="javax.swing.JTextField" name="txtImpuestosInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField135">
+                    <Component class="javax.swing.JTextField" name="txtSalarioSupInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField136">
+                    <Component class="javax.swing.JTextField" name="txtTotalServicioPublico">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField137">
+                    <Component class="javax.swing.JTextField" name="txtTotalSalarioOfi">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField138">
+                    <Component class="javax.swing.JTextField" name="txtTotalServicioPrivado">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField139">
+                    <Component class="javax.swing.JTextField" name="txtTotalMano">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField140">
+                    <Component class="javax.swing.JTextField" name="txtTotalMaterial">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField141">
+                    <Component class="javax.swing.JTextField" name="txtTotalCalidad">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField142">
+                    <Component class="javax.swing.JTextField" name="txtTotalSumi">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField143">
+                    <Component class="javax.swing.JTextField" name="txtTotalInsumo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField144">
+                    <Component class="javax.swing.JTextField" name="txtTotalHerra">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField145">
+                    <Component class="javax.swing.JTextField" name="txtTotalMantenimientoSoft">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField146">
+                    <Component class="javax.swing.JTextField" name="txtTotalOtros">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField147">
+                    <Component class="javax.swing.JTextField" name="txtTotalInfraestructura">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField148">
+                    <Component class="javax.swing.JTextField" name="txtTotalDepreciacion">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField149">
+                    <Component class="javax.swing.JTextField" name="txtTotalImpuesto">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField150">
+                    <Component class="javax.swing.JTextField" name="txtTotalSalarioSup">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -5005,27 +5012,27 @@
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField158">
+                    <Component class="javax.swing.JTextField" name="txtTotalVCalidad">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField159">
+                    <Component class="javax.swing.JTextField" name="txtTotalVInsumo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField160">
+                    <Component class="javax.swing.JTextField" name="txtTotalTotal">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField161">
+                    <Component class="javax.swing.JTextField" name="txtTotalVInfraestructura">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField162">
+                    <Component class="javax.swing.JTextField" name="txtTotalVManteniemintoSoft">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>

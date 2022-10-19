@@ -379,89 +379,89 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel94 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
-        jTextField34 = new javax.swing.JTextField();
-        jTextField35 = new javax.swing.JTextField();
-        jTextField36 = new javax.swing.JTextField();
-        jTextField37 = new javax.swing.JTextField();
-        jTextField38 = new javax.swing.JTextField();
-        jTextField39 = new javax.swing.JTextField();
-        jTextField40 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
-        jTextField43 = new javax.swing.JTextField();
-        jTextField44 = new javax.swing.JTextField();
-        jTextField45 = new javax.swing.JTextField();
+        txtSalarioSupAnalisisProductivo = new javax.swing.JTextField();
+        txtSalarioOfiAnalisisProductivo = new javax.swing.JTextField();
+        txtManoAnalisisProductivo = new javax.swing.JTextField();
+        txtMaterialAnalisisProductivo = new javax.swing.JTextField();
+        txtSumiAnalisisProductivo = new javax.swing.JTextField();
+        txtHerraAnalisisProductivo = new javax.swing.JTextField();
+        txtOtrosAnalisisProductivo = new javax.swing.JTextField();
+        txtDepreciacionAnalisisProductivo = new javax.swing.JTextField();
+        txtImpuestosAnalisisProductivo = new javax.swing.JTextField();
+        txtServicioPublicoAnalisisProductivo = new javax.swing.JTextField();
+        txtServicioPrivadoAnalisisProductivo = new javax.swing.JTextField();
+        txtCalidadAnalisisProductivo = new javax.swing.JTextField();
+        txtInsumoAnalisisProductivo = new javax.swing.JTextField();
+        txtMantenimientoSoftAnalisisProductivo = new javax.swing.JTextField();
+        txtInfraestructuraAnalisisProductivo = new javax.swing.JTextField();
+        txtImpuestosDisenoProductivo = new javax.swing.JTextField();
+        txtSalarioSupDisenoProductivo = new javax.swing.JTextField();
+        txtServicioPublicoDisenoProductivo = new javax.swing.JTextField();
+        txtSalarioOfiDisenoProductivo = new javax.swing.JTextField();
+        txtServicioPrivadoDisenoProductivo = new javax.swing.JTextField();
+        txtManoDisenoProductivo = new javax.swing.JTextField();
+        txtMaterialDisenoProductivo = new javax.swing.JTextField();
+        txtCalidadDisenoProductivo = new javax.swing.JTextField();
+        txtSumiDisenoProductivo = new javax.swing.JTextField();
+        txtInsumoDisenoProductivo = new javax.swing.JTextField();
+        txtHerraDisenoProductivo = new javax.swing.JTextField();
+        txtMantenimientoSoftDisenoProductivo = new javax.swing.JTextField();
+        txtOtrosDisenoProductivo = new javax.swing.JTextField();
+        txtInfraestructuraDisenoProductivo = new javax.swing.JTextField();
+        txtDepreciacionDisenoProductivo = new javax.swing.JTextField();
+        txtImpuestosDesarrolloProductivo = new javax.swing.JTextField();
+        txtSalarioSupDesarrolloProductivo = new javax.swing.JTextField();
+        txtServicioPublicoDesarrolloProductivo = new javax.swing.JTextField();
+        txtSalarioOfiDesarrolloProductivo = new javax.swing.JTextField();
+        txtServicioPrivadoDesarrolloProductivo = new javax.swing.JTextField();
+        txtManoDesarrolloProductivo = new javax.swing.JTextField();
+        txtMaterialDesarrolloProductivo = new javax.swing.JTextField();
+        txtCalidadDesarrolloProductivo = new javax.swing.JTextField();
+        txtSumiDesarrolloProductivo = new javax.swing.JTextField();
+        txtInsumoDesarrolloProductivo = new javax.swing.JTextField();
+        txtHerraDesarrolloProductivo = new javax.swing.JTextField();
+        txtMantenimientoSoftDesarrolloProductivo = new javax.swing.JTextField();
+        txtOtrosDesarrolloProductivo = new javax.swing.JTextField();
+        txtInfraestructuraDesarrolloProductivo = new javax.swing.JTextField();
+        txtDepreciacionDesarrolloProductivo = new javax.swing.JTextField();
         jLabel112 = new javax.swing.JLabel();
-        jTextField46 = new javax.swing.JTextField();
-        jTextField47 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
-        jTextField49 = new javax.swing.JTextField();
-        jTextField50 = new javax.swing.JTextField();
-        jTextField51 = new javax.swing.JTextField();
-        jTextField52 = new javax.swing.JTextField();
-        jTextField53 = new javax.swing.JTextField();
-        jTextField54 = new javax.swing.JTextField();
-        jTextField55 = new javax.swing.JTextField();
-        jTextField56 = new javax.swing.JTextField();
-        jTextField57 = new javax.swing.JTextField();
-        jTextField58 = new javax.swing.JTextField();
-        jTextField59 = new javax.swing.JTextField();
-        jTextField60 = new javax.swing.JTextField();
-        jTextField61 = new javax.swing.JTextField();
-        jTextField62 = new javax.swing.JTextField();
-        jTextField63 = new javax.swing.JTextField();
-        jTextField64 = new javax.swing.JTextField();
-        jTextField65 = new javax.swing.JTextField();
-        jTextField66 = new javax.swing.JTextField();
-        jTextField67 = new javax.swing.JTextField();
-        jTextField68 = new javax.swing.JTextField();
-        jTextField69 = new javax.swing.JTextField();
-        jTextField70 = new javax.swing.JTextField();
-        jTextField71 = new javax.swing.JTextField();
-        jTextField72 = new javax.swing.JTextField();
-        jTextField73 = new javax.swing.JTextField();
-        jTextField74 = new javax.swing.JTextField();
-        jTextField75 = new javax.swing.JTextField();
+        txtServicioPublicoPruebaProductivo = new javax.swing.JTextField();
+        txtSalarioOfiPruebaProductivo = new javax.swing.JTextField();
+        txtServicioPrivadoPruebaProductivo = new javax.swing.JTextField();
+        txtManoPruebaProductivo = new javax.swing.JTextField();
+        txtMaterialPruebaProductivo = new javax.swing.JTextField();
+        txtCalidadPruebaProductivo = new javax.swing.JTextField();
+        txtSumiPruebaProductivo = new javax.swing.JTextField();
+        txtInsumoPruebaProductivo = new javax.swing.JTextField();
+        txtHerraPruebaProductivo = new javax.swing.JTextField();
+        txtMantenimientoSoftPruebaProductivo = new javax.swing.JTextField();
+        txtOtrosPruebaProductivo = new javax.swing.JTextField();
+        txtInfraestructuraPruebaProductivo = new javax.swing.JTextField();
+        txtDepreciacionPruebaProductivo = new javax.swing.JTextField();
+        txtImpuestosPruebaProductivo = new javax.swing.JTextField();
+        txtSalarioSupPruebaProductivo = new javax.swing.JTextField();
+        txtServicioPublicoMantenimientoProductivo = new javax.swing.JTextField();
+        txtSalarioOfiMantenimientoProductivo = new javax.swing.JTextField();
+        txtServicioPrivadoMantenimientoProductivo = new javax.swing.JTextField();
+        txtManoManteniminetoProductivo = new javax.swing.JTextField();
+        txtMaterialMantenimientoProductivo = new javax.swing.JTextField();
+        txtCalidadMantenimientoProductivo = new javax.swing.JTextField();
+        txtSumiMantenimientoProductivo = new javax.swing.JTextField();
+        txtInsumoMantenimientoProductivo = new javax.swing.JTextField();
+        txtHerraMantenimientoProductivo = new javax.swing.JTextField();
+        txtMantenimientoSoftMantenimientoProductivo = new javax.swing.JTextField();
+        txtOtrosMantenimientoProductivo = new javax.swing.JTextField();
+        txtInfraestructuraMantenimientoProductivo = new javax.swing.JTextField();
+        txtDepreciacionMantenimientoProductivo = new javax.swing.JTextField();
+        txtImpuestosMantenimientoProductivo = new javax.swing.JTextField();
+        txtSalarioSupMantenimientoProductivo = new javax.swing.JTextField();
         jLabel113 = new javax.swing.JLabel();
         jLabel117 = new javax.swing.JLabel();
-        jTextField153 = new javax.swing.JTextField();
-        jTextField154 = new javax.swing.JTextField();
-        jTextField155 = new javax.swing.JTextField();
-        jTextField156 = new javax.swing.JTextField();
-        jTextField157 = new javax.swing.JTextField();
+        txtTotalAnalisis = new javax.swing.JTextField();
+        txtTotalDiseno = new javax.swing.JTextField();
+        txtTotalDesarrollo = new javax.swing.JTextField();
+        txtTotalPrueba = new javax.swing.JTextField();
+        txtTotalMantenimiento = new javax.swing.JTextField();
         jLabel97 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
@@ -498,90 +498,90 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel118 = new javax.swing.JLabel();
         jLabel133 = new javax.swing.JLabel();
         jLabel134 = new javax.swing.JLabel();
-        jTextField76 = new javax.swing.JTextField();
-        jTextField77 = new javax.swing.JTextField();
-        jTextField78 = new javax.swing.JTextField();
-        jTextField79 = new javax.swing.JTextField();
-        jTextField80 = new javax.swing.JTextField();
-        jTextField81 = new javax.swing.JTextField();
-        jTextField82 = new javax.swing.JTextField();
-        jTextField83 = new javax.swing.JTextField();
-        jTextField84 = new javax.swing.JTextField();
-        jTextField85 = new javax.swing.JTextField();
-        jTextField86 = new javax.swing.JTextField();
-        jTextField87 = new javax.swing.JTextField();
-        jTextField88 = new javax.swing.JTextField();
-        jTextField89 = new javax.swing.JTextField();
-        jTextField90 = new javax.swing.JTextField();
-        jTextField91 = new javax.swing.JTextField();
-        jTextField92 = new javax.swing.JTextField();
-        jTextField93 = new javax.swing.JTextField();
-        jTextField94 = new javax.swing.JTextField();
-        jTextField95 = new javax.swing.JTextField();
-        jTextField96 = new javax.swing.JTextField();
-        jTextField97 = new javax.swing.JTextField();
-        jTextField98 = new javax.swing.JTextField();
-        jTextField99 = new javax.swing.JTextField();
-        jTextField100 = new javax.swing.JTextField();
-        jTextField101 = new javax.swing.JTextField();
-        jTextField102 = new javax.swing.JTextField();
-        jTextField103 = new javax.swing.JTextField();
-        jTextField104 = new javax.swing.JTextField();
-        jTextField105 = new javax.swing.JTextField();
-        jTextField106 = new javax.swing.JTextField();
-        jTextField107 = new javax.swing.JTextField();
-        jTextField108 = new javax.swing.JTextField();
-        jTextField109 = new javax.swing.JTextField();
-        jTextField110 = new javax.swing.JTextField();
-        jTextField111 = new javax.swing.JTextField();
-        jTextField112 = new javax.swing.JTextField();
-        jTextField113 = new javax.swing.JTextField();
-        jTextField114 = new javax.swing.JTextField();
-        jTextField115 = new javax.swing.JTextField();
-        jTextField116 = new javax.swing.JTextField();
-        jTextField117 = new javax.swing.JTextField();
-        jTextField118 = new javax.swing.JTextField();
-        jTextField119 = new javax.swing.JTextField();
-        jTextField120 = new javax.swing.JTextField();
+        txtSalarioSupCalidadServicio = new javax.swing.JTextField();
+        txtSalarioOfiCalidadServicio = new javax.swing.JTextField();
+        txtManoCalidadServicio = new javax.swing.JTextField();
+        txtMaterialCalidadServicio = new javax.swing.JTextField();
+        txtSumiCalidadServicio = new javax.swing.JTextField();
+        txtHerraCalidadServicio = new javax.swing.JTextField();
+        txtOtrosCalidadServicio = new javax.swing.JTextField();
+        txtDepreciacionCalidadServicio = new javax.swing.JTextField();
+        txtImpuestosCalidadServicio = new javax.swing.JTextField();
+        txtServicioPublicoCalidadServicio = new javax.swing.JTextField();
+        txtServicioPrivadoCalidadServicio = new javax.swing.JTextField();
+        txtCalidadCalidadServicio = new javax.swing.JTextField();
+        txtInsumoCalidadServicio = new javax.swing.JTextField();
+        txtMantenimientoSoftCalidadServicio = new javax.swing.JTextField();
+        txtInfraestructuraCalidadServicio = new javax.swing.JTextField();
+        txtImpuestosInsumoServicio = new javax.swing.JTextField();
+        txtSalarioSupInsumoServicio = new javax.swing.JTextField();
+        txtServicioPublicoInsumoServicio = new javax.swing.JTextField();
+        txtSalarioOfiInsumosServicio = new javax.swing.JTextField();
+        txtServicioPrivadoInsumoServicio = new javax.swing.JTextField();
+        txtManoInsumoServicio = new javax.swing.JTextField();
+        txtMaterialInsumoServicio = new javax.swing.JTextField();
+        txtCalidadInsumoServicio = new javax.swing.JTextField();
+        txtSumiInsumoServicio = new javax.swing.JTextField();
+        txtInsumoInsumoServicio = new javax.swing.JTextField();
+        txtHerraInsumoServicio = new javax.swing.JTextField();
+        txtMantenimientoSoftInsumoServicio = new javax.swing.JTextField();
+        txtOtrosInsumoServicio = new javax.swing.JTextField();
+        txtInfraestructuraInsumoServicio = new javax.swing.JTextField();
+        txtDepreciacionInsumoServicio = new javax.swing.JTextField();
+        txtImpuestosMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtSalarioSupMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtServicioPublicoMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtSalarioOfiMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtServicioPrivadoMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtManoMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtMaterialMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtCalidadMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtSumiMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtInsumoMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtHerraMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtMantenimientoSoftMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtOtrosMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtInfraestructuraMantenimientoSoftServicio = new javax.swing.JTextField();
+        txtDepreciacionMantenimientoSoftServicio = new javax.swing.JTextField();
         jLabel135 = new javax.swing.JLabel();
-        jTextField121 = new javax.swing.JTextField();
-        jTextField122 = new javax.swing.JTextField();
-        jTextField123 = new javax.swing.JTextField();
-        jTextField124 = new javax.swing.JTextField();
-        jTextField125 = new javax.swing.JTextField();
-        jTextField126 = new javax.swing.JTextField();
-        jTextField127 = new javax.swing.JTextField();
-        jTextField128 = new javax.swing.JTextField();
-        jTextField129 = new javax.swing.JTextField();
-        jTextField130 = new javax.swing.JTextField();
-        jTextField131 = new javax.swing.JTextField();
-        jTextField132 = new javax.swing.JTextField();
-        jTextField133 = new javax.swing.JTextField();
-        jTextField134 = new javax.swing.JTextField();
-        jTextField135 = new javax.swing.JTextField();
-        jTextField136 = new javax.swing.JTextField();
-        jTextField137 = new javax.swing.JTextField();
-        jTextField138 = new javax.swing.JTextField();
-        jTextField139 = new javax.swing.JTextField();
-        jTextField140 = new javax.swing.JTextField();
-        jTextField141 = new javax.swing.JTextField();
-        jTextField142 = new javax.swing.JTextField();
-        jTextField143 = new javax.swing.JTextField();
-        jTextField144 = new javax.swing.JTextField();
-        jTextField145 = new javax.swing.JTextField();
-        jTextField146 = new javax.swing.JTextField();
-        jTextField147 = new javax.swing.JTextField();
-        jTextField148 = new javax.swing.JTextField();
-        jTextField149 = new javax.swing.JTextField();
-        jTextField150 = new javax.swing.JTextField();
+        txtServicioPublicoInfraestructuraServicio = new javax.swing.JTextField();
+        txtSalarioOfiInfraestructuraServicio = new javax.swing.JTextField();
+        txtServicioPrivadoInfraestructuraServicio = new javax.swing.JTextField();
+        txtManoInfraestructuraServicio = new javax.swing.JTextField();
+        txtMaterialInfraestructuraServicio = new javax.swing.JTextField();
+        txtCalidadInfraestructuraServicio = new javax.swing.JTextField();
+        txtSumiInfraestructuraServicio = new javax.swing.JTextField();
+        txtInsumoInfraestructuraServicio = new javax.swing.JTextField();
+        txtHerraInfraestrucutraServicio = new javax.swing.JTextField();
+        txtMantenimientoSoftInfraestructuraServicio = new javax.swing.JTextField();
+        txtOtrosInfraestructuraServicio = new javax.swing.JTextField();
+        txtInfraestructuraInfraestructuraServicio = new javax.swing.JTextField();
+        txtDepreciacionInfraestructuraServicio = new javax.swing.JTextField();
+        txtImpuestosInfraestructuraServicio = new javax.swing.JTextField();
+        txtSalarioSupInfraestructuraServicio = new javax.swing.JTextField();
+        txtTotalServicioPublico = new javax.swing.JTextField();
+        txtTotalSalarioOfi = new javax.swing.JTextField();
+        txtTotalServicioPrivado = new javax.swing.JTextField();
+        txtTotalMano = new javax.swing.JTextField();
+        txtTotalMaterial = new javax.swing.JTextField();
+        txtTotalCalidad = new javax.swing.JTextField();
+        txtTotalSumi = new javax.swing.JTextField();
+        txtTotalInsumo = new javax.swing.JTextField();
+        txtTotalHerra = new javax.swing.JTextField();
+        txtTotalMantenimientoSoft = new javax.swing.JTextField();
+        txtTotalOtros = new javax.swing.JTextField();
+        txtTotalInfraestructura = new javax.swing.JTextField();
+        txtTotalDepreciacion = new javax.swing.JTextField();
+        txtTotalImpuesto = new javax.swing.JTextField();
+        txtTotalSalarioSup = new javax.swing.JTextField();
         jLabel136 = new javax.swing.JLabel();
         jLabel137 = new javax.swing.JLabel();
         jTextField152 = new javax.swing.JTextField();
-        jTextField158 = new javax.swing.JTextField();
-        jTextField159 = new javax.swing.JTextField();
-        jTextField160 = new javax.swing.JTextField();
-        jTextField161 = new javax.swing.JTextField();
-        jTextField162 = new javax.swing.JTextField();
+        txtTotalVCalidad = new javax.swing.JTextField();
+        txtTotalVInsumo = new javax.swing.JTextField();
+        txtTotalTotal = new javax.swing.JTextField();
+        txtTotalVInfraestructura = new javax.swing.JTextField();
+        txtTotalVManteniemintoSoft = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2262,171 +2262,171 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel96.setText("ANÁLISIS");
 
-        jTextField1.setEditable(false);
+        txtSalarioSupAnalisisProductivo.setEditable(false);
 
-        jTextField2.setEditable(false);
+        txtSalarioOfiAnalisisProductivo.setEditable(false);
 
-        jTextField3.setEditable(false);
+        txtManoAnalisisProductivo.setEditable(false);
 
-        jTextField4.setEditable(false);
+        txtMaterialAnalisisProductivo.setEditable(false);
 
-        jTextField5.setEditable(false);
+        txtSumiAnalisisProductivo.setEditable(false);
 
-        jTextField6.setEditable(false);
+        txtHerraAnalisisProductivo.setEditable(false);
 
-        jTextField7.setEditable(false);
+        txtOtrosAnalisisProductivo.setEditable(false);
 
-        jTextField8.setEditable(false);
+        txtDepreciacionAnalisisProductivo.setEditable(false);
 
-        jTextField9.setEditable(false);
+        txtImpuestosAnalisisProductivo.setEditable(false);
 
-        jTextField10.setEditable(false);
+        txtServicioPublicoAnalisisProductivo.setEditable(false);
 
-        jTextField11.setEditable(false);
+        txtServicioPrivadoAnalisisProductivo.setEditable(false);
 
-        jTextField13.setEditable(false);
+        txtCalidadAnalisisProductivo.setEditable(false);
 
-        jTextField14.setEditable(false);
+        txtInsumoAnalisisProductivo.setEditable(false);
 
-        jTextField15.setEditable(false);
+        txtMantenimientoSoftAnalisisProductivo.setEditable(false);
 
-        jTextField16.setEditable(false);
+        txtInfraestructuraAnalisisProductivo.setEditable(false);
 
-        jTextField12.setEditable(false);
+        txtImpuestosDisenoProductivo.setEditable(false);
 
-        jTextField17.setEditable(false);
+        txtSalarioSupDisenoProductivo.setEditable(false);
 
-        jTextField18.setEditable(false);
+        txtServicioPublicoDisenoProductivo.setEditable(false);
 
-        jTextField19.setEditable(false);
+        txtSalarioOfiDisenoProductivo.setEditable(false);
 
-        jTextField20.setEditable(false);
+        txtServicioPrivadoDisenoProductivo.setEditable(false);
 
-        jTextField21.setEditable(false);
+        txtManoDisenoProductivo.setEditable(false);
 
-        jTextField22.setEditable(false);
+        txtMaterialDisenoProductivo.setEditable(false);
 
-        jTextField23.setEditable(false);
+        txtCalidadDisenoProductivo.setEditable(false);
 
-        jTextField24.setEditable(false);
+        txtSumiDisenoProductivo.setEditable(false);
 
-        jTextField25.setEditable(false);
+        txtInsumoDisenoProductivo.setEditable(false);
 
-        jTextField26.setEditable(false);
+        txtHerraDisenoProductivo.setEditable(false);
 
-        jTextField27.setEditable(false);
+        txtMantenimientoSoftDisenoProductivo.setEditable(false);
 
-        jTextField28.setEditable(false);
+        txtOtrosDisenoProductivo.setEditable(false);
 
-        jTextField29.setEditable(false);
+        txtInfraestructuraDisenoProductivo.setEditable(false);
 
-        jTextField30.setEditable(false);
+        txtDepreciacionDisenoProductivo.setEditable(false);
 
-        jTextField31.setEditable(false);
+        txtImpuestosDesarrolloProductivo.setEditable(false);
 
-        jTextField32.setEditable(false);
+        txtSalarioSupDesarrolloProductivo.setEditable(false);
 
-        jTextField33.setEditable(false);
+        txtServicioPublicoDesarrolloProductivo.setEditable(false);
 
-        jTextField34.setEditable(false);
+        txtSalarioOfiDesarrolloProductivo.setEditable(false);
 
-        jTextField35.setEditable(false);
+        txtServicioPrivadoDesarrolloProductivo.setEditable(false);
 
-        jTextField36.setEditable(false);
+        txtManoDesarrolloProductivo.setEditable(false);
 
-        jTextField37.setEditable(false);
+        txtMaterialDesarrolloProductivo.setEditable(false);
 
-        jTextField38.setEditable(false);
+        txtCalidadDesarrolloProductivo.setEditable(false);
 
-        jTextField39.setEditable(false);
+        txtSumiDesarrolloProductivo.setEditable(false);
 
-        jTextField40.setEditable(false);
+        txtInsumoDesarrolloProductivo.setEditable(false);
 
-        jTextField41.setEditable(false);
+        txtHerraDesarrolloProductivo.setEditable(false);
 
-        jTextField42.setEditable(false);
+        txtMantenimientoSoftDesarrolloProductivo.setEditable(false);
 
-        jTextField43.setEditable(false);
+        txtOtrosDesarrolloProductivo.setEditable(false);
 
-        jTextField44.setEditable(false);
+        txtInfraestructuraDesarrolloProductivo.setEditable(false);
 
-        jTextField45.setEditable(false);
+        txtDepreciacionDesarrolloProductivo.setEditable(false);
 
         jLabel112.setText("DESARROLLO");
 
-        jTextField46.setEditable(false);
+        txtServicioPublicoPruebaProductivo.setEditable(false);
 
-        jTextField47.setEditable(false);
+        txtSalarioOfiPruebaProductivo.setEditable(false);
 
-        jTextField48.setEditable(false);
+        txtServicioPrivadoPruebaProductivo.setEditable(false);
 
-        jTextField49.setEditable(false);
+        txtManoPruebaProductivo.setEditable(false);
 
-        jTextField50.setEditable(false);
+        txtMaterialPruebaProductivo.setEditable(false);
 
-        jTextField51.setEditable(false);
+        txtCalidadPruebaProductivo.setEditable(false);
 
-        jTextField52.setEditable(false);
+        txtSumiPruebaProductivo.setEditable(false);
 
-        jTextField53.setEditable(false);
+        txtInsumoPruebaProductivo.setEditable(false);
 
-        jTextField54.setEditable(false);
+        txtHerraPruebaProductivo.setEditable(false);
 
-        jTextField55.setEditable(false);
+        txtMantenimientoSoftPruebaProductivo.setEditable(false);
 
-        jTextField56.setEditable(false);
+        txtOtrosPruebaProductivo.setEditable(false);
 
-        jTextField57.setEditable(false);
+        txtInfraestructuraPruebaProductivo.setEditable(false);
 
-        jTextField58.setEditable(false);
+        txtDepreciacionPruebaProductivo.setEditable(false);
 
-        jTextField59.setEditable(false);
+        txtImpuestosPruebaProductivo.setEditable(false);
 
-        jTextField60.setEditable(false);
+        txtSalarioSupPruebaProductivo.setEditable(false);
 
-        jTextField61.setEditable(false);
+        txtServicioPublicoMantenimientoProductivo.setEditable(false);
 
-        jTextField62.setEditable(false);
+        txtSalarioOfiMantenimientoProductivo.setEditable(false);
 
-        jTextField63.setEditable(false);
+        txtServicioPrivadoMantenimientoProductivo.setEditable(false);
 
-        jTextField64.setEditable(false);
+        txtManoManteniminetoProductivo.setEditable(false);
 
-        jTextField65.setEditable(false);
+        txtMaterialMantenimientoProductivo.setEditable(false);
 
-        jTextField66.setEditable(false);
+        txtCalidadMantenimientoProductivo.setEditable(false);
 
-        jTextField67.setEditable(false);
+        txtSumiMantenimientoProductivo.setEditable(false);
 
-        jTextField68.setEditable(false);
+        txtInsumoMantenimientoProductivo.setEditable(false);
 
-        jTextField69.setEditable(false);
+        txtHerraMantenimientoProductivo.setEditable(false);
 
-        jTextField70.setEditable(false);
+        txtMantenimientoSoftMantenimientoProductivo.setEditable(false);
 
-        jTextField71.setEditable(false);
+        txtOtrosMantenimientoProductivo.setEditable(false);
 
-        jTextField72.setEditable(false);
+        txtInfraestructuraMantenimientoProductivo.setEditable(false);
 
-        jTextField73.setEditable(false);
+        txtDepreciacionMantenimientoProductivo.setEditable(false);
 
-        jTextField74.setEditable(false);
+        txtImpuestosMantenimientoProductivo.setEditable(false);
 
-        jTextField75.setEditable(false);
+        txtSalarioSupMantenimientoProductivo.setEditable(false);
 
         jLabel113.setText("PRUEBAS");
 
         jLabel117.setText("MANTENIMIENTO");
 
-        jTextField153.setEditable(false);
+        txtTotalAnalisis.setEditable(false);
 
-        jTextField154.setEditable(false);
+        txtTotalDiseno.setEditable(false);
 
-        jTextField155.setEditable(false);
+        txtTotalDesarrollo.setEditable(false);
 
-        jTextField156.setEditable(false);
+        txtTotalPrueba.setEditable(false);
 
-        jTextField157.setEditable(false);
+        txtTotalMantenimiento.setEditable(false);
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -2439,54 +2439,54 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel21Layout.createSequentialGroup()
                                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtServicioPrivadoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField9)
-                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtImpuestosAnalisisProductivo)
+                                        .addComponent(txtServicioPublicoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField13)
-                                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtCalidadAnalisisProductivo)
+                                        .addComponent(txtInsumoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField15)
-                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtMantenimientoSoftAnalisisProductivo)
+                                        .addComponent(txtInfraestructuraAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField3)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtManoAnalisisProductivo)
+                                        .addComponent(txtMaterialAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField1)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))
+                                        .addComponent(txtSalarioSupAnalisisProductivo)
+                                        .addComponent(txtSalarioOfiAnalisisProductivo, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField5)
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtSumiAnalisisProductivo)
+                                        .addComponent(txtHerraAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField7)
-                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField153, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtOtrosAnalisisProductivo)
+                                        .addComponent(txtDepreciacionAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtTotalAnalisis, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(34, 34, 34)
                                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtServicioPrivadoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField12)
-                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtImpuestosDisenoProductivo)
+                                        .addComponent(txtServicioPublicoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField23)
-                                        .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtCalidadDisenoProductivo)
+                                        .addComponent(txtInsumoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField27)
-                                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtMantenimientoSoftDisenoProductivo)
+                                        .addComponent(txtInfraestructuraDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField21)
-                                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtManoDisenoProductivo)
+                                        .addComponent(txtMaterialDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField17)
-                                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtSalarioSupDisenoProductivo)
+                                        .addComponent(txtSalarioOfiDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField24)
-                                        .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtSumiDisenoProductivo)
+                                        .addComponent(txtHerraDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField28)
-                                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField154, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtOtrosDisenoProductivo)
+                                        .addComponent(txtDepreciacionDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtTotalDiseno, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel21Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
                                 .addComponent(jLabel96)
@@ -2497,53 +2497,53 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel21Layout.createSequentialGroup()
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPrivadoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField31)
-                                            .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtImpuestosDesarrolloProductivo)
+                                            .addComponent(txtServicioPublicoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField38)
-                                            .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtCalidadDesarrolloProductivo)
+                                            .addComponent(txtInsumoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField42)
-                                            .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtMantenimientoSoftDesarrolloProductivo)
+                                            .addComponent(txtInfraestructuraDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField36)
-                                            .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtManoDesarrolloProductivo)
+                                            .addComponent(txtMaterialDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField32)
-                                            .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtSalarioSupDesarrolloProductivo)
+                                            .addComponent(txtSalarioOfiDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField39)
-                                            .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtSumiDesarrolloProductivo)
+                                            .addComponent(txtHerraDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField43)
-                                            .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(txtOtrosDesarrolloProductivo)
+                                            .addComponent(txtDepreciacionDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGap(27, 27, 27)
                                     .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPrivadoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField59)
-                                            .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtImpuestosPruebaProductivo)
+                                            .addComponent(txtServicioPublicoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField51)
-                                            .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtCalidadPruebaProductivo)
+                                            .addComponent(txtInsumoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField55)
-                                            .addComponent(jTextField57, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtMantenimientoSoftPruebaProductivo)
+                                            .addComponent(txtInfraestructuraPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField49)
-                                            .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtManoPruebaProductivo)
+                                            .addComponent(txtMaterialPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField60)
-                                            .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtSalarioSupPruebaProductivo)
+                                            .addComponent(txtSalarioOfiPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField52)
-                                            .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtSumiPruebaProductivo)
+                                            .addComponent(txtHerraPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField56)
-                                            .addComponent(jTextField58, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jTextField156, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtOtrosPruebaProductivo)
+                                            .addComponent(txtDepreciacionPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtTotalPrueba, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(27, 27, 27))
                                 .addGroup(jPanel21Layout.createSequentialGroup()
                                     .addComponent(jLabel112)
@@ -2551,26 +2551,26 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                     .addComponent(jLabel113)
                                     .addGap(48, 48, 48)))
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jTextField155, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtTotalDesarrollo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(139, 139, 139)))
                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel117, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField75)
-                            .addComponent(jTextField62)
-                            .addComponent(jTextField64)
-                            .addComponent(jTextField65)
-                            .addComponent(jTextField67)
-                            .addComponent(jTextField69)
-                            .addComponent(jTextField71)
-                            .addComponent(jTextField73)
-                            .addComponent(jTextField74)
-                            .addComponent(jTextField61)
-                            .addComponent(jTextField63)
-                            .addComponent(jTextField66)
-                            .addComponent(jTextField68)
-                            .addComponent(jTextField70)
-                            .addComponent(jTextField72)
-                            .addComponent(jTextField157)))
+                            .addComponent(txtSalarioSupMantenimientoProductivo)
+                            .addComponent(txtSalarioOfiMantenimientoProductivo)
+                            .addComponent(txtManoManteniminetoProductivo)
+                            .addComponent(txtMaterialMantenimientoProductivo)
+                            .addComponent(txtSumiMantenimientoProductivo)
+                            .addComponent(txtHerraMantenimientoProductivo)
+                            .addComponent(txtOtrosMantenimientoProductivo)
+                            .addComponent(txtDepreciacionMantenimientoProductivo)
+                            .addComponent(txtImpuestosMantenimientoProductivo)
+                            .addComponent(txtServicioPublicoMantenimientoProductivo)
+                            .addComponent(txtServicioPrivadoMantenimientoProductivo)
+                            .addComponent(txtCalidadMantenimientoProductivo)
+                            .addComponent(txtInsumoMantenimientoProductivo)
+                            .addComponent(txtMantenimientoSoftMantenimientoProductivo)
+                            .addComponent(txtInfraestructuraMantenimientoProductivo)
+                            .addComponent(txtTotalMantenimiento)))
                     .addGroup(jPanel21Layout.createSequentialGroup()
                         .addGap(214, 214, 214)
                         .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -2586,171 +2586,173 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(jPanel21Layout.createSequentialGroup()
                         .addComponent(jLabel117)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSalarioSupMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSalarioOfiMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtManoManteniminetoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtMaterialMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtSumiMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtHerraMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtOtrosMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtDepreciacionMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtImpuestosMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtServicioPublicoMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtServicioPrivadoMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51)
-                        .addComponent(jTextField66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtCalidadMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtInsumoMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtMantenimientoSoftMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34))
                     .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel95)
-                            .addComponent(jLabel96)
-                            .addComponent(jLabel112)
-                            .addComponent(jLabel113))
+                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel96, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel95)
+                                .addComponent(jLabel112)
+                                .addComponent(jLabel113)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtInfraestructuraAnalisisProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtInfraestructuraDisenoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtInfraestructuraDesarrolloProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jTextField60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtInfraestructuraPruebaProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtInfraestructuraMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField153, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField154, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField155, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField156, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField157, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtTotalAnalisis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalDiseno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalDesarrollo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalPrueba, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalMantenimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jLabel97.setBackground(new java.awt.Color(153, 255, 255));
@@ -2891,157 +2893,157 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel134.setText("CALIDAD");
 
-        jTextField76.setEditable(false);
+        txtSalarioSupCalidadServicio.setEditable(false);
 
-        jTextField77.setEditable(false);
+        txtSalarioOfiCalidadServicio.setEditable(false);
 
-        jTextField78.setEditable(false);
+        txtManoCalidadServicio.setEditable(false);
 
-        jTextField79.setEditable(false);
+        txtMaterialCalidadServicio.setEditable(false);
 
-        jTextField80.setEditable(false);
+        txtSumiCalidadServicio.setEditable(false);
 
-        jTextField81.setEditable(false);
+        txtHerraCalidadServicio.setEditable(false);
 
-        jTextField82.setEditable(false);
+        txtOtrosCalidadServicio.setEditable(false);
 
-        jTextField83.setEditable(false);
+        txtDepreciacionCalidadServicio.setEditable(false);
 
-        jTextField84.setEditable(false);
+        txtImpuestosCalidadServicio.setEditable(false);
 
-        jTextField85.setEditable(false);
+        txtServicioPublicoCalidadServicio.setEditable(false);
 
-        jTextField86.setEditable(false);
+        txtServicioPrivadoCalidadServicio.setEditable(false);
 
-        jTextField87.setEditable(false);
+        txtCalidadCalidadServicio.setEditable(false);
 
-        jTextField88.setEditable(false);
+        txtInsumoCalidadServicio.setEditable(false);
 
-        jTextField89.setEditable(false);
+        txtMantenimientoSoftCalidadServicio.setEditable(false);
 
-        jTextField90.setEditable(false);
+        txtInfraestructuraCalidadServicio.setEditable(false);
 
-        jTextField91.setEditable(false);
+        txtImpuestosInsumoServicio.setEditable(false);
 
-        jTextField92.setEditable(false);
+        txtSalarioSupInsumoServicio.setEditable(false);
 
-        jTextField93.setEditable(false);
+        txtServicioPublicoInsumoServicio.setEditable(false);
 
-        jTextField94.setEditable(false);
+        txtSalarioOfiInsumosServicio.setEditable(false);
 
-        jTextField95.setEditable(false);
+        txtServicioPrivadoInsumoServicio.setEditable(false);
 
-        jTextField96.setEditable(false);
+        txtManoInsumoServicio.setEditable(false);
 
-        jTextField97.setEditable(false);
+        txtMaterialInsumoServicio.setEditable(false);
 
-        jTextField98.setEditable(false);
+        txtCalidadInsumoServicio.setEditable(false);
 
-        jTextField99.setEditable(false);
+        txtSumiInsumoServicio.setEditable(false);
 
-        jTextField100.setEditable(false);
+        txtInsumoInsumoServicio.setEditable(false);
 
-        jTextField101.setEditable(false);
+        txtHerraInsumoServicio.setEditable(false);
 
-        jTextField102.setEditable(false);
+        txtMantenimientoSoftInsumoServicio.setEditable(false);
 
-        jTextField103.setEditable(false);
+        txtOtrosInsumoServicio.setEditable(false);
 
-        jTextField104.setEditable(false);
+        txtInfraestructuraInsumoServicio.setEditable(false);
 
-        jTextField105.setEditable(false);
+        txtDepreciacionInsumoServicio.setEditable(false);
 
-        jTextField106.setEditable(false);
+        txtImpuestosMantenimientoSoftServicio.setEditable(false);
 
-        jTextField107.setEditable(false);
+        txtSalarioSupMantenimientoSoftServicio.setEditable(false);
 
-        jTextField108.setEditable(false);
+        txtServicioPublicoMantenimientoSoftServicio.setEditable(false);
 
-        jTextField109.setEditable(false);
+        txtSalarioOfiMantenimientoSoftServicio.setEditable(false);
 
-        jTextField110.setEditable(false);
+        txtServicioPrivadoMantenimientoSoftServicio.setEditable(false);
 
-        jTextField111.setEditable(false);
+        txtManoMantenimientoSoftServicio.setEditable(false);
 
-        jTextField112.setEditable(false);
+        txtMaterialMantenimientoSoftServicio.setEditable(false);
 
-        jTextField113.setEditable(false);
+        txtCalidadMantenimientoSoftServicio.setEditable(false);
 
-        jTextField114.setEditable(false);
+        txtSumiMantenimientoSoftServicio.setEditable(false);
 
-        jTextField115.setEditable(false);
+        txtInsumoMantenimientoSoftServicio.setEditable(false);
 
-        jTextField116.setEditable(false);
+        txtHerraMantenimientoSoftServicio.setEditable(false);
 
-        jTextField117.setEditable(false);
+        txtMantenimientoSoftMantenimientoSoftServicio.setEditable(false);
 
-        jTextField118.setEditable(false);
+        txtOtrosMantenimientoSoftServicio.setEditable(false);
 
-        jTextField119.setEditable(false);
+        txtInfraestructuraMantenimientoSoftServicio.setEditable(false);
 
-        jTextField120.setEditable(false);
+        txtDepreciacionMantenimientoSoftServicio.setEditable(false);
 
         jLabel135.setText("MANTENIMI.. SOFTWARE");
 
-        jTextField121.setEditable(false);
+        txtServicioPublicoInfraestructuraServicio.setEditable(false);
 
-        jTextField122.setEditable(false);
+        txtSalarioOfiInfraestructuraServicio.setEditable(false);
 
-        jTextField123.setEditable(false);
+        txtServicioPrivadoInfraestructuraServicio.setEditable(false);
 
-        jTextField124.setEditable(false);
+        txtManoInfraestructuraServicio.setEditable(false);
 
-        jTextField125.setEditable(false);
+        txtMaterialInfraestructuraServicio.setEditable(false);
 
-        jTextField126.setEditable(false);
+        txtCalidadInfraestructuraServicio.setEditable(false);
 
-        jTextField127.setEditable(false);
+        txtSumiInfraestructuraServicio.setEditable(false);
 
-        jTextField128.setEditable(false);
+        txtInsumoInfraestructuraServicio.setEditable(false);
 
-        jTextField129.setEditable(false);
+        txtHerraInfraestrucutraServicio.setEditable(false);
 
-        jTextField130.setEditable(false);
+        txtMantenimientoSoftInfraestructuraServicio.setEditable(false);
 
-        jTextField131.setEditable(false);
+        txtOtrosInfraestructuraServicio.setEditable(false);
 
-        jTextField132.setEditable(false);
+        txtInfraestructuraInfraestructuraServicio.setEditable(false);
 
-        jTextField133.setEditable(false);
+        txtDepreciacionInfraestructuraServicio.setEditable(false);
 
-        jTextField134.setEditable(false);
+        txtImpuestosInfraestructuraServicio.setEditable(false);
 
-        jTextField135.setEditable(false);
+        txtSalarioSupInfraestructuraServicio.setEditable(false);
 
-        jTextField136.setEditable(false);
+        txtTotalServicioPublico.setEditable(false);
 
-        jTextField137.setEditable(false);
+        txtTotalSalarioOfi.setEditable(false);
 
-        jTextField138.setEditable(false);
+        txtTotalServicioPrivado.setEditable(false);
 
-        jTextField139.setEditable(false);
+        txtTotalMano.setEditable(false);
 
-        jTextField140.setEditable(false);
+        txtTotalMaterial.setEditable(false);
 
-        jTextField141.setEditable(false);
+        txtTotalCalidad.setEditable(false);
 
-        jTextField142.setEditable(false);
+        txtTotalSumi.setEditable(false);
 
-        jTextField143.setEditable(false);
+        txtTotalInsumo.setEditable(false);
 
-        jTextField144.setEditable(false);
+        txtTotalHerra.setEditable(false);
 
-        jTextField145.setEditable(false);
+        txtTotalMantenimientoSoft.setEditable(false);
 
-        jTextField146.setEditable(false);
+        txtTotalOtros.setEditable(false);
 
-        jTextField147.setEditable(false);
+        txtTotalInfraestructura.setEditable(false);
 
-        jTextField148.setEditable(false);
+        txtTotalDepreciacion.setEditable(false);
 
-        jTextField149.setEditable(false);
+        txtTotalImpuesto.setEditable(false);
 
-        jTextField150.setEditable(false);
+        txtTotalSalarioSup.setEditable(false);
 
         jLabel136.setText("INFRAESTRUCTURA");
 
@@ -3050,15 +3052,15 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jTextField152.setEditable(false);
 
-        jTextField158.setEditable(false);
+        txtTotalVCalidad.setEditable(false);
 
-        jTextField159.setEditable(false);
+        txtTotalVInsumo.setEditable(false);
 
-        jTextField160.setEditable(false);
+        txtTotalTotal.setEditable(false);
 
-        jTextField161.setEditable(false);
+        txtTotalVInfraestructura.setEditable(false);
 
-        jTextField162.setEditable(false);
+        txtTotalVManteniemintoSoft.setEditable(false);
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -3069,43 +3071,45 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addComponent(jLabel118, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel22Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(44, 44, 44)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addComponent(jTextField158, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalVCalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField152, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel22Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jTextField152, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel22Layout.createSequentialGroup()
                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel22Layout.createSequentialGroup()
                                         .addGap(115, 115, 115)
-                                        .addComponent(jTextField159, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtTotalVInsumo, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel22Layout.createSequentialGroup()
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField86, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtServicioPrivadoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField84)
-                                                .addComponent(jTextField85, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtImpuestosCalidadServicio)
+                                                .addComponent(txtServicioPublicoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField87)
-                                                .addComponent(jTextField88, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtCalidadCalidadServicio)
+                                                .addComponent(txtInsumoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField89)
-                                                .addComponent(jTextField90, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtMantenimientoSoftCalidadServicio)
+                                                .addComponent(txtInfraestructuraCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField78)
-                                                .addComponent(jTextField79, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtManoCalidadServicio)
+                                                .addComponent(txtMaterialCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField76)
-                                                .addComponent(jTextField77, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))
+                                                .addComponent(txtSalarioSupCalidadServicio)
+                                                .addComponent(txtSalarioOfiCalidadServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField80)
-                                                .addComponent(jTextField81, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtSumiCalidadServicio)
+                                                .addComponent(txtHerraCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField82)
-                                                .addComponent(jTextField83, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(txtOtrosCalidadServicio)
+                                                .addComponent(txtDepreciacionCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel22Layout.createSequentialGroup()
                                                 .addGap(14, 14, 14)
                                                 .addComponent(jLabel134)))
@@ -3113,91 +3117,91 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField93, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField91, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField105, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField103, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField101, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField99, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField97, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField96, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField94, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField92, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField95, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE))
+                                                .addComponent(txtServicioPublicoInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtImpuestosInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtDepreciacionInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtOtrosInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtHerraInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtSumiInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtMaterialInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtManoInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtSalarioOfiInsumosServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtSalarioSupInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtServicioPrivadoInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE))
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField104, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
-                                                .addComponent(jTextField102, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField100, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jTextField98, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                                                .addComponent(txtInfraestructuraInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
+                                                .addComponent(txtMantenimientoSoftInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtInsumoInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(txtCalidadInsumoServicio, javax.swing.GroupLayout.Alignment.TRAILING)))))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel22Layout.createSequentialGroup()
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel22Layout.createSequentialGroup()
                                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jTextField107, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField109, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField108, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField106, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField120, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField118, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField116, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField110, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField112, javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField111)
-                                                    .addComponent(jTextField114)
-                                                    .addComponent(jLabel135, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE))
+                                                    .addComponent(txtSalarioSupMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtSalarioOfiMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtServicioPublicoMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtImpuestosMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtDepreciacionMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtOtrosMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtHerraMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtServicioPrivadoMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtMaterialMantenimientoSoftServicio, javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(txtManoMantenimientoSoftServicio)
+                                                    .addComponent(txtSumiMantenimientoSoftServicio)
+                                                    .addComponent(jLabel135, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE))
                                                 .addGap(25, 25, 25))
                                             .addGroup(jPanel22Layout.createSequentialGroup()
-                                                .addComponent(jTextField162)
+                                                .addComponent(txtTotalVManteniemintoSoft)
                                                 .addGap(30, 30, 30)))
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField161, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtTotalVInfraestructura, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField123)
-                                                .addComponent(jTextField134)
-                                                .addComponent(jTextField121)
-                                                .addComponent(jTextField126)
-                                                .addComponent(jTextField128)
-                                                .addComponent(jTextField130)
-                                                .addComponent(jTextField132)
-                                                .addComponent(jTextField124)
-                                                .addComponent(jTextField125)
-                                                .addComponent(jTextField135)
-                                                .addComponent(jTextField122)
-                                                .addComponent(jTextField127)
-                                                .addComponent(jTextField129)
-                                                .addComponent(jTextField131)
-                                                .addComponent(jTextField133)
+                                                .addComponent(txtServicioPrivadoInfraestructuraServicio)
+                                                .addComponent(txtImpuestosInfraestructuraServicio)
+                                                .addComponent(txtServicioPublicoInfraestructuraServicio)
+                                                .addComponent(txtCalidadInfraestructuraServicio)
+                                                .addComponent(txtInsumoInfraestructuraServicio)
+                                                .addComponent(txtMantenimientoSoftInfraestructuraServicio)
+                                                .addComponent(txtInfraestructuraInfraestructuraServicio)
+                                                .addComponent(txtManoInfraestructuraServicio)
+                                                .addComponent(txtMaterialInfraestructuraServicio)
+                                                .addComponent(txtSalarioSupInfraestructuraServicio)
+                                                .addComponent(txtSalarioOfiInfraestructuraServicio)
+                                                .addComponent(txtSumiInfraestructuraServicio)
+                                                .addComponent(txtHerraInfraestrucutraServicio)
+                                                .addComponent(txtOtrosInfraestructuraServicio)
+                                                .addComponent(txtDepreciacionInfraestructuraServicio)
                                                 .addComponent(jLabel136, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                         .addGap(32, 32, 32)
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel137, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jTextField140)
-                                            .addComponent(jTextField142)
-                                            .addComponent(jTextField144)
-                                            .addComponent(jTextField146)
-                                            .addComponent(jTextField148)
-                                            .addComponent(jTextField149)
-                                            .addComponent(jTextField136)
-                                            .addComponent(jTextField138)
-                                            .addComponent(jTextField141)
-                                            .addComponent(jTextField143)
-                                            .addComponent(jTextField145)
-                                            .addComponent(jTextField147)
-                                            .addComponent(jTextField137)
-                                            .addComponent(jTextField139)
+                                            .addComponent(txtTotalMaterial)
+                                            .addComponent(txtTotalSumi)
+                                            .addComponent(txtTotalHerra)
+                                            .addComponent(txtTotalOtros)
+                                            .addComponent(txtTotalDepreciacion)
+                                            .addComponent(txtTotalImpuesto)
+                                            .addComponent(txtTotalServicioPublico)
+                                            .addComponent(txtTotalServicioPrivado)
+                                            .addComponent(txtTotalCalidad)
+                                            .addComponent(txtTotalInsumo)
+                                            .addComponent(txtTotalMantenimientoSoft)
+                                            .addComponent(txtTotalInfraestructura)
+                                            .addComponent(txtTotalSalarioOfi)
+                                            .addComponent(txtTotalMano)
                                             .addGroup(jPanel22Layout.createSequentialGroup()
                                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField160, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jTextField150, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(0, 0, Short.MAX_VALUE))))
+                                                    .addComponent(txtTotalTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(txtTotalSalarioSup, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(0, 2, Short.MAX_VALUE))))
                                     .addGroup(jPanel22Layout.createSequentialGroup()
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField115, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField117, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField113, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtInsumoMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtMantenimientoSoftMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtInfraestructuraMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtCalidadMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(0, 0, Short.MAX_VALUE)))))
                         .addGap(41, 41, 41))))
         );
@@ -3211,37 +3215,37 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addComponent(jLabel137)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField150, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalSalarioSup, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField137, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalSalarioOfi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField139, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalMano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField140, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalMaterial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField142, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalSumi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField144, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalHerra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField146, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalOtros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField148, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalDepreciacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField149, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalImpuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField136, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalServicioPublico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField138, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalServicioPrivado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextField152, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17)
-                        .addComponent(jTextField141, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalCalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField143, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalInsumo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField145, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalMantenimientoSoft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField147, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtTotalInfraestructura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel134)
@@ -3252,135 +3256,135 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addComponent(jTextField76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField79, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField81, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField86, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField87, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField89, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtInfraestructuraCalidadServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addComponent(jTextField92, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioSupInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSalarioOfiInsumosServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField96, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtManoInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField97, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMaterialInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField99, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtSumiInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField101, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHerraInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField103, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtOtrosInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField105, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDepreciacionInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField91, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtImpuestosInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField93, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPublicoInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField95, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtServicioPrivadoInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(51, 51, 51)
-                                .addComponent(jTextField98, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCalidadInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField100, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtInsumoInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField102, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMantenimientoSoftInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField104, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtInfraestructuraInsumoServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel22Layout.createSequentialGroup()
                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jTextField107)
-                                    .addComponent(jTextField135))
+                                    .addComponent(txtSalarioSupMantenimientoSoftServicio)
+                                    .addComponent(txtSalarioSupInfraestructuraServicio))
                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel22Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField122, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtSalarioOfiInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField124, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtManoInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField125, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtMaterialInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField127, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtSumiInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField129, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtHerraInfraestrucutraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField131, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtOtrosInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField133, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDepreciacionInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField134, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtImpuestosInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField121, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPublicoInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField123, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPrivadoInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(51, 51, 51)
-                                        .addComponent(jTextField126, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCalidadInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField128, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtInsumoInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField130, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtMantenimientoSoftInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField132, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtInfraestructuraInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
                                         .addGap(12, 12, 12)
-                                        .addComponent(jTextField109, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtSalarioOfiMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtManoMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtMaterialMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField114, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtSumiMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField116, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtHerraMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField118, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtOtrosMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField120, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDepreciacionMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField106, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtImpuestosMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPublicoMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtServicioPrivadoMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(51, 51, 51)
-                                        .addComponent(jTextField113, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCalidadMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField115, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtInsumoMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField117, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtMantenimientoSoftMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField119, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                        .addComponent(txtInfraestructuraMantenimientoSoftServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField158, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField159, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField160, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField161, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField162, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTotalVCalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalVInsumo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalVInfraestructura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTotalVManteniemintoSoft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
         );
 
@@ -3538,7 +3542,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4029,167 +4033,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField100;
-    private javax.swing.JTextField jTextField101;
-    private javax.swing.JTextField jTextField102;
-    private javax.swing.JTextField jTextField103;
-    private javax.swing.JTextField jTextField104;
-    private javax.swing.JTextField jTextField105;
-    private javax.swing.JTextField jTextField106;
-    private javax.swing.JTextField jTextField107;
-    private javax.swing.JTextField jTextField108;
-    private javax.swing.JTextField jTextField109;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField110;
-    private javax.swing.JTextField jTextField111;
-    private javax.swing.JTextField jTextField112;
-    private javax.swing.JTextField jTextField113;
-    private javax.swing.JTextField jTextField114;
-    private javax.swing.JTextField jTextField115;
-    private javax.swing.JTextField jTextField116;
-    private javax.swing.JTextField jTextField117;
-    private javax.swing.JTextField jTextField118;
-    private javax.swing.JTextField jTextField119;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField120;
-    private javax.swing.JTextField jTextField121;
-    private javax.swing.JTextField jTextField122;
-    private javax.swing.JTextField jTextField123;
-    private javax.swing.JTextField jTextField124;
-    private javax.swing.JTextField jTextField125;
-    private javax.swing.JTextField jTextField126;
-    private javax.swing.JTextField jTextField127;
-    private javax.swing.JTextField jTextField128;
-    private javax.swing.JTextField jTextField129;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField130;
-    private javax.swing.JTextField jTextField131;
-    private javax.swing.JTextField jTextField132;
-    private javax.swing.JTextField jTextField133;
-    private javax.swing.JTextField jTextField134;
-    private javax.swing.JTextField jTextField135;
-    private javax.swing.JTextField jTextField136;
-    private javax.swing.JTextField jTextField137;
-    private javax.swing.JTextField jTextField138;
-    private javax.swing.JTextField jTextField139;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField140;
-    private javax.swing.JTextField jTextField141;
-    private javax.swing.JTextField jTextField142;
-    private javax.swing.JTextField jTextField143;
-    private javax.swing.JTextField jTextField144;
-    private javax.swing.JTextField jTextField145;
-    private javax.swing.JTextField jTextField146;
-    private javax.swing.JTextField jTextField147;
-    private javax.swing.JTextField jTextField148;
-    private javax.swing.JTextField jTextField149;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField150;
     private javax.swing.JTextField jTextField152;
-    private javax.swing.JTextField jTextField153;
-    private javax.swing.JTextField jTextField154;
-    private javax.swing.JTextField jTextField155;
-    private javax.swing.JTextField jTextField156;
-    private javax.swing.JTextField jTextField157;
-    private javax.swing.JTextField jTextField158;
-    private javax.swing.JTextField jTextField159;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField160;
-    private javax.swing.JTextField jTextField161;
-    private javax.swing.JTextField jTextField162;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
-    private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField40;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField47;
-    private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField55;
-    private javax.swing.JTextField jTextField56;
-    private javax.swing.JTextField jTextField57;
-    private javax.swing.JTextField jTextField58;
-    private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField60;
-    private javax.swing.JTextField jTextField61;
-    private javax.swing.JTextField jTextField62;
-    private javax.swing.JTextField jTextField63;
-    private javax.swing.JTextField jTextField64;
-    private javax.swing.JTextField jTextField65;
-    private javax.swing.JTextField jTextField66;
-    private javax.swing.JTextField jTextField67;
-    private javax.swing.JTextField jTextField68;
-    private javax.swing.JTextField jTextField69;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField70;
-    private javax.swing.JTextField jTextField71;
-    private javax.swing.JTextField jTextField72;
-    private javax.swing.JTextField jTextField73;
-    private javax.swing.JTextField jTextField74;
-    private javax.swing.JTextField jTextField75;
-    private javax.swing.JTextField jTextField76;
-    private javax.swing.JTextField jTextField77;
-    private javax.swing.JTextField jTextField78;
-    private javax.swing.JTextField jTextField79;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField80;
-    private javax.swing.JTextField jTextField81;
-    private javax.swing.JTextField jTextField82;
-    private javax.swing.JTextField jTextField83;
-    private javax.swing.JTextField jTextField84;
-    private javax.swing.JTextField jTextField85;
-    private javax.swing.JTextField jTextField86;
-    private javax.swing.JTextField jTextField87;
-    private javax.swing.JTextField jTextField88;
-    private javax.swing.JTextField jTextField89;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JTextField jTextField90;
-    private javax.swing.JTextField jTextField91;
-    private javax.swing.JTextField jTextField92;
-    private javax.swing.JTextField jTextField93;
-    private javax.swing.JTextField jTextField94;
-    private javax.swing.JTextField jTextField95;
-    private javax.swing.JTextField jTextField96;
-    private javax.swing.JTextField jTextField97;
-    private javax.swing.JTextField jTextField98;
-    private javax.swing.JTextField jTextField99;
     private javax.swing.JList<String> lstCuentasDisponibles;
     private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
@@ -4202,14 +4046,32 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtAnalisisEspacio;
     private javax.swing.JTextField txtAnalisisHora;
     private javax.swing.JTextField txtCIF;
+    private javax.swing.JTextField txtCalidadAnalisisProductivo;
+    private javax.swing.JTextField txtCalidadCalidadServicio;
     private javax.swing.JTextField txtCalidadConsumo;
+    private javax.swing.JTextField txtCalidadDesarrolloProductivo;
+    private javax.swing.JTextField txtCalidadDisenoProductivo;
     private javax.swing.JTextField txtCalidadEmpleado;
     private javax.swing.JTextField txtCalidadEspacio;
     private javax.swing.JTextField txtCalidadHora;
+    private javax.swing.JTextField txtCalidadInfraestructuraServicio;
+    private javax.swing.JTextField txtCalidadInsumoServicio;
+    private javax.swing.JTextField txtCalidadMantenimientoProductivo;
+    private javax.swing.JTextField txtCalidadMantenimientoSoftServicio;
+    private javax.swing.JTextField txtCalidadPruebaProductivo;
     private javax.swing.JTextField txtCodigoCuenta;
     private javax.swing.JTextField txtCostoTotal;
     private javax.swing.JTextField txtDebe;
     private javax.swing.JTextField txtDepreciacion;
+    private javax.swing.JTextField txtDepreciacionAnalisisProductivo;
+    private javax.swing.JTextField txtDepreciacionCalidadServicio;
+    private javax.swing.JTextField txtDepreciacionDesarrolloProductivo;
+    private javax.swing.JTextField txtDepreciacionDisenoProductivo;
+    private javax.swing.JTextField txtDepreciacionInfraestructuraServicio;
+    private javax.swing.JTextField txtDepreciacionInsumoServicio;
+    private javax.swing.JTextField txtDepreciacionMantenimientoProductivo;
+    private javax.swing.JTextField txtDepreciacionMantenimientoSoftServicio;
+    private javax.swing.JTextField txtDepreciacionPruebaProductivo;
     private javax.swing.JTextField txtDesarrolloConsumo;
     private javax.swing.JTextField txtDesarrolloEmpleado;
     private javax.swing.JTextField txtDesarrolloEspacio;
@@ -4232,18 +4094,63 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtHaber;
     private javax.swing.JTextField txtHaber1;
     private javax.swing.JTextField txtHaber2;
+    private javax.swing.JTextField txtHerraAnalisisProductivo;
+    private javax.swing.JTextField txtHerraCalidadServicio;
+    private javax.swing.JTextField txtHerraDesarrolloProductivo;
+    private javax.swing.JTextField txtHerraDisenoProductivo;
+    private javax.swing.JTextField txtHerraInfraestrucutraServicio;
+    private javax.swing.JTextField txtHerraInsumoServicio;
+    private javax.swing.JTextField txtHerraMantenimientoProductivo;
+    private javax.swing.JTextField txtHerraMantenimientoSoftServicio;
+    private javax.swing.JTextField txtHerraPruebaProductivo;
     private javax.swing.JTextField txtHerramientas;
     private javax.swing.JTextField txtHora;
     private javax.swing.JTextField txtHoraEficiencia;
     private javax.swing.JTextField txtHoras;
     private javax.swing.JTextField txtINSAFORP;
     private javax.swing.JTextField txtImpuestos;
+    private javax.swing.JTextField txtImpuestosAnalisisProductivo;
+    private javax.swing.JTextField txtImpuestosCalidadServicio;
+    private javax.swing.JTextField txtImpuestosDesarrolloProductivo;
+    private javax.swing.JTextField txtImpuestosDisenoProductivo;
+    private javax.swing.JTextField txtImpuestosInfraestructuraServicio;
+    private javax.swing.JTextField txtImpuestosInsumoServicio;
+    private javax.swing.JTextField txtImpuestosMantenimientoProductivo;
+    private javax.swing.JTextField txtImpuestosMantenimientoSoftServicio;
+    private javax.swing.JTextField txtImpuestosPruebaProductivo;
+    private javax.swing.JTextField txtInfraestructuraAnalisisProductivo;
+    private javax.swing.JTextField txtInfraestructuraCalidadServicio;
+    private javax.swing.JTextField txtInfraestructuraDesarrolloProductivo;
+    private javax.swing.JTextField txtInfraestructuraDisenoProductivo;
+    private javax.swing.JTextField txtInfraestructuraInfraestructuraServicio;
+    private javax.swing.JTextField txtInfraestructuraInsumoServicio;
+    private javax.swing.JTextField txtInfraestructuraMantenimientoProductivo;
+    private javax.swing.JTextField txtInfraestructuraMantenimientoSoftServicio;
+    private javax.swing.JTextField txtInfraestructuraPruebaProductivo;
+    private javax.swing.JTextField txtInsumoAnalisisProductivo;
+    private javax.swing.JTextField txtInsumoCalidadServicio;
     private javax.swing.JTextField txtInsumoConsumo;
+    private javax.swing.JTextField txtInsumoDesarrolloProductivo;
+    private javax.swing.JTextField txtInsumoDisenoProductivo;
     private javax.swing.JTextField txtInsumoEmpleado;
     private javax.swing.JTextField txtInsumoEspacio;
     private javax.swing.JTextField txtInsumoHora;
+    private javax.swing.JTextField txtInsumoInfraestructuraServicio;
+    private javax.swing.JTextField txtInsumoInsumoServicio;
+    private javax.swing.JTextField txtInsumoMantenimientoProductivo;
+    private javax.swing.JTextField txtInsumoMantenimientoSoftServicio;
+    private javax.swing.JTextField txtInsumoPruebaProductivo;
+    private javax.swing.JTextField txtManoAnalisisProductivo;
+    private javax.swing.JTextField txtManoCalidadServicio;
     private javax.swing.JTextField txtManoDeObra;
     private javax.swing.JTextField txtManoDeObraIndirecta;
+    private javax.swing.JTextField txtManoDesarrolloProductivo;
+    private javax.swing.JTextField txtManoDisenoProductivo;
+    private javax.swing.JTextField txtManoInfraestructuraServicio;
+    private javax.swing.JTextField txtManoInsumoServicio;
+    private javax.swing.JTextField txtManoMantenimientoSoftServicio;
+    private javax.swing.JTextField txtManoManteniminetoProductivo;
+    private javax.swing.JTextField txtManoPruebaProductivo;
     private javax.swing.JTextField txtMantenimientoConsumo;
     private javax.swing.JTextField txtMantenimientoEmpleado;
     private javax.swing.JTextField txtMantenimientoEspacio;
@@ -4252,13 +4159,40 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtMantenimientoServicioEmpleado;
     private javax.swing.JTextField txtMantenimientoServicioEspacio;
     private javax.swing.JTextField txtMantenimientoServicioHora;
+    private javax.swing.JTextField txtMantenimientoSoftAnalisisProductivo;
+    private javax.swing.JTextField txtMantenimientoSoftCalidadServicio;
     private javax.swing.JTextField txtMantenimientoSoftConsumo;
+    private javax.swing.JTextField txtMantenimientoSoftDesarrolloProductivo;
+    private javax.swing.JTextField txtMantenimientoSoftDisenoProductivo;
     private javax.swing.JTextField txtMantenimientoSoftEmpleado;
     private javax.swing.JTextField txtMantenimientoSoftEspacio;
     private javax.swing.JTextField txtMantenimientoSoftHora;
+    private javax.swing.JTextField txtMantenimientoSoftInfraestructuraServicio;
+    private javax.swing.JTextField txtMantenimientoSoftInsumoServicio;
+    private javax.swing.JTextField txtMantenimientoSoftMantenimientoProductivo;
+    private javax.swing.JTextField txtMantenimientoSoftMantenimientoSoftServicio;
+    private javax.swing.JTextField txtMantenimientoSoftPruebaProductivo;
+    private javax.swing.JTextField txtMaterialAnalisisProductivo;
+    private javax.swing.JTextField txtMaterialCalidadServicio;
+    private javax.swing.JTextField txtMaterialDesarrolloProductivo;
+    private javax.swing.JTextField txtMaterialDisenoProductivo;
+    private javax.swing.JTextField txtMaterialInfraestructuraServicio;
+    private javax.swing.JTextField txtMaterialInsumoServicio;
+    private javax.swing.JTextField txtMaterialMantenimientoProductivo;
+    private javax.swing.JTextField txtMaterialMantenimientoSoftServicio;
+    private javax.swing.JTextField txtMaterialPruebaProductivo;
     private javax.swing.JTextField txtMaterialesIndirectos;
     private javax.swing.JTextField txtNombreCuenta;
+    private javax.swing.JTextField txtOtrosAnalisisProductivo;
+    private javax.swing.JTextField txtOtrosCalidadServicio;
+    private javax.swing.JTextField txtOtrosDesarrolloProductivo;
+    private javax.swing.JTextField txtOtrosDisenoProductivo;
+    private javax.swing.JTextField txtOtrosInfraestructuraServicio;
+    private javax.swing.JTextField txtOtrosInsumoServicio;
+    private javax.swing.JTextField txtOtrosMantenimientoProductivo;
+    private javax.swing.JTextField txtOtrosMantenimientoSoftServicio;
     private javax.swing.JTextField txtOtrosMateriales;
+    private javax.swing.JTextField txtOtrosPruebaProductivo;
     private javax.swing.JTextField txtPorcentajeAFP;
     private javax.swing.JTextField txtPorcentajeEficiencia;
     private javax.swing.JTextField txtPorcentajeINSAFORP;
@@ -4274,24 +4208,94 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtSalarioDiaEficiencia;
     private javax.swing.JTextField txtSalarioHora;
     private javax.swing.JTextField txtSalarioHoraEficiencia;
+    private javax.swing.JTextField txtSalarioOfiAnalisisProductivo;
+    private javax.swing.JTextField txtSalarioOfiCalidadServicio;
+    private javax.swing.JTextField txtSalarioOfiDesarrolloProductivo;
+    private javax.swing.JTextField txtSalarioOfiDisenoProductivo;
+    private javax.swing.JTextField txtSalarioOfiInfraestructuraServicio;
+    private javax.swing.JTextField txtSalarioOfiInsumosServicio;
+    private javax.swing.JTextField txtSalarioOfiMantenimientoProductivo;
+    private javax.swing.JTextField txtSalarioOfiMantenimientoSoftServicio;
+    private javax.swing.JTextField txtSalarioOfiPruebaProductivo;
     private javax.swing.JTextField txtSalarioSemana;
     private javax.swing.JTextField txtSalarioSemanaEficiencia;
+    private javax.swing.JTextField txtSalarioSupAnalisisProductivo;
+    private javax.swing.JTextField txtSalarioSupCalidadServicio;
+    private javax.swing.JTextField txtSalarioSupDesarrolloProductivo;
+    private javax.swing.JTextField txtSalarioSupDisenoProductivo;
+    private javax.swing.JTextField txtSalarioSupInfraestructuraServicio;
+    private javax.swing.JTextField txtSalarioSupInsumoServicio;
+    private javax.swing.JTextField txtSalarioSupMantenimientoProductivo;
+    private javax.swing.JTextField txtSalarioSupMantenimientoSoftServicio;
+    private javax.swing.JTextField txtSalarioSupPruebaProductivo;
     private javax.swing.JTextField txtSalariosOfi;
     private javax.swing.JTextField txtSalariosSup;
     private javax.swing.JTextField txtSalud;
     private javax.swing.JTextField txtSemana;
     private javax.swing.JTextField txtSemanaEficiencia;
     private javax.swing.JTextField txtSeptimo;
+    private javax.swing.JTextField txtServicioPrivadoAnalisisProductivo;
+    private javax.swing.JTextField txtServicioPrivadoCalidadServicio;
+    private javax.swing.JTextField txtServicioPrivadoDesarrolloProductivo;
+    private javax.swing.JTextField txtServicioPrivadoDisenoProductivo;
+    private javax.swing.JTextField txtServicioPrivadoInfraestructuraServicio;
+    private javax.swing.JTextField txtServicioPrivadoInsumoServicio;
+    private javax.swing.JTextField txtServicioPrivadoMantenimientoProductivo;
+    private javax.swing.JTextField txtServicioPrivadoMantenimientoSoftServicio;
+    private javax.swing.JTextField txtServicioPrivadoPruebaProductivo;
+    private javax.swing.JTextField txtServicioPublicoAnalisisProductivo;
+    private javax.swing.JTextField txtServicioPublicoCalidadServicio;
+    private javax.swing.JTextField txtServicioPublicoDesarrolloProductivo;
+    private javax.swing.JTextField txtServicioPublicoDisenoProductivo;
+    private javax.swing.JTextField txtServicioPublicoInfraestructuraServicio;
+    private javax.swing.JTextField txtServicioPublicoInsumoServicio;
+    private javax.swing.JTextField txtServicioPublicoMantenimientoProductivo;
+    private javax.swing.JTextField txtServicioPublicoMantenimientoSoftServicio;
+    private javax.swing.JTextField txtServicioPublicoPruebaProductivo;
     private javax.swing.JTextField txtServiciosPrivados;
     private javax.swing.JTextField txtServiciosPublicos;
+    private javax.swing.JTextField txtSumiAnalisisProductivo;
+    private javax.swing.JTextField txtSumiCalidadServicio;
+    private javax.swing.JTextField txtSumiDesarrolloProductivo;
+    private javax.swing.JTextField txtSumiDisenoProductivo;
+    private javax.swing.JTextField txtSumiInfraestructuraServicio;
+    private javax.swing.JTextField txtSumiInsumoServicio;
+    private javax.swing.JTextField txtSumiMantenimientoProductivo;
+    private javax.swing.JTextField txtSumiMantenimientoSoftServicio;
+    private javax.swing.JTextField txtSumiPruebaProductivo;
     private javax.swing.JTextField txtSuministros;
     private javax.swing.JTextField txtTotal;
+    private javax.swing.JTextField txtTotalAnalisis;
+    private javax.swing.JTextField txtTotalCalidad;
     private javax.swing.JTextField txtTotalConsumo;
+    private javax.swing.JTextField txtTotalDepreciacion;
+    private javax.swing.JTextField txtTotalDesarrollo;
     private javax.swing.JTextField txtTotalDia;
+    private javax.swing.JTextField txtTotalDiseno;
     private javax.swing.JTextField txtTotalEmpleado;
     private javax.swing.JTextField txtTotalEspacio;
+    private javax.swing.JTextField txtTotalHerra;
     private javax.swing.JTextField txtTotalHora;
     private javax.swing.JTextField txtTotalHoraHombre;
+    private javax.swing.JTextField txtTotalImpuesto;
+    private javax.swing.JTextField txtTotalInfraestructura;
+    private javax.swing.JTextField txtTotalInsumo;
+    private javax.swing.JTextField txtTotalMano;
+    private javax.swing.JTextField txtTotalMantenimiento;
+    private javax.swing.JTextField txtTotalMantenimientoSoft;
+    private javax.swing.JTextField txtTotalMaterial;
+    private javax.swing.JTextField txtTotalOtros;
+    private javax.swing.JTextField txtTotalPrueba;
+    private javax.swing.JTextField txtTotalSalarioOfi;
+    private javax.swing.JTextField txtTotalSalarioSup;
+    private javax.swing.JTextField txtTotalServicioPrivado;
+    private javax.swing.JTextField txtTotalServicioPublico;
+    private javax.swing.JTextField txtTotalSumi;
+    private javax.swing.JTextField txtTotalTotal;
+    private javax.swing.JTextField txtTotalVCalidad;
+    private javax.swing.JTextField txtTotalVInfraestructura;
+    private javax.swing.JTextField txtTotalVInsumo;
+    private javax.swing.JTextField txtTotalVManteniemintoSoft;
     private javax.swing.JTextField txtTotales;
     private javax.swing.JTextField txtVacacion;
     // End of variables declaration//GEN-END:variables
