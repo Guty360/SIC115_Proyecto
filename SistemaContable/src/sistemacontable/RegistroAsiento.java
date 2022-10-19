@@ -25,14 +25,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import javax.swing.JDialog;
-import javax.swing.JRadioButton;
 import javax.swing.JTree;
-import javax.swing.event.TreeModelEvent;
-import javax.swing.event.TreeModelListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.table.AbstractTableModel;
-import javax.swing.tree.DefaultTreeModel;
 import utilidades.Nodo;
 
 /**
@@ -45,8 +41,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private List<Registro> nuevosRegistros;
     private List<Cuenta> cuentasDisp;
     private Cuenta cuentaSeleccionada;
-    JTree arbolDeCuentas;
-    JDialog dialogoSeleccionarCuenta;
+    private JTree arbolDeCuentas;
+    private JDialog dialogoSeleccionarCuenta;
     //variables auxiliares 
     private double totalDebe;
     private double totalHaber;
@@ -350,7 +346,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private void btnAñadirTransaccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAñadirTransaccionActionPerformed
         Registro registroNuevo = new Registro();
         double valor = Double.parseDouble(txtValor.getText());
-       
+        
         
         boolean camposVacios = txtValor.getText().isBlank()
                 & txtCuentaSeleccionada.getText().isBlank()
@@ -363,16 +359,27 @@ public class RegistroAsiento extends javax.swing.JFrame {
         }
         
         if(tieneIVA.isSelected()){
-            nuevosRegistros.add(crearRegistroConIVA(0.13,valor));
+            controladorTablaRegistro.añadirNuevoRegistro(crearRegistroConIVA(0.13,valor));
+        }
+        if(rbtnAbono.isSelected()){
+            tipoTransaccion = Tipo.DEBE;
         }
         
+        cuentaSeleccionada = cuentasDisp.stream()
+                .filter(cuenta -> cuenta.getNombre().equals(txtCuentaSeleccionada.getText()))
+                .findFirst()
+                .get();
+        
         registroNuevo.setNumRegistro(ultimoNumRegistro+1);
-        registroNuevo.setCuenta(null);
+        registroNuevo.setCuenta(cuentaSeleccionada);
+        System.out.println(tipoTransaccion);
         registroNuevo.setTipo(tipoTransaccion);
         registroNuevo.setValor(valor);
         registroNuevo.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
         registroNuevo.getDescripcion().append(txtDescripcion.getText());
-        nuevosRegistros.add(registroNuevo);
+        
+        
+        controladorTablaRegistro.añadirNuevoRegistro(registroNuevo);
         
         //Actualiza el contador de registros
         
@@ -565,6 +572,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
     
     class ControladorTablaRegistro extends AbstractTableModel{
 
+     
+        
         @Override
         public int getRowCount() {
             return (nuevosRegistros!=null)?nuevosRegistros.size():0;
@@ -609,8 +618,9 @@ public class RegistroAsiento extends javax.swing.JFrame {
             
         }
         
-        public void añadirNuevosRegistros(List<Registro> nuevos){
-            nuevosRegistros.addAll(nuevos);
+        public void añadirNuevoRegistro(Registro nuevo){
+            nuevosRegistros.add(nuevo);
+            System.out.println(nuevosRegistros);
             fireTableDataChanged();
         }
     }
