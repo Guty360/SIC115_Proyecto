@@ -27,6 +27,10 @@ import java.util.stream.Collectors;
 import javax.swing.JDialog;
 import javax.swing.JRadioButton;
 import javax.swing.JTree;
+import javax.swing.event.TreeModelEvent;
+import javax.swing.event.TreeModelListener;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.tree.DefaultTreeModel;
 import utilidades.Nodo;
@@ -41,7 +45,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private List<Registro> nuevosRegistros;
     private List<Cuenta> cuentasDisp;
     private Cuenta cuentaSeleccionada;
-    
+    JTree arbolDeCuentas;
+    JDialog dialogoSeleccionarCuenta;
     //variables auxiliares 
     private double totalDebe;
     private double totalHaber;
@@ -59,7 +64,6 @@ public class RegistroAsiento extends javax.swing.JFrame {
             try{
                 Double.valueOf(txtValor.getText());
             }catch(NumberFormatException e){
-                System.out.println("Error convirtiendo el valor");
                 JOptionPane.showMessageDialog(rootPane,"Introduzca un valor valido para el monto de la transacción.","Error en el valor.",JOptionPane.ERROR_MESSAGE);
                 return false;
             }
@@ -392,36 +396,41 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
     private void btnArbolDeCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArbolDeCuentasActionPerformed
         
-        Nodo<String> raiz = new Nodo<String>();
+        Nodo<String> raiz = new Nodo<>();
         raiz.setContenido("Seleccione la cuenta");
         
-        Map<Categoria,List<Cuenta>> arbolCuentas = cuentasDisp.stream()
-                                                              .collect(Collectors.groupingBy(cuenta -> cuenta.getCategoria()));
+        Map<Categoria,List<Cuenta>> agrupacionCuentarPorCategorias = agruparCuentasPorCategorias();
         
-        Iterator<Categoria> iterCategorias = arbolCuentas.keySet().iterator();
+        Iterator<Categoria> iterCategorias = agrupacionCuentarPorCategorias.keySet().iterator();
         
-        List<Nodo<String>> categorias = new ArrayList<>();
-        Nodo<String> nodoAnte = null;
-        
-        while(iterCategorias.hasNext()){
-            Nodo<String> nodo = new Nodo<>();
-            
-            Categoria categoria = iterCategorias.next();
-            nodo.setContenido(categoria.toString());
-            nodo.setNodoAnterior(nodoAnte);
-            nodoAnte = nodo;
-            categorias.add(nodo);
-        }
-        
-        raiz.añadirHijos(categorias);
+        añadirHijosDesdeIterador(iterCategorias, raiz);
         
         //categorias.stream().forEach(a -> System.out.println(a.getContenido()));
-        
+        añadirHijosDesdeLista(raiz, agrupacionCuentarPorCategorias);
        
-       JTree arbolDeCuentas = new JTree(raiz);
+        arbolDeCuentas = new JTree(raiz);
+        arbolDeCuentas.addTreeSelectionListener(new TreeSelectionListener() {
+            @Override
+            public void valueChanged(TreeSelectionEvent e) {
+                
+                Nodo<String> seleccion =(Nodo<String>) e.getNewLeadSelectionPath().getLastPathComponent();
+                
+                switch(seleccion.getContenido()){
+                    case "ACTIVO":break;
+                    case "PASIVO":break;
+                    case "INGRESOS":break;
+                    case "COSTOS_y_GASTOS":break;
+                    default:txtCuentaSeleccionada.setText(seleccion.getContenido());dialogoSeleccionarCuenta.dispose();
+                }
+                
+                
+                
+            }
+        });
         
+
         
-        JDialog dialogoSeleccionarCuenta = new JDialog(this);
+        dialogoSeleccionarCuenta = new JDialog(this);
         dialogoSeleccionarCuenta.setSize(new Dimension(300,300));
         dialogoSeleccionarCuenta.setTitle("Seleccionar cuenta");
         
@@ -431,6 +440,60 @@ public class RegistroAsiento extends javax.swing.JFrame {
         dialogoSeleccionarCuenta.setVisible(true);
     }//GEN-LAST:event_btnArbolDeCuentasActionPerformed
 
+    public void añadirHijosDesdeLista(Nodo<String> nodoRaiz,Map<Categoria,List<Cuenta>> agrupacionPorCategoria){
+        
+        List<Nodo<String>> hijosNodoRaiz = nodoRaiz.getNodosHijos();
+       
+        
+        List<List<Nodo<String>>> listaDeListaNodosHijos = new ArrayList<>();
+        
+        Nodo<String> nodoAnt = null;
+        
+        for(var listaDeListaDeCuentas: agrupacionPorCategoria.values()){
+             List<Nodo<String>> hijosNodo = new ArrayList<>();
+            for (var cuenta : listaDeListaDeCuentas){
+                Nodo<String> nodo = new Nodo<>();
+                nodo.setContenido(cuenta.getNombre());
+                nodo.setNodoAnterior(nodoAnt);
+                
+                nodoAnt = nodo;
+                hijosNodo.add(nodo);
+            }
+            listaDeListaNodosHijos.add(hijosNodo);
+           
+        }
+        
+        Iterator<Nodo<String>> iterator = hijosNodoRaiz.iterator();
+        
+        var iter = listaDeListaNodosHijos.iterator();
+        while(iterator.hasNext()){
+            iterator.next().añadirHijos(iter.next());
+        }
+        
+      
+    }
+    
+    public Map<Categoria,List<Cuenta>> agruparCuentasPorCategorias(){
+        return cuentasDisp.stream()
+                          .collect(Collectors.groupingBy(cuenta -> cuenta.getCategoria()));
+    }
+    
+    public void añadirHijosDesdeIterador(Iterator<Categoria> iterator,Nodo<String> raiz){
+         List<Nodo<String>> categorias = new ArrayList<>();
+        Nodo<String> nodoAnte = null;
+        
+        while(iterator.hasNext()){
+            Nodo<String> nodo = new Nodo<>();
+            
+            Categoria categoria = iterator.next();
+            nodo.setContenido(categoria.toString());
+            nodo.setNodoAnterior(nodoAnte);
+            nodoAnte = nodo;
+            categorias.add(nodo);
+        }
+        
+        raiz.añadirHijos(categorias);
+    }
     
     public Registro crearRegistroConIVA(double porcentajeIVA,double valor){
         Cuenta cuentaIVA ;

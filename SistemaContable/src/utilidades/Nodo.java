@@ -46,6 +46,9 @@ public class Nodo<T> implements TreeNode{
         nodosHijosAdapater.nodosHijos = hijos;
     }
     
+    public List<Nodo<T>> getNodosHijos(){
+        return nodosHijosAdapater.getHijos();
+    }
 
     @Override
     public TreeNode getChildAt(int childIndex) {
@@ -74,7 +77,7 @@ public class Nodo<T> implements TreeNode{
 
     @Override
     public boolean isLeaf() {
-        esHoja = nodosHijosAdapater.getHijos()== null;
+        esHoja = nodosHijosAdapater.getHijos().isEmpty();
         return esHoja;
     }
 
@@ -99,7 +102,7 @@ public class Nodo<T> implements TreeNode{
         
     }
     
-    class NodosHijosAdapater implements Enumeration<Nodo>{
+    public class NodosHijosAdapater implements Enumeration<Nodo>{
         private List<Nodo<T>> nodosHijos;
         
         public NodosHijosAdapater(){
@@ -110,7 +113,6 @@ public class Nodo<T> implements TreeNode{
         
         public void añadirHijos(Nodo<T> hijo){
             nodosHijos.add(hijo);
-            hijo.setIndice();
             
         }
         
