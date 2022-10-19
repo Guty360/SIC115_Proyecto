@@ -26,10 +26,16 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 import Persistencia.PersistenciaDeDatos;
+import com.google.gson.Gson;
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
+import javax.swing.SwingConstants;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 
 /**
@@ -62,15 +68,16 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         protected InformacionContable doInBackground() throws Exception {
             
             
-            
                 
             return persistenciaDeDatos.recuperarDatos();
         }
         
         @Override
         protected void done(){
+            
             inicializacionDeDatosDialog.dispose();
             
+            System.out.println("YAAAA"+SwingUtilities.isEventDispatchThread());
             try {
                 informacionContable = get();
                 
@@ -82,7 +89,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 libroMayor = (LibroMayor)informacionContable.getLibroMayor();
                 cuentas = libroMayor.getCuentas();
                 libroDiario = (LibroDiario)informacionContable.getLibroDiario();
-                System.out.println(cuentas);
+                System.out.println(libroDiario.getAsientos());
             }else{
                 informacionContable = new InformacionContable();
                 libroMayor = new LibroMayor();
@@ -95,10 +102,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 
             }
             
-            
-            
+           
             //debe ser el ultimo metodo a llamar
-            initComponents();
             //cuentas de prueba
             
             
@@ -124,7 +129,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             
             configurarListViewCuentasDisponibles(cuentas);
             
-            configurarTablaLibroDiario(asientos);
+            configurarTablaLibroDiario(libroDiario.getAsientos());
             configurarSeleccionCuenta();
             
         }
@@ -134,43 +139,10 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
      * Creates new form Principal
      */
     public Principal() {
-        
-        //initComponents();
-        
-        SwingUtilities.invokeLater(()->{
-        
-        LectorArchivos lectorArchivos = new LectorArchivos();
-        lectorArchivos.execute();
-        
-        inicializacionDeDatosDialog = new JDialog(this,true);
-        
-        JPanel panelDeCarga = new JPanel(false);
-        
-        
-         
-        //barra de progreso
-        JProgressBar barraDeProgreso = new JProgressBar();
-        barraDeProgreso.setIndeterminate(true);
-        
-        //añadiendo la barra de progreso al panel
-        panelDeCarga.add(barraDeProgreso);
-        
-        
-        inicializacionDeDatosDialog.setSize(new Dimension(400,400));
-        inicializacionDeDatosDialog.setContentPane(panelDeCarga);
-        inicializacionDeDatosDialog.pack();
-        //centra el cuadro de carga
-        inicializacionDeDatosDialog.setLocationRelativeTo(null);
-        inicializacionDeDatosDialog.setVisible(true);
-        
-        });
-        
+        initComponents();
     }
     
 
-
-    
-    
     /*
     * Define el modelo que el JList utilizara para mostrar las cuentas disponibles y
     * configura los listeners necesarios
@@ -240,6 +212,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtCodigoCuenta = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
         cmbSeleccionarCuenta = new javax.swing.JComboBox<>();
+        btnAbrirArchivo = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -372,6 +345,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtPorcentajeAFP = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                onClosing(evt);
+            }
+        });
 
         jLabel1.setText("Nombre de la cuenta:");
 
@@ -379,11 +357,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel3.setText("Cuentas disponibles:");
 
-        lstCuentasDisponibles.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(lstCuentasDisponibles);
 
         btnAnadirCuenta.setText("Añadir cuentas");
@@ -397,7 +370,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel51.setText("Categoria:");
 
-        cmbSeleccionarCuenta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        btnAbrirArchivo.setText("Abrir archivo");
+        btnAbrirArchivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAbrirArchivoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -406,23 +384,26 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(btnAnadirCuenta)
-                    .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnModificarCuenta)
-                    .addComponent(txtNombreCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                    .addComponent(txtCodigoCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbSeleccionarCuenta, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(80, 80, 80)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAbrirArchivo)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnAnadirCuenta)
+                            .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnModificarCuenta)
+                            .addComponent(txtNombreCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                            .addComponent(txtCodigoCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbSeleccionarCuenta, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(80, 80, 80)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(139, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -448,7 +429,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addComponent(btnAnadirCuenta)
                             .addComponent(btnModificarCuenta)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(371, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 347, Short.MAX_VALUE)
+                .addComponent(btnAbrirArchivo)
+                .addGap(17, 17, 17))
         );
 
         contenedorPestañas.addTab("Cuentas", jPanel1);
@@ -1577,6 +1560,53 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
     }//GEN-LAST:event_btnAnadirTransaccionActionPerformed
 
+    private void btnAbrirArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbrirArchivoActionPerformed
+        JFileChooser seleccionadorArchivo = new JFileChooser();
+        seleccionadorArchivo.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        seleccionadorArchivo.setFileFilter(new FileNameExtensionFilter("Informacion contable","txt"));
+        int opcion = seleccionadorArchivo.showOpenDialog(this);
+        LectorArchivos lectorArchivos = new LectorArchivos();
+        
+        
+        if(opcion == JFileChooser.APPROVE_OPTION){
+            persistenciaDeDatos.configurarArchivo(seleccionadorArchivo.getSelectedFile().getPath());
+        }
+        
+               
+        inicializacionDeDatosDialog = new JDialog(this);
+        JPanel panelDeCarga = new JPanel();
+         
+        //barra de progreso
+        JProgressBar barraDeProgreso = new JProgressBar();
+        barraDeProgreso.setIndeterminate(true);
+        
+        //añadiendo la barra de progreso al panel
+        panelDeCarga.add(barraDeProgreso);
+        
+        
+        inicializacionDeDatosDialog.setSize(new Dimension(400,400));
+        inicializacionDeDatosDialog.setContentPane(panelDeCarga);
+        inicializacionDeDatosDialog.pack();
+        //centra el cuadro de carga
+        inicializacionDeDatosDialog.setLocationRelativeTo(null);
+        inicializacionDeDatosDialog.setVisible(true);
+        
+        lectorArchivos.execute();
+        
+    }//GEN-LAST:event_btnAbrirArchivoActionPerformed
+
+    private void onClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onClosing
+         if(persistenciaDeDatos == null || informacionContable == null) return;
+        
+        try {
+            persistenciaDeDatos.guardarDatos(informacionContable);
+            System.out.println(informacionContable);
+        } catch (IOException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }//GEN-LAST:event_onClosing
+
     //metodos utilitarios
     public void limpiarTxtPestañaCuentas(){
         txtCodigoCuenta.setText("");
@@ -1625,6 +1655,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAbrirArchivo;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnAnadirCuenta;
     private javax.swing.JButton btnAnadirTransaccion;

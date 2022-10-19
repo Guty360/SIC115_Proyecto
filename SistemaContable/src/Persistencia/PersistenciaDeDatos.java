@@ -12,13 +12,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
 /**
  *
  * @author pc
@@ -36,22 +29,9 @@ public class PersistenciaDeDatos {
     private FileInputStream fileInputStream;
     
     private File archivo;
-    private URI ruta;
 
    
     private PersistenciaDeDatos(){
-      
-        try {
-            ruta = new URI(getClass().getResource("/Persistencia/Datos/Persistencia.txt").toString());
-            System.out.println(ruta.getPath());
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(PersistenciaDeDatos.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        archivo = new File(ruta);
-        System.out.println(archivo.canRead());
-        System.err.println(archivo.canWrite());
-
     }
     
     public static PersistenciaDeDatos getPersistenciaDeDatos(){
@@ -64,7 +44,7 @@ public class PersistenciaDeDatos {
         
         fileOutputStream = new FileOutputStream(archivo);
         objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        
+        System.out.println(informacionContable);
         objectOutputStream.writeObject(informacionContable);
         objectOutputStream.close();
         objectOutputStream.flush();
@@ -80,6 +60,10 @@ public class PersistenciaDeDatos {
         return info;
     }
     
+
     
+    public void configurarArchivo(String ruta){
+        archivo = new File(ruta);
+    }
     
 }

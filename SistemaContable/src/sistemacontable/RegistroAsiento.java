@@ -475,7 +475,7 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         
 
         
-        dialogoSeleccionarCuenta = new JDialog(this);
+        dialogoSeleccionarCuenta = new JDialog(this,true);
         dialogoSeleccionarCuenta.setSize(new Dimension(300,300));
         dialogoSeleccionarCuenta.setTitle("Seleccionar cuenta");
         
