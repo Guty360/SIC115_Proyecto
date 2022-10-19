@@ -370,6 +370,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel77 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
         jTextField368 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1956,6 +1958,10 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel78.setText("HORAS-HOMBRES");
 
+        jButton2.setText("jButton2");
+
+        jButton3.setText("jButton3");
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -1963,15 +1969,23 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(342, 342, 342)
-                        .addComponent(jTextField368, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(99, 99, 99)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(342, 342, 342)
+                                .addComponent(jTextField368, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(187, 187, 187)
+                                .addComponent(jButton2)))
+                        .addGap(99, 99, 99))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addComponent(jButton3)
+                        .addGap(191, 191, 191)))
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2004,15 +2018,17 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addComponent(jLabel77)
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 473, Short.MAX_VALUE))
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField368, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(24, 24, 24)
+                        .addComponent(jButton3))
+                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField368, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap(243, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("CIF", jPanel7);
@@ -2246,34 +2262,14 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JComboBox<String> cmbOrdenTransacciones;
     private javax.swing.JTabbedPane contenedorPestañas;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel117;
-    private javax.swing.JLabel jLabel118;
-    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel120;
-    private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel122;
-    private javax.swing.JLabel jLabel123;
-    private javax.swing.JLabel jLabel124;
-    private javax.swing.JLabel jLabel125;
-    private javax.swing.JLabel jLabel126;
-    private javax.swing.JLabel jLabel127;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -2361,12 +2357,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
-    private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -2377,9 +2367,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2394,237 +2382,28 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField100;
-    private javax.swing.JTextField jTextField101;
-    private javax.swing.JTextField jTextField102;
-    private javax.swing.JTextField jTextField103;
-    private javax.swing.JTextField jTextField104;
-    private javax.swing.JTextField jTextField105;
-    private javax.swing.JTextField jTextField106;
-    private javax.swing.JTextField jTextField107;
-    private javax.swing.JTextField jTextField108;
-    private javax.swing.JTextField jTextField109;
     private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField110;
-    private javax.swing.JTextField jTextField111;
-    private javax.swing.JTextField jTextField112;
-    private javax.swing.JTextField jTextField113;
-    private javax.swing.JTextField jTextField114;
-    private javax.swing.JTextField jTextField115;
-    private javax.swing.JTextField jTextField116;
-    private javax.swing.JTextField jTextField117;
-    private javax.swing.JTextField jTextField118;
-    private javax.swing.JTextField jTextField119;
     private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField120;
-    private javax.swing.JTextField jTextField121;
-    private javax.swing.JTextField jTextField122;
-    private javax.swing.JTextField jTextField123;
-    private javax.swing.JTextField jTextField124;
-    private javax.swing.JTextField jTextField125;
-    private javax.swing.JTextField jTextField126;
-    private javax.swing.JTextField jTextField127;
-    private javax.swing.JTextField jTextField128;
-    private javax.swing.JTextField jTextField129;
     private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField130;
-    private javax.swing.JTextField jTextField131;
-    private javax.swing.JTextField jTextField132;
-    private javax.swing.JTextField jTextField133;
-    private javax.swing.JTextField jTextField134;
-    private javax.swing.JTextField jTextField135;
-    private javax.swing.JTextField jTextField136;
-    private javax.swing.JTextField jTextField137;
-    private javax.swing.JTextField jTextField138;
-    private javax.swing.JTextField jTextField139;
     private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField140;
-    private javax.swing.JTextField jTextField141;
-    private javax.swing.JTextField jTextField142;
-    private javax.swing.JTextField jTextField143;
-    private javax.swing.JTextField jTextField144;
-    private javax.swing.JTextField jTextField145;
-    private javax.swing.JTextField jTextField146;
-    private javax.swing.JTextField jTextField147;
-    private javax.swing.JTextField jTextField148;
-    private javax.swing.JTextField jTextField149;
     private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField150;
-    private javax.swing.JTextField jTextField151;
-    private javax.swing.JTextField jTextField152;
-    private javax.swing.JTextField jTextField153;
-    private javax.swing.JTextField jTextField154;
-    private javax.swing.JTextField jTextField155;
-    private javax.swing.JTextField jTextField156;
-    private javax.swing.JTextField jTextField157;
-    private javax.swing.JTextField jTextField158;
-    private javax.swing.JTextField jTextField159;
     private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField160;
-    private javax.swing.JTextField jTextField161;
-    private javax.swing.JTextField jTextField162;
-    private javax.swing.JTextField jTextField163;
-    private javax.swing.JTextField jTextField164;
-    private javax.swing.JTextField jTextField165;
-    private javax.swing.JTextField jTextField166;
-    private javax.swing.JTextField jTextField167;
-    private javax.swing.JTextField jTextField168;
-    private javax.swing.JTextField jTextField169;
     private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField170;
-    private javax.swing.JTextField jTextField171;
-    private javax.swing.JTextField jTextField172;
-    private javax.swing.JTextField jTextField173;
-    private javax.swing.JTextField jTextField174;
-    private javax.swing.JTextField jTextField175;
-    private javax.swing.JTextField jTextField176;
-    private javax.swing.JTextField jTextField177;
-    private javax.swing.JTextField jTextField178;
-    private javax.swing.JTextField jTextField179;
     private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField180;
-    private javax.swing.JTextField jTextField181;
-    private javax.swing.JTextField jTextField182;
-    private javax.swing.JTextField jTextField183;
-    private javax.swing.JTextField jTextField184;
-    private javax.swing.JTextField jTextField185;
-    private javax.swing.JTextField jTextField186;
-    private javax.swing.JTextField jTextField187;
-    private javax.swing.JTextField jTextField188;
-    private javax.swing.JTextField jTextField189;
     private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField190;
-    private javax.swing.JTextField jTextField191;
-    private javax.swing.JTextField jTextField192;
-    private javax.swing.JTextField jTextField193;
-    private javax.swing.JTextField jTextField194;
-    private javax.swing.JTextField jTextField195;
-    private javax.swing.JTextField jTextField196;
-    private javax.swing.JTextField jTextField197;
-    private javax.swing.JTextField jTextField198;
-    private javax.swing.JTextField jTextField199;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField200;
-    private javax.swing.JTextField jTextField201;
-    private javax.swing.JTextField jTextField202;
-    private javax.swing.JTextField jTextField203;
-    private javax.swing.JTextField jTextField204;
-    private javax.swing.JTextField jTextField205;
-    private javax.swing.JTextField jTextField206;
-    private javax.swing.JTextField jTextField207;
-    private javax.swing.JTextField jTextField208;
-    private javax.swing.JTextField jTextField209;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField210;
-    private javax.swing.JTextField jTextField211;
-    private javax.swing.JTextField jTextField212;
-    private javax.swing.JTextField jTextField213;
-    private javax.swing.JTextField jTextField214;
-    private javax.swing.JTextField jTextField215;
-    private javax.swing.JTextField jTextField216;
-    private javax.swing.JTextField jTextField217;
-    private javax.swing.JTextField jTextField218;
-    private javax.swing.JTextField jTextField219;
     private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField220;
-    private javax.swing.JTextField jTextField221;
-    private javax.swing.JTextField jTextField222;
-    private javax.swing.JTextField jTextField223;
-    private javax.swing.JTextField jTextField224;
-    private javax.swing.JTextField jTextField225;
-    private javax.swing.JTextField jTextField226;
-    private javax.swing.JTextField jTextField227;
-    private javax.swing.JTextField jTextField228;
-    private javax.swing.JTextField jTextField229;
     private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField230;
-    private javax.swing.JTextField jTextField231;
-    private javax.swing.JTextField jTextField232;
-    private javax.swing.JTextField jTextField233;
-    private javax.swing.JTextField jTextField234;
-    private javax.swing.JTextField jTextField235;
-    private javax.swing.JTextField jTextField236;
-    private javax.swing.JTextField jTextField237;
-    private javax.swing.JTextField jTextField238;
-    private javax.swing.JTextField jTextField239;
     private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField240;
-    private javax.swing.JTextField jTextField241;
-    private javax.swing.JTextField jTextField242;
-    private javax.swing.JTextField jTextField243;
-    private javax.swing.JTextField jTextField244;
-    private javax.swing.JTextField jTextField245;
-    private javax.swing.JTextField jTextField246;
-    private javax.swing.JTextField jTextField247;
-    private javax.swing.JTextField jTextField248;
-    private javax.swing.JTextField jTextField249;
     private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField250;
-    private javax.swing.JTextField jTextField251;
-    private javax.swing.JTextField jTextField252;
-    private javax.swing.JTextField jTextField253;
-    private javax.swing.JTextField jTextField254;
-    private javax.swing.JTextField jTextField255;
-    private javax.swing.JTextField jTextField256;
-    private javax.swing.JTextField jTextField257;
-    private javax.swing.JTextField jTextField258;
-    private javax.swing.JTextField jTextField259;
     private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField260;
-    private javax.swing.JTextField jTextField261;
-    private javax.swing.JTextField jTextField262;
-    private javax.swing.JTextField jTextField263;
-    private javax.swing.JTextField jTextField264;
-    private javax.swing.JTextField jTextField265;
-    private javax.swing.JTextField jTextField266;
-    private javax.swing.JTextField jTextField267;
-    private javax.swing.JTextField jTextField268;
-    private javax.swing.JTextField jTextField269;
     private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField270;
-    private javax.swing.JTextField jTextField271;
-    private javax.swing.JTextField jTextField272;
-    private javax.swing.JTextField jTextField273;
-    private javax.swing.JTextField jTextField274;
-    private javax.swing.JTextField jTextField275;
-    private javax.swing.JTextField jTextField276;
-    private javax.swing.JTextField jTextField277;
-    private javax.swing.JTextField jTextField278;
-    private javax.swing.JTextField jTextField279;
     private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField280;
-    private javax.swing.JTextField jTextField281;
-    private javax.swing.JTextField jTextField282;
-    private javax.swing.JTextField jTextField283;
-    private javax.swing.JTextField jTextField284;
-    private javax.swing.JTextField jTextField285;
-    private javax.swing.JTextField jTextField286;
-    private javax.swing.JTextField jTextField287;
-    private javax.swing.JTextField jTextField288;
-    private javax.swing.JTextField jTextField289;
     private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField290;
-    private javax.swing.JTextField jTextField291;
-    private javax.swing.JTextField jTextField292;
-    private javax.swing.JTextField jTextField293;
-    private javax.swing.JTextField jTextField294;
-    private javax.swing.JTextField jTextField295;
-    private javax.swing.JTextField jTextField296;
-    private javax.swing.JTextField jTextField297;
-    private javax.swing.JTextField jTextField298;
-    private javax.swing.JTextField jTextField299;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField300;
-    private javax.swing.JTextField jTextField301;
-    private javax.swing.JTextField jTextField302;
-    private javax.swing.JTextField jTextField303;
-    private javax.swing.JTextField jTextField304;
-    private javax.swing.JTextField jTextField305;
-    private javax.swing.JTextField jTextField306;
-    private javax.swing.JTextField jTextField307;
-    private javax.swing.JTextField jTextField308;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
@@ -2650,57 +2429,10 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField jTextField50;
     private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField55;
-    private javax.swing.JTextField jTextField56;
-    private javax.swing.JTextField jTextField57;
-    private javax.swing.JTextField jTextField58;
-    private javax.swing.JTextField jTextField59;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField60;
-    private javax.swing.JTextField jTextField61;
-    private javax.swing.JTextField jTextField62;
-    private javax.swing.JTextField jTextField63;
-    private javax.swing.JTextField jTextField64;
-    private javax.swing.JTextField jTextField65;
-    private javax.swing.JTextField jTextField66;
-    private javax.swing.JTextField jTextField67;
-    private javax.swing.JTextField jTextField68;
-    private javax.swing.JTextField jTextField69;
     private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField70;
-    private javax.swing.JTextField jTextField71;
-    private javax.swing.JTextField jTextField72;
-    private javax.swing.JTextField jTextField73;
-    private javax.swing.JTextField jTextField74;
-    private javax.swing.JTextField jTextField75;
-    private javax.swing.JTextField jTextField76;
-    private javax.swing.JTextField jTextField77;
-    private javax.swing.JTextField jTextField78;
-    private javax.swing.JTextField jTextField79;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField80;
-    private javax.swing.JTextField jTextField81;
-    private javax.swing.JTextField jTextField82;
-    private javax.swing.JTextField jTextField83;
-    private javax.swing.JTextField jTextField84;
-    private javax.swing.JTextField jTextField85;
-    private javax.swing.JTextField jTextField86;
-    private javax.swing.JTextField jTextField87;
-    private javax.swing.JTextField jTextField88;
-    private javax.swing.JTextField jTextField89;
     private javax.swing.JTextField jTextField9;
-    private javax.swing.JTextField jTextField90;
-    private javax.swing.JTextField jTextField91;
-    private javax.swing.JTextField jTextField92;
-    private javax.swing.JTextField jTextField93;
-    private javax.swing.JTextField jTextField94;
-    private javax.swing.JTextField jTextField95;
-    private javax.swing.JTextField jTextField96;
-    private javax.swing.JTextField jTextField97;
-    private javax.swing.JTextField jTextField98;
-    private javax.swing.JTextField jTextField99;
     private javax.swing.JList<String> lstCuentasDisponibles;
     private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
