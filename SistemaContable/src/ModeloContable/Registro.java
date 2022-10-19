@@ -21,7 +21,9 @@ public class Registro extends Serializacion{
     private int numRegistro;
     private static int contadorRegistros;
 
-    public Registro(){}
+    public Registro(){
+    
+    }
 
     /***
      * 
@@ -41,7 +43,7 @@ public class Registro extends Serializacion{
         return numRegistro;
     }
 
-    public void setNumRegistro(int numRegistro) {
+    public void setNumRegistro(int numRegistro){
         this.numRegistro = numRegistro;
     }
 

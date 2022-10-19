@@ -12,6 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.net.URI;
 import java.util.List;
 
 
@@ -21,9 +22,8 @@ import java.util.List;
  * 
  */
 public class PersistenciaDeDatos {
-    private String ruta;
     private InformacionContable contexto;
-    private static PersistenciaDeDatos persistenciaDeDatoss;
+    private static PersistenciaDeDatos persistenciaDeDatos;
     
     //Almacenamiento de la informacion contable
     private ObjectOutputStream objectOutputStream;
@@ -33,80 +33,15 @@ public class PersistenciaDeDatos {
     private ObjectInputStream objectInputStream;
     private FileInputStream fileInputStream;
     
-    private PersistenciaDeDatos(){
-    
-    }
-    
-    public static PersistenciaDeDatos getPersistenciaDeDatoss(){
-        if(persistenciaDeDatoss==null) persistenciaDeDatoss = new PersistenciaDeDatos();
-        
-        return persistenciaDeDatoss;
-    }
+    private File archivo;
+    private URI ruta;
 
-    public String getRuta() {
-        return ruta;
-    }
-
-    public PersistenciaDeDatos setRuta(String ruta) throws FileNotFoundException{
-        this.ruta = ruta;
-        fileOutputStream = new FileOutputStream(new File(ruta));
-        return this;
-    }
-
-    public InformacionContable getContexto() {
-        return contexto;
-    }
-
-    public PersistenciaDeDatos setContexto(InformacionContable contexto){
-        this.contexto = contexto;
-        
-        try {
-          objectOutputStream = new ObjectOutputStream(this.fileOutputStream);  
-        } catch (IOException e) {
-            
-        }
-        
-        return this;
-    }
+   
+    private PersistenciaDeDatos(){}
     
-    /**
-    * @return Devuelve verdadero si los datos se guardaron correctamente 
-    */
-    public boolean guardarDatos(){
-        boolean datosGuardadosCorrectamente = true;
-        if(contextoNoVacio()){
-            try {
-                objectOutputStream.writeObject(contexto);
-                objectOutputStream.flush();
-                objectOutputStream.close();  
-            } catch (IOException e) {
-            datosGuardadosCorrectamente = false;
-            }
-            
-        }else{
-            datosGuardadosCorrectamente = false;
-        }
-
-        return datosGuardadosCorrectamente;
+    public static PersistenciaDeDatos getPersistenciaDeDatos(){
+        return persistenciaDeDatos;
     }
-    
-    public InformacionContable recuperarInformacionContable() throws FileNotFoundException,IOException,ClassNotFoundException{
-        
-       
-        fileInputStream = new FileInputStream(new File(ruta));
-        objectInputStream = new ObjectInputStream(fileInputStream);
-            
-        contexto = (InformacionContable)objectInputStream.readObject();
-            
-        return contexto;
-    }
-    
-    public boolean contextoNoVacio(){
-        return !(contexto == null);
-    }
-
-    
-    
     
     
 }

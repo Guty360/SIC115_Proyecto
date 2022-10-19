@@ -28,7 +28,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import javax.swing.JDialog;
+import javax.swing.JTable;
 import javax.swing.JTree;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.table.AbstractTableModel;
@@ -53,7 +56,6 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
     // al hacer click a cualquier radio button asi se cambiara 
     private Tipo tipoTransaccion;
     //Contiene el valor del ultimo registro que fue añadido
-    private int ultimoNumRegistro;
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
@@ -91,7 +93,6 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         this.controladorTablaLibroDiario = controladorTablaLibroDiario;
         this.cuentasDisp = cuentasDisp;
         
-        ultimoNumRegistro = Registro.getContadorRegistros();
         btngTipoTransaccion.add(rbtnAbono);
         btngTipoTransaccion.add(rbtnCargo);
         txtValor.setInputVerifier( new VerificadorValorRegistro());
@@ -410,7 +411,6 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
             controladorTablaRegistro.añadirNuevoRegistro(crearRegistroConIVA(0.13,valor,cuentaSeleccionada.getCategoria()));
         }
          
-        registroNuevo.setNumRegistro(ultimoNumRegistro+1);
         registroNuevo.setCuenta(cuentaSeleccionada);
         registroNuevo.setTipo(tipoTransaccion);
         registroNuevo.setValor(valor);
@@ -435,7 +435,6 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
 
     private void btnGuardarNuevasTransaccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarNuevasTransaccionesActionPerformed
        controladorTablaLibroDiario.añadirRegistros(nuevosRegistros);
-       Registro.setContadorRegistros(ultimoNumRegistro+1);
        dispose();
         
     }//GEN-LAST:event_btnGuardarNuevasTransaccionesActionPerformed
@@ -562,7 +561,6 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         System.out.println(tipoTransaccion);
         Registro registroIVA = new Registro();
         
-        registroIVA.setNumRegistro(ultimoNumRegistro+1);
         registroIVA.setCuenta(cuentaIVA);
         registroIVA.setTipo(tipoTransaccionIva);
         registroIVA.setValor(porcentajeIVA*valor);
@@ -609,6 +607,20 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
             }
             
         }
+        
+        
+        controladorTablaRegistro.addTableModelListener(cambioEnTablaEvent->{
+        
+            ControladorTablaRegistro tablaOrigenEvento = (ControladorTablaRegistro)cambioEnTablaEvent.getSource();
+            double totalDebe = Double.parseDouble(lblTotalDebe.getText());
+            double totalHaber = Double.parseDouble(lblTotalHaber.getText());
+            boolean seCumplePartidaDoble = totalDebe == totalHaber;
+            System.out.println(tablaOrigenEvento.getRowCount());
+            if(tablaOrigenEvento.getRowCount()>=2 & seCumplePartidaDoble  ){
+                btnGuardarNuevasTransacciones.setEnabled(true);
+            }
+        
+        });
         
         
     }
