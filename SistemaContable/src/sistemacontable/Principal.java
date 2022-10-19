@@ -26,7 +26,6 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 import Persistencia.PersistenciaDeDatos;
-import com.google.gson.Gson;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
