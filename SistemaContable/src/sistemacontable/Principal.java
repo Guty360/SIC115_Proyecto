@@ -26,6 +26,10 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 import Persistencia.PersistenciaDeDatos;
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -42,11 +46,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     InformacionContable informacionContable;
     LibroMayor libroMayor;
     List<Registro> asientos;
-    List<LibroDiario> librosDiarios;
+    LibroDiario libroDiario;
     List<Cuenta> cuentas;
    
     //Escritura-lectura de archivos
-    final PersistenciaDeDatos persistenciaDeDatos = PersistenciaDeDatos.getPersistenciaDeDatoss();
+    final PersistenciaDeDatos persistenciaDeDatos = PersistenciaDeDatos.getPersistenciaDeDatos();
             
     
     //componentes graficos auxiliares
@@ -56,22 +60,50 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         @Override
         protected InformacionContable doInBackground() throws Exception {
-            //informacionContable = persistenciaDeDatos.setRuta("").recuperarInformacionContable();
+            
             
             
                 
-            return informacionContable;
+            return persistenciaDeDatos.recuperarDatos();
         }
         
         @Override
         protected void done(){
             inicializacionDeDatosDialog.dispose();
             
+            try {
+                informacionContable = get();
+                
+            } catch (InterruptedException | ExecutionException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            if(informacionContable != null){
+                libroMayor = (LibroMayor)informacionContable.getLibroMayor();
+                cuentas = libroMayor.getCuentas();
+                libroDiario = (LibroDiario)informacionContable.getLibroDiario();
+                System.out.println(cuentas);
+            }else{
+                informacionContable = new InformacionContable();
+                libroMayor = new LibroMayor();
+                libroDiario = new LibroDiario();
+                
+                
+                informacionContable.setLibroMayor(libroMayor);
+                informacionContable.setLibroDiario(libroDiario);
+                cuentas = libroMayor.getCuentas();
+                
+            }
+            
+            
+            
             //debe ser el ultimo metodo a llamar
             initComponents();
             //cuentas de prueba
             
-            cuentas = new ArrayList<>();
+            
+            ////-------------------
+            /*
             cuentas.add(new Cuenta(1,"Caja",Categoria.ACTIVO));
             cuentas.add(new Cuenta(2,"Inventario",Categoria.ACTIVO));
             cuentas.add(new Cuenta(3,"Ventas",Categoria.INGRESOS));
@@ -81,13 +113,21 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             cuentas.add(new Cuenta(6,"IVA debito fiscal",Categoria.PASIVO));
             
             
-            //configurarListViewCategorias(cuentas);
             
-            configurarTablaLibroDiario(new ArrayList<>());
+            try {
+                persistenciaDeDatos.guardarDatos(informacionContable);
+            } catch (IOException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            */
+            
+            configurarListViewCuentasDisponibles(cuentas);
+            
+            configurarTablaLibroDiario(asientos);
             configurarSeleccionCuenta();
+            
         }
-        
-        
     }
 
     /**
@@ -136,8 +176,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     * configura los listeners necesarios
     */
     
-    public void configurarListViewCategorias(List<Cuenta> listadoCuentas){
-        controladorCuentasDisp = new ControladorListadoCuentasDisponibles(listadoCuentas);
+    public void configurarListViewCuentasDisponibles(List<Cuenta> listadoCuentas){
+        
+        controladorCuentasDisp = new ControladorListadoCuentasDisponibles();
+        
+        if(listadoCuentas == null) return;
+        controladorCuentasDisp.setListadoCuentas(listadoCuentas);
         
         lstCuentasDisponibles.setModel(controladorCuentasDisp);
         lstCuentasDisponibles.addListSelectionListener(this);
@@ -146,7 +190,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     public void configurarTablaLibroDiario(List<Registro> asientos){
        int numColumnas = tablaLibroDiario.getColumnModel().getColumnCount();
        
-    
+       if(asientos == null) return;
        
        controladorTablaLibroDiario = new ControladorTablaLibroDiario(asientos);
        tablaLibroDiario.setModel(controladorTablaLibroDiario);   

@@ -17,10 +17,7 @@ import javax.swing.DefaultListModel;
 public class ControladorListadoCuentasDisponibles extends AbstractListModel<String>{
     List<Cuenta> listadoCuentas;
 
-    public ControladorListadoCuentasDisponibles(List<Cuenta> listadoCuentas) {
-        this.listadoCuentas = listadoCuentas;
-    }
-
+  
     
     
     public List<Cuenta> getListadoCuentas() {
