@@ -77,10 +77,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             
             cuentas = new ArrayList<>();
             cuentas.add(new Cuenta(1,"Caja",Categoria.ACTIVO));
-            cuentas.add(new Cuenta(2,"Inventario",Categoria.PASIVO));
+            cuentas.add(new Cuenta(2,"Inventario",Categoria.ACTIVO));
             cuentas.add(new Cuenta(3,"Ventas",Categoria.INGRESOS));
             cuentas.add(new Cuenta(4,"Compras",Categoria.COSTOS_y_GASTOS));
             cuentas.add(new Cuenta(5,"Gastos sobre compras",Categoria.COSTOS_y_GASTOS));
+            cuentas.add(new Cuenta(5,"IVA credito fiscal",Categoria.ACTIVO));
+            cuentas.add(new Cuenta(6,"IVA debito fiscal",Categoria.PASIVO));
             
             
             configurarListViewCategorias(cuentas);

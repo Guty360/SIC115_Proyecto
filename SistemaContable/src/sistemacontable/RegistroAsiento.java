@@ -16,6 +16,9 @@ import ModeloContable.Cuenta;
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
 import java.awt.Dimension;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -35,7 +38,7 @@ import utilidades.Nodo;
  *
  * @author pc
  */
-public class RegistroAsiento extends javax.swing.JFrame {
+public class RegistroAsiento extends javax.swing.JFrame implements PropertyChangeListener{
     private ControladorTablaLibroDiario controladorTablaLibroDiario;
     private ControladorTablaRegistro controladorTablaRegistro;
     private List<Registro> nuevosRegistros;
@@ -43,15 +46,22 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private Cuenta cuentaSeleccionada;
     private JTree arbolDeCuentas;
     private JDialog dialogoSeleccionarCuenta;
-    //variables auxiliares 
-    private double totalDebe;
-    private double totalHaber;
+    private PropertyChangeSupport cambioListaRegistros;
+  
     
     //Debo usar este tipo aqui ya que no es posible saber si un rdio button ha sido seleccionado
     // al hacer click a cualquier radio button asi se cambiara 
     private Tipo tipoTransaccion;
     //Contiene el valor del ultimo registro que fue añadido
     private int ultimoNumRegistro;
+
+    @Override
+    public void propertyChange(PropertyChangeEvent evt) {
+        List<Registro> source = (List<Registro>)evt.getSource();
+        if(source.isEmpty()){
+            btnGuardarNuevasTransacciones.setEnabled(true);
+        }
+    }
     
     class VerificadorValorRegistro extends InputVerifier{
 
@@ -86,8 +96,12 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btngTipoTransaccion.add(rbtnCargo);
         txtValor.setInputVerifier( new VerificadorValorRegistro());
         
-        configurarTablaRegistro();
+        lblTotalDebe.setText(null);
+        lblTotalHaber.setText(null);
         
+        configurarTablaRegistro();
+        cambioListaRegistros = new PropertyChangeSupport(nuevosRegistros);
+        cambioListaRegistros.addPropertyChangeListener(this);
         
     }
 
@@ -124,6 +138,9 @@ public class RegistroAsiento extends javax.swing.JFrame {
         txtCuentaSeleccionada = new javax.swing.JTextField();
         btnGuardarTransaccionModificada = new javax.swing.JButton();
         btnEliminarSeleccion = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        lblTotalDebe = new javax.swing.JLabel();
+        lblTotalHaber = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -225,6 +242,12 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btnEliminarSeleccion.setText("Eliminar selección.");
         btnEliminarSeleccion.setEnabled(false);
 
+        jLabel4.setText("Totales:");
+
+        lblTotalDebe.setText("jLabel8");
+
+        lblTotalHaber.setText("jLabel8");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -257,7 +280,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(rbtnAbono, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(tieneIVA, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 89, Short.MAX_VALUE))
+                                        .addGap(0, 83, Short.MAX_VALUE))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -278,17 +301,29 @@ public class RegistroAsiento extends javax.swing.JFrame {
                         .addComponent(btnGuardarNuevasTransacciones)
                         .addGap(18, 18, 18)
                         .addComponent(btnEliminarSeleccion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTotalDebe, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(131, 131, 131)
+                        .addComponent(lblTotalHaber, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(lblTotalDebe)
+                    .addComponent(lblTotalHaber))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
                             .addComponent(jLabel7)
@@ -305,7 +340,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(tieneIVA)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(71, 71, 71)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
                             .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -358,21 +393,25 @@ public class RegistroAsiento extends javax.swing.JFrame {
             return;
         }
         
-        if(tieneIVA.isSelected()){
-            controladorTablaRegistro.añadirNuevoRegistro(crearRegistroConIVA(0.13,valor));
-        }
+       
         if(rbtnAbono.isSelected()){
+            tipoTransaccion = Tipo.HABER;
+        }else{
             tipoTransaccion = Tipo.DEBE;
         }
+        
         
         cuentaSeleccionada = cuentasDisp.stream()
                 .filter(cuenta -> cuenta.getNombre().equals(txtCuentaSeleccionada.getText()))
                 .findFirst()
                 .get();
         
+         if(tieneIVA.isSelected()){
+            controladorTablaRegistro.añadirNuevoRegistro(crearRegistroConIVA(0.13,valor,cuentaSeleccionada.getCategoria()));
+        }
+         
         registroNuevo.setNumRegistro(ultimoNumRegistro+1);
         registroNuevo.setCuenta(cuentaSeleccionada);
-        System.out.println(tipoTransaccion);
         registroNuevo.setTipo(tipoTransaccion);
         registroNuevo.setValor(valor);
         registroNuevo.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
@@ -380,17 +419,17 @@ public class RegistroAsiento extends javax.swing.JFrame {
         
         
         controladorTablaRegistro.añadirNuevoRegistro(registroNuevo);
-        
+        limpiarParametros();
         //Actualiza el contador de registros
         
     }//GEN-LAST:event_btnAñadirTransaccionActionPerformed
 
     private void rbtnCargoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnCargoMouseClicked
-        tipoTransaccion = Tipo.DEBE;
+       
     }//GEN-LAST:event_rbtnCargoMouseClicked
 
     private void rbtnAbonoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rbtnAbonoMouseClicked
-       tipoTransaccion = Tipo.HABER;
+      
         
     }//GEN-LAST:event_rbtnAbonoMouseClicked
 
@@ -502,27 +541,30 @@ public class RegistroAsiento extends javax.swing.JFrame {
         raiz.añadirHijos(categorias);
     }
     
-    public Registro crearRegistroConIVA(double porcentajeIVA,double valor){
+    public Registro crearRegistroConIVA(double porcentajeIVA,double valor,Categoria categoriaCuenta){
         Cuenta cuentaIVA ;
+        Tipo tipoTransaccionIva;
         
-        if(tipoTransaccion.equals(Tipo.DEBE)){
+        if(tipoTransaccion.equals(Tipo.HABER)){
             cuentaIVA = cuentasDisp.stream()
                             .filter(cuenta -> cuenta.getNombre().equals("IVA credito fiscal"))
                             .findFirst()
                             .get();
+            tipoTransaccionIva = Tipo.DEBE;
         }else{
             cuentaIVA = cuentasDisp.stream()
                     .filter(cuenta -> cuenta.getNombre().contains("IVA debito fiscal"))
                     .findFirst()
                     .get();
+            tipoTransaccionIva = Tipo.HABER;
         }
         
-        
+        System.out.println(tipoTransaccion);
         Registro registroIVA = new Registro();
         
         registroIVA.setNumRegistro(ultimoNumRegistro+1);
         registroIVA.setCuenta(cuentaIVA);
-        registroIVA.setTipo(tipoTransaccion);
+        registroIVA.setTipo(tipoTransaccionIva);
         registroIVA.setValor(porcentajeIVA*valor);
         registroIVA.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
         registroIVA.getDescripcion().append(txtDescripcion.getText());
@@ -539,6 +581,8 @@ public class RegistroAsiento extends javax.swing.JFrame {
         txtFecha.setText(null);
         txtValor.setText(null);
         txtCuentaSeleccionada.setText(null);
+        tieneIVA.setSelected(false);
+        
     }
     
     public final void configurarTablaRegistro(){
@@ -576,7 +620,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         
         @Override
         public int getRowCount() {
-            return (nuevosRegistros!=null)?nuevosRegistros.size():0;
+            return (nuevosRegistros!=null )?nuevosRegistros.size():0;
         }
 
         @Override
@@ -585,19 +629,16 @@ public class RegistroAsiento extends javax.swing.JFrame {
         }
 
         @Override
-        public Object getValueAt(int rowIndex, int columnIndex) {
+        public Object getValueAt(int rowIndex, int columnIndex) { 
+        
+        
             Registro registro = nuevosRegistros.get(rowIndex);
             
             double debe = (registro.getTipo().equals(Tipo.DEBE))?registro.getValor():0;
             double haber = (registro.getTipo().equals(Tipo.HABER))?registro.getValor():0;
             
-            totalDebe += debe;
-            totalHaber += haber;
-            
-            
-            if(rowIndex == getRowCount()+1 && columnIndex == 0){
-                return "Total";
-            }
+           
+           
             
             switch(columnIndex){
                 case 0:
@@ -620,7 +661,19 @@ public class RegistroAsiento extends javax.swing.JFrame {
         
         public void añadirNuevoRegistro(Registro nuevo){
             nuevosRegistros.add(nuevo);
-            System.out.println(nuevosRegistros);
+            double totalDebe = nuevosRegistros.stream()
+                    .filter(registro -> registro.getTipo()==Tipo.DEBE)
+                    .mapToDouble(registro -> registro.getValor())
+                    .sum();
+            
+            double totalHaber = nuevosRegistros.stream()
+                    .filter(registro -> registro.getTipo() == Tipo.HABER)
+                    .mapToDouble(registro -> registro.getValor())
+                    .sum();
+            
+            lblTotalDebe.setText(String.valueOf(totalDebe));
+            lblTotalHaber.setText(String.valueOf(totalHaber));
+            
             fireTableDataChanged();
         }
     }
@@ -637,12 +690,15 @@ public class RegistroAsiento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblTotalDebe;
+    private javax.swing.JLabel lblTotalHaber;
     private javax.swing.JRadioButton rbtnAbono;
     private javax.swing.JRadioButton rbtnCargo;
     private javax.swing.JTable tablaRegistrosNuevos;
