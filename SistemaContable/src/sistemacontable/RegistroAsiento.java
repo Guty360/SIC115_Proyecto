@@ -11,15 +11,25 @@ import javax.swing.JOptionPane;
 
 
 import Controladores.ControladorTablaLibroDiario;
+import ModeloContable.Categoria;
 import ModeloContable.Cuenta;
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
+import java.awt.Dimension;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import javax.swing.JDialog;
 import javax.swing.JRadioButton;
+import javax.swing.JTree;
 import javax.swing.table.AbstractTableModel;
+import javax.swing.tree.DefaultTreeModel;
+import utilidades.Nodo;
 
 /**
  *
@@ -108,7 +118,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
         btnAñadirTransaccion = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         btnGuardarNuevasTransacciones = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnArbolDeCuentas = new javax.swing.JButton();
         txtFecha = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtCuentaSeleccionada = new javax.swing.JTextField();
@@ -199,8 +209,13 @@ public class RegistroAsiento extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("Q");
-        jButton4.setToolTipText("Click para buscar una cuenta");
+        btnArbolDeCuentas.setText("Q");
+        btnArbolDeCuentas.setToolTipText("Click para buscar una cuenta");
+        btnArbolDeCuentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnArbolDeCuentasActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Fecha:");
 
@@ -231,7 +246,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(txtCuentaSeleccionada, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton4)))
+                                        .addComponent(btnArbolDeCuentas)))
                                 .addGap(22, 22, 22)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -277,7 +292,7 @@ public class RegistroAsiento extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
                             .addComponent(jLabel7)
-                            .addComponent(jButton4)
+                            .addComponent(btnArbolDeCuentas)
                             .addComponent(jLabel3)
                             .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCuentaSeleccionada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -374,6 +389,47 @@ public class RegistroAsiento extends javax.swing.JFrame {
        dispose();
         
     }//GEN-LAST:event_btnGuardarNuevasTransaccionesActionPerformed
+
+    private void btnArbolDeCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArbolDeCuentasActionPerformed
+        
+        Nodo<String> raiz = new Nodo<String>();
+        raiz.setContenido("Seleccione la cuenta");
+        
+        Map<Categoria,List<Cuenta>> arbolCuentas = cuentasDisp.stream()
+                                                              .collect(Collectors.groupingBy(cuenta -> cuenta.getCategoria()));
+        
+        Iterator<Categoria> iterCategorias = arbolCuentas.keySet().iterator();
+        
+        List<Nodo<String>> categorias = new ArrayList<>();
+        Nodo<String> nodoAnte = null;
+        
+        while(iterCategorias.hasNext()){
+            Nodo<String> nodo = new Nodo<>();
+            
+            Categoria categoria = iterCategorias.next();
+            nodo.setContenido(categoria.toString());
+            nodo.setNodoAnterior(nodoAnte);
+            nodoAnte = nodo;
+            categorias.add(nodo);
+        }
+        
+        raiz.añadirHijos(categorias);
+        
+        //categorias.stream().forEach(a -> System.out.println(a.getContenido()));
+        
+       
+       JTree arbolDeCuentas = new JTree(raiz);
+        
+        
+        JDialog dialogoSeleccionarCuenta = new JDialog(this);
+        dialogoSeleccionarCuenta.setSize(new Dimension(300,300));
+        dialogoSeleccionarCuenta.setTitle("Seleccionar cuenta");
+        
+        
+        dialogoSeleccionarCuenta.add(arbolDeCuentas);
+        
+        dialogoSeleccionarCuenta.setVisible(true);
+    }//GEN-LAST:event_btnArbolDeCuentasActionPerformed
 
     
     public Registro crearRegistroConIVA(double porcentajeIVA,double valor){
@@ -498,13 +554,13 @@ public class RegistroAsiento extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnArbolDeCuentas;
     private javax.swing.JButton btnAñadirTransaccion;
     private javax.swing.JButton btnEliminarSeleccion;
     private javax.swing.JButton btnGuardarNuevasTransacciones;
     private javax.swing.JButton btnGuardarTransaccionModificada;
     private javax.swing.ButtonGroup btngTipoTransaccion;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

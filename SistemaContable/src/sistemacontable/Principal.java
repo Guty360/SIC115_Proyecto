@@ -26,6 +26,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.util.List;
 import javax.swing.JOptionPane;
+import javax.swing.JTree;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
@@ -75,8 +76,9 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             //cuentas de prueba
             
             cuentas = new ArrayList<>();
-            cuentas.add(new Cuenta(1,"Caja"));
-            cuentas.add(new Cuenta(2,"Inventario"));
+            cuentas.add(new Cuenta(1,"Caja",Categoria.ACTIVO));
+            cuentas.add(new Cuenta(2,"Inventario",Categoria.PASIVO));
+            cuentas.add(new Cuenta(3,"Ventas",Categoria.INGRESOS));
             
             
             configurarListViewCategorias(cuentas);
@@ -87,7 +89,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             registros.add(new Registro(LocalDate.now(),cuentas.get(1), Tipo.HABER, 300));
             configurarTablaLibroDiario(registros);
             
-            
+           
             
         }
         
@@ -110,6 +112,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         JPanel panelDeCarga = new JPanel(false);
         
+        
+         
         //barra de progreso
         JProgressBar barraDeProgreso = new JProgressBar();
         barraDeProgreso.setIndeterminate(true);
@@ -1499,7 +1503,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         if(seleccion == JOptionPane.OK_OPTION)
         {
-            controladorCuentasDisp.añadirNuevaCuenta(new Cuenta(codigoCuenta, nombreCuenta));
+            //CAMBIAR POR LA CATEGORIA ----------------------------------------------------
+            controladorCuentasDisp.añadirNuevaCuenta(new Cuenta(codigoCuenta, nombreCuenta,Categoria.ACTIVO));
             
         }
         

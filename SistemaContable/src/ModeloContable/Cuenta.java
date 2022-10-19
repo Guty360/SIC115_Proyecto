@@ -19,11 +19,14 @@ public class Cuenta extends Serializacion{
     private Tipo naturaleza;
     private Categoria categoria;
 
+
+
  
 
-    public Cuenta(int codCuenta, String nombre) {
+    public Cuenta(int codCuenta, String nombre,Categoria categoria) {
         this.codCuenta = codCuenta;
         this.nombre = nombre;
+        this.categoria = categoria;
     }
 
     public Categoria getCategoria() {

@@ -67,7 +67,7 @@
                                       <Group type="102" attributes="0">
                                           <Component id="txtCuentaSeleccionada" min="-2" pref="214" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnArbolDeCuentas" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
@@ -128,7 +128,7 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnArbolDeCuentas" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtFecha" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtCuentaSeleccionada" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -310,11 +310,14 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarNuevasTransaccionesActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="btnArbolDeCuentas">
           <Properties>
             <Property name="text" type="java.lang.String" value="Q"/>
             <Property name="toolTipText" type="java.lang.String" value="Click para buscar una cuenta"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnArbolDeCuentasActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtFecha">
         </Component>
