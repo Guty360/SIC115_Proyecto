@@ -136,7 +136,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         @Override
         protected List<Cuenta> doInBackground() throws Exception {
-            
+            /*
             registrosAgrupadosPorCuentas = asientos
                     .stream()
                     .collect(Collectors.groupingBy(Registro::getCuenta));
@@ -155,18 +155,30 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         );
                        return cuenta;
                    }).toList().forEach(System.out::println);
+           */
             //solucion imperativa
             
             for(Cuenta cuenta: cuentas){
-                
+                double totalHaber = 0,totalDebe = 0;
                 for(Registro registro: asientos){
                     if(registro.getCuenta().equals(cuenta)){
-                        
-                    }
-                }
+                       switch(registro.getTipo()){
+                           case DEBE:
+                               totalDebe += registro.getValor();
+                               break;
+                           case HABER:
+                               totalHaber += registro.getValor();
+                       } 
+                    } 
+                }                    
+                cuenta.setTotalDebe(totalDebe);
+                cuenta.setTotalHaber(totalHaber);
+                cuenta.setSaldo(totalDebe-totalHaber);
+                if(cuenta.getSaldo()>0) cuenta.setNaturaleza(Tipo.ACREEDORA);
+                else cuenta.setNaturaleza(Tipo.DEUDORA);
             }
             
-            
+            cuentas.stream().filter(cuenta -> cuenta.getSaldo()!=0).forEach(System.out::println);
             return null;
         }
         
