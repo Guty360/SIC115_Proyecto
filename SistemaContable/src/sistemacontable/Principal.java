@@ -299,8 +299,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         btnCrearNuevoArchivoInfc = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        cmbOrdenTransacciones = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         tablaLibroDiario = new javax.swing.JTable();
         btnAnadirTransaccion = new javax.swing.JButton();
@@ -310,13 +308,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jButton6 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        tblComprobacion = new javax.swing.JTable();
-        btnActualizar = new javax.swing.JButton();
+        tablaBalanzaComprobacion = new javax.swing.JTable();
+        btnGenerarBalanzaComprobacion = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         txtHaber = new javax.swing.JTextField();
         txtDebe = new javax.swing.JTextField();
-        txtHaber1 = new javax.swing.JTextField();
-        txtHaber2 = new javax.swing.JTextField();
+        lblInforBalanzaComprobacion = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblEstadoResultado = new javax.swing.JTable();
@@ -538,10 +535,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         jLabel4.setText("Transacciones:");
 
-        jLabel5.setText("Ordenadas por:");
-
-        cmbOrdenTransacciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Más recientes", "Más antiguas" }));
-
         tablaLibroDiario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -580,29 +573,21 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGap(17, 17, 17)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnAnadirTransaccion)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(cmbOrdenTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(cmbOrdenTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
+                .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(110, 110, 110)
                 .addComponent(btnAnadirTransaccion)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Libro diario", jPanel2);
@@ -629,7 +614,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         tablaLibroMayor.getTableHeader().setReorderingAllowed(false);
         jScrollPane6.setViewportView(tablaLibroMayor);
 
-        jButton6.setText("Generar Libro Mayor");
+        jButton6.setText("Generar libro mayor");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -653,29 +638,29 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGap(17, 17, 17)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addComponent(jButton6)
+                .addContainerGap(156, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Libro mayor", jPanel3);
 
-        tblComprobacion.setModel(new javax.swing.table.DefaultTableModel(
+        tablaBalanzaComprobacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Código", "Nombre de la cuenta", "Debe", "Haber", "Saldo Deudor", "Saldo Acreedor"
+                "Código", "Cuenta", "Debe", "Haber"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Object.class
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -686,10 +671,15 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane3.setViewportView(tblComprobacion);
+        jScrollPane3.setViewportView(tablaBalanzaComprobacion);
 
-        btnActualizar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnActualizar.setText("ACTUALIZAR");
+        btnGenerarBalanzaComprobacion.setText("Generar balanza de comprobación.");
+        btnGenerarBalanzaComprobacion.setEnabled(false);
+        btnGenerarBalanzaComprobacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGenerarBalanzaComprobacionActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("TOTAL");
 
@@ -697,9 +687,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtDebe.setEditable(false);
 
-        txtHaber1.setEditable(false);
-
-        txtHaber2.setEditable(false);
+        lblInforBalanzaComprobacion.setText("Debe generar el libro mayor primero.");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -707,25 +695,23 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(btnGenerarBalanzaComprobacion)
+                .addGap(18, 18, 18)
+                .addComponent(lblInforBalanzaComprobacion)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(160, 160, 160)
                         .addComponent(jLabel7)
-                        .addGap(90, 90, 90)
-                        .addComponent(txtDebe, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtHaber, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtHaber2, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtHaber1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(16, 16, 16))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtDebe, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtHaber, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -737,12 +723,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addComponent(jLabel7)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtHaber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtDebe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtHaber1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtHaber2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(27, 27, 27)
-                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                        .addComponent(txtDebe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGenerarBalanzaComprobacion)
+                    .addComponent(lblInforBalanzaComprobacion))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
 
         contenedorPestañas.addTab("Balance comprobación", jPanel4);
@@ -1723,7 +1709,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
        GeneradorLibroMayor generadorLibroMayor = new GeneradorLibroMayor();
        generadorLibroMayor.execute();
-        
+       btnGenerarBalanzaComprobacion.setEnabled(true);
+       lblInforBalanzaComprobacion.setVisible(false);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void btnCrearNuevoArchivoInfcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearNuevoArchivoInfcActionPerformed
@@ -1745,6 +1732,35 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
 
     }//GEN-LAST:event_btnCrearNuevoArchivoInfcActionPerformed
+
+    private void btnGenerarBalanzaComprobacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarBalanzaComprobacionActionPerformed
+        var cuentasSaldoReal = cuentas.stream()
+                .filter(cuenta -> cuenta.getSaldo()!= 0)
+                .toList();
+        ControladorTablaBalanzaComprobacion controladorTablaBalanzaComprobacion = new ControladorTablaBalanzaComprobacion(cuentasSaldoReal);
+        tablaBalanzaComprobacion.setModel(controladorTablaBalanzaComprobacion);
+        
+        var colModel = tablaBalanzaComprobacion.getColumnModel();
+        
+        for(int j=0;j<colModel.getColumnCount();j++){
+            if(j==0) colModel.getColumn(j).setHeaderValue("Código");
+            if(j==1) colModel.getColumn(j).setHeaderValue("Cuenta");
+            if(j==2) colModel.getColumn(j).setHeaderValue("Debe");
+            if(j==3) colModel.getColumn(j).setHeaderValue("Haber");
+        }
+        
+        double totalDebeBalanzaComprobacion = cuentasSaldoReal.stream()
+                                                .filter(cuenta -> cuenta.getSaldo()> 0)
+                                                .mapToDouble(Cuenta::getSaldo)
+                                                .sum();
+        double totalHaberBalanzaComprobacion = cuentasSaldoReal.stream()
+                                                .filter(cuenta -> cuenta.getSaldo()< 0)
+                                                .mapToDouble(Cuenta::getSaldo)
+                                                .sum();
+      
+    txtDebe.setText(String.valueOf(totalDebeBalanzaComprobacion));
+    txtHaber.setText(String.valueOf(Math.abs(totalHaberBalanzaComprobacion)));
+    }//GEN-LAST:event_btnGenerarBalanzaComprobacionActionPerformed
 
     //metodos utilitarios
     public void limpiarTxtPestañaCuentas(){
@@ -1794,12 +1810,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAbrirArchivo;
-    private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnAnadirCuenta;
     private javax.swing.JButton btnAnadirTransaccion;
     private javax.swing.JButton btnCrearNuevoArchivoInfc;
+    private javax.swing.JButton btnGenerarBalanzaComprobacion;
     private javax.swing.JButton btnModificarCuenta;
-    private javax.swing.JComboBox<String> cmbOrdenTransacciones;
     private javax.swing.JComboBox<String> cmbSeleccionarCuenta;
     private javax.swing.JTabbedPane contenedorPestañas;
     private javax.swing.JButton jButton1;
@@ -1852,7 +1867,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1886,10 +1900,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JLabel lblInforBalanzaComprobacion;
     private javax.swing.JList<String> lstCuentasDisponibles;
+    private javax.swing.JTable tablaBalanzaComprobacion;
     private javax.swing.JTable tablaLibroDiario;
     private javax.swing.JTable tablaLibroMayor;
-    private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
     private javax.swing.JTable tblUtilidadPerdida;
     private javax.swing.JTextField txtAFP;
@@ -1910,8 +1925,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtFactorSemana;
     private javax.swing.JTextField txtFactorSemanaEficiencia;
     private javax.swing.JTextField txtHaber;
-    private javax.swing.JTextField txtHaber1;
-    private javax.swing.JTextField txtHaber2;
     private javax.swing.JTextField txtHora;
     private javax.swing.JTextField txtHoraEficiencia;
     private javax.swing.JTextField txtHoras;

@@ -14,6 +14,11 @@ import javax.swing.table.AbstractTableModel;
  */
 public class ControladorTablaBalanzaComprobacion extends AbstractTableModel{
     private List<Cuenta> cuentasSaldadas;
+
+    public ControladorTablaBalanzaComprobacion(List<Cuenta> cuentasSaldadas) {
+        this.cuentasSaldadas = cuentasSaldadas;
+    }
+    
     
     
     @Override
@@ -23,12 +28,22 @@ public class ControladorTablaBalanzaComprobacion extends AbstractTableModel{
 
     @Override
     public int getColumnCount() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return 4;
     }
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+        Cuenta cuenta = cuentasSaldadas.get(rowIndex);
+        double saldoCuenta = cuenta.getSaldo();
+        switch (columnIndex) {
+            case 0: return cuenta.getCodCuenta();
+            case 1: return cuenta.getNombre();
+            case 2: return (saldoCuenta > 0)? saldoCuenta:""; 
+            case 3: return (saldoCuenta < 0)? Math.abs(saldoCuenta): "";
+            default: return null;
+        }
+        
     }
     
 }
