@@ -16,6 +16,10 @@ import ModeloContable.Cuenta;
 import ModeloContable.Registro;
 import ModeloContable.Tipo;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -27,21 +31,26 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JDialog;
-import javax.swing.JTable;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.JTree;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.table.AbstractTableModel;
+import utilidades.DialogoCrearRegistroDeIVA;
 import utilidades.Nodo;
 
 /**
  *
  * @author pc
  */
-public class RegistroAsiento extends javax.swing.JFrame implements PropertyChangeListener{
+public class RegistroAsiento extends javax.swing.JFrame implements PropertyChangeListener,ActionListener{
     private ControladorTablaLibroDiario controladorTablaLibroDiario;
     private ControladorTablaRegistro controladorTablaRegistro;
     private List<Registro> nuevosRegistros;
@@ -64,6 +73,20 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
             btnGuardarNuevasTransacciones.setEnabled(true);
         }
     }
+
+    ///ELIMINARRRR ---------------------------------
+
+    
+
+    
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        if(e.getActionCommand().equals("OK")) System.out.println("A presionado el boton de OK");
+        
+    }
     
     class VerificadorValorRegistro extends InputVerifier{
 
@@ -81,9 +104,8 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         }
         
     }
-    /**
-     * Creates new form RegistroAsiento
-     */
+    
+ 
     public RegistroAsiento(ControladorTablaLibroDiario controladorTablaLibroDiario,List<Cuenta> cuentasDisp) {
         this.setVisible(rootPaneCheckingEnabled);
         initComponents();
@@ -104,6 +126,7 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         cambioListaRegistros = new PropertyChangeSupport(nuevosRegistros);
         cambioListaRegistros.addPropertyChangeListener(this);
         
+
     }
 
     /**
@@ -203,6 +226,11 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         jLabel1.setText("Incluye IVA:");
 
         tieneIVA.setText("IVA");
+        tieneIVA.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                tieneIVAItemStateChanged(evt);
+            }
+        });
 
         jLabel2.setText("Descripción de la transacción:");
 
@@ -407,8 +435,17 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
                 .findFirst()
                 .get();
         
+        
          if(tieneIVA.isSelected()){
-            controladorTablaRegistro.añadirNuevoRegistro(crearRegistroConIVA(0.13,valor,cuentaSeleccionada.getCategoria()));
+             Registro registroIVA =  new Registro();
+             registroIVA.setValor(valor*0.13);
+             registroIVA.setFechaRegistro(LocalDate.parse(txtFecha.getText()));
+             registroIVA.getDescripcion().append(txtDescripcion.getText());
+             DialogoCrearRegistroDeIVA dialogoCrearRegistroDeIVA = new DialogoCrearRegistroDeIVA(this, true, cuentasDisp,registroIVA);
+             dialogoCrearRegistroDeIVA.setVisible(true);
+                
+            controladorTablaRegistro.añadirNuevoRegistro(registroIVA);
+            
         }
          
         registroNuevo.setCuenta(cuentaSeleccionada);
@@ -485,6 +522,10 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         dialogoSeleccionarCuenta.setVisible(true);
     }//GEN-LAST:event_btnArbolDeCuentasActionPerformed
 
+    private void tieneIVAItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_tieneIVAItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tieneIVAItemStateChanged
+
     public void añadirHijosDesdeLista(Nodo<String> nodoRaiz,Map<Categoria,List<Cuenta>> agrupacionPorCategoria){
         
         List<Nodo<String>> hijosNodoRaiz = nodoRaiz.getNodosHijos();
@@ -540,25 +581,13 @@ public class RegistroAsiento extends javax.swing.JFrame implements PropertyChang
         raiz.añadirHijos(categorias);
     }
     
-    public Registro crearRegistroConIVA(double porcentajeIVA,double valor,Categoria categoriaCuenta){
-        Cuenta cuentaIVA ;
-        Tipo tipoTransaccionIva;
+    public Registro crearRegistroConIVA(Tipo tipoTransaccionIva,double porcentajeIVA,double valor,String nombreCuentaIVA){
+        Cuenta cuentaIVA  = cuentasDisp.stream()
+                .filter(cuenta -> cuenta.getNombre().equals(nombreCuentaIVA))
+                .findFirst()
+                .get();
+      
         
-        if(tipoTransaccion.equals(Tipo.HABER)){
-            cuentaIVA = cuentasDisp.stream()
-                            .filter(cuenta -> cuenta.getNombre().equals("IVA credito fiscal"))
-                            .findFirst()
-                            .get();
-            tipoTransaccionIva = Tipo.DEBE;
-        }else{
-            cuentaIVA = cuentasDisp.stream()
-                    .filter(cuenta -> cuenta.getNombre().contains("IVA debito fiscal"))
-                    .findFirst()
-                    .get();
-            tipoTransaccionIva = Tipo.HABER;
-        }
-        
-        System.out.println(tipoTransaccion);
         Registro registroIVA = new Registro();
         
         registroIVA.setCuenta(cuentaIVA);

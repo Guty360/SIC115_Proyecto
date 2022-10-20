@@ -4,22 +4,21 @@
  */
 package Controladores;
 
-import ModeloContable.*;
+import ModeloContable.Cuenta;
 import java.util.List;
-import javax.swing.JTable;
-import javax.swing.SwingWorker;
 import javax.swing.table.AbstractTableModel;
 
 /**
  *
  * @author pc
  */
-public class ControladorLibroMayor extends AbstractTableModel{
+public class ControladorTablaBalanzaComprobacion extends AbstractTableModel{
+    private List<Cuenta> cuentasSaldadas;
     
-
+    
     @Override
     public int getRowCount() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return cuentasSaldadas.size();
     }
 
     @Override
@@ -31,11 +30,5 @@ public class ControladorLibroMayor extends AbstractTableModel{
     public Object getValueAt(int rowIndex, int columnIndex) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-   
-    
-    
-    
-    
     
 }
