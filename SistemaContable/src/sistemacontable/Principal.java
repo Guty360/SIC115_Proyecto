@@ -26,11 +26,12 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 import Persistencia.PersistenciaDeDatos;
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
+import java.util.Map;
 import javax.swing.JFileChooser;
 import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileFilter;
@@ -65,9 +66,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         @Override
         protected InformacionContable doInBackground() throws Exception {
-            
-            
-                
             return persistenciaDeDatos.recuperarDatos();
         }
         
@@ -76,10 +74,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             
             inicializacionDeDatosDialog.dispose();
             
-            System.out.println("YAAAA"+SwingUtilities.isEventDispatchThread());
             try {
                 informacionContable = get();
-                
             } catch (InterruptedException | ExecutionException ex) {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -88,7 +84,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 libroMayor = (LibroMayor)informacionContable.getLibroMayor();
                 cuentas = libroMayor.getCuentas();
                 libroDiario = (LibroDiario)informacionContable.getLibroDiario();
-                System.out.println(libroDiario.getAsientos());
+                asientos = libroDiario.getAsientos();
             }else{
                 informacionContable = new InformacionContable();
                 libroMayor = new LibroMayor();
@@ -98,7 +94,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 informacionContable.setLibroMayor(libroMayor);
                 informacionContable.setLibroDiario(libroDiario);
                 cuentas = libroMayor.getCuentas();
-                
+                asientos = libroDiario.getAsientos();
             }
             
            
@@ -123,17 +119,63 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
             } catch (IOException ex) {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
             */
+            
             
             configurarListViewCuentasDisponibles(cuentas);
             
-            configurarTablaLibroDiario(libroDiario.getAsientos());
+            configurarTablaLibroDiario(asientos);
             configurarSeleccionCuenta();
             
         }
     }
 
+    
+    class GeneradorLibroMayor extends SwingWorker<List<Cuenta>, Integer>{
+        Map<Cuenta,List<Registro>> registrosAgrupadosPorCuentas ;
+        
+        @Override
+        protected List<Cuenta> doInBackground() throws Exception {
+            
+            registrosAgrupadosPorCuentas = asientos
+                    .stream()
+                    .collect(Collectors.groupingBy(Registro::getCuenta));
+            
+           Map<Boolean,List<Registro>> registrosAgrupadosPorTipoTransaccion = asientos.stream()
+                                        .collect(Collectors.partitioningBy(registro -> registro.getTipo() == Tipo.DEBE));
+                
+            
+           cuentas.stream()
+                   .map(cuenta -> {
+                        cuenta.setSaldo(asientos.stream()
+                                           .filter(asientos-> asientos.getCuenta().equals(cuenta))
+                                           .filter(asientoCuentaActual -> asientoCuentaActual.getTipo().equals(Tipo.DEBE))
+                                           .mapToDouble(asiento -> asiento.getValor())
+                                           .sum()
+                        );
+                       return cuenta;
+                   }).toList().forEach(System.out::println);
+            //solucion imperativa
+            
+            for(Cuenta cuenta: cuentas){
+                
+                for(Registro registro: asientos){
+                    if(registro.getCuenta().equals(cuenta)){
+                        
+                    }
+                }
+            }
+            
+            
+            return null;
+        }
+        
+        @Override
+        public void done(){
+            
+        }
+        
+    }
     /**
      * Creates new form Principal
      */
@@ -520,6 +562,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jScrollPane6.setViewportView(jTable1);
 
         jButton6.setText("Generar Libro Mayor");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1599,12 +1646,17 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         try {
             persistenciaDeDatos.guardarDatos(informacionContable);
-            System.out.println(informacionContable);
         } catch (IOException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }//GEN-LAST:event_onClosing
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+       GeneradorLibroMayor generadorLibroMayor = new GeneradorLibroMayor();
+       generadorLibroMayor.execute();
+        
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     //metodos utilitarios
     public void limpiarTxtPestañaCuentas(){
@@ -1624,7 +1676,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                System.out.println(info.getClassName());
                 if ("Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;

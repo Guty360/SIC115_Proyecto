@@ -44,7 +44,6 @@ public class PersistenciaDeDatos {
         
         fileOutputStream = new FileOutputStream(archivo);
         objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        System.out.println(informacionContable);
         objectOutputStream.writeObject(informacionContable);
         objectOutputStream.close();
         objectOutputStream.flush();
