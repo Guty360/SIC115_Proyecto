@@ -6,26 +6,24 @@ package ModeloContable;
 
 import java.util.List;
 import java.time.LocalDate;
-import java.util.ArrayList;
 /**
  *
  * @author pc
  */
 public class LibroDiario extends Serializacion{
-    private List<Registro> asientos = new ArrayList<>();
-    private LocalDate fecha;
+    private List<Asiento> asientos;
 
-  
+    public LibroDiario(List<Asiento> asientos, LocalDate fechaLocal) {
+        this.asientos = asientos;
+    }
 
-    public List<Registro> getAsientos() {
+    public List<Asiento> getAsientos() {
         return asientos;
     }
-    
-    public void añadirRegistros(List<Registro> registros){
-        asientos.addAll(registros);
+
+    public void setAsientos(List<Asiento> asientos) {
+        this.asientos = asientos;
     }
-
-
 
 
     @Override
