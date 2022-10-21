@@ -4,6 +4,8 @@
  */
 package ModeloContable;
 
+import java.util.List;
+
 /**
  *
  * @author pc
@@ -15,15 +17,27 @@ public class Cuenta extends Serializacion{
     private double totalHaber;
     private double saldo;
     private Tipo naturaleza;
+    private Categoria categoria;
 
-    public Cuenta(int codCuenta, String nombre, double totalDebe, double totalHaber, double saldo, Tipo naturaleza) {
+
+
+ 
+
+    public Cuenta(int codCuenta, String nombre,Categoria categoria) {
         this.codCuenta = codCuenta;
         this.nombre = nombre;
-        this.totalDebe = totalDebe;
-        this.totalHaber = totalHaber;
-        this.saldo = saldo;
-        this.naturaleza = naturaleza;
+        this.categoria = categoria;
     }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+    
+    
 
     public int getCodCuenta() {
         return codCuenta;

@@ -4,6 +4,7 @@
  */
 package ModeloContable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,34 +12,23 @@ import java.util.List;
  * @author pc
  */
 public class LibroMayor extends Serializacion{
-   List<Cuenta> cuentas;
+   private final List<Cuenta> cuentas = new ArrayList<>();
    List<LibroDiario> libroDiarios;
-   List<Asiento> ajustes;
+   List<Registro> ajustes;
 
    public LibroMayor(){}
    
    
-    public LibroMayor(List<Cuenta> cuentas, List<Asiento> ajustes,List<LibroDiario> librosDiarios) {
-        this.cuentas = cuentas;
-        this.ajustes = ajustes;
-        this.libroDiarios = librosDiarios;
-    }
+
 
     public List<Cuenta> getCuentas() {
         return cuentas;
     }
 
-    public void setCuentas(List<Cuenta> cuentas) {
-        this.cuentas = cuentas;
+    public void añadirCuentas(List<Cuenta> cuentas){
+        this.cuentas.addAll(cuentas);
     }
 
-    public List<Asiento> getAjustes() {
-        return ajustes;
-    }
-
-    public void setAjustes(List<Asiento> ajustes) {
-        this.ajustes = ajustes;
-    }
 
     public List<LibroDiario> getLibroDiarios() {
         return libroDiarios;

@@ -7,32 +7,42 @@ package Controladores;
 import ModeloContable.Cuenta;
 import java.util.List;
 import static java.util.stream.Collectors.toList;
+import javax.swing.AbstractListModel;
 import javax.swing.DefaultListModel;
 
 /**
  *
  * @author pc
  */
-public class ControladorListadoCuentasDisponibles extends DefaultListModel<String>{
+public class ControladorListadoCuentasDisponibles extends AbstractListModel<String>{
     List<Cuenta> listadoCuentas;
-    
-    public ControladorListadoCuentasDisponibles(List<Cuenta> cuentas){
-        this.listadoCuentas = cuentas;
-        this.addAll(nombresCuentas(listadoCuentas));
-        
-        
-    }
-    
-    public final List<String> nombresCuentas(List<Cuenta> cuentas){
-        return cuentas.stream().map( c -> c.getNombre()).collect(toList());
-    }
 
+  
+    
+    
     public List<Cuenta> getListadoCuentas() {
         return listadoCuentas;
     }
 
     public void setListadoCuentas(List<Cuenta> listadoCuentas) {
         this.listadoCuentas = listadoCuentas;
+    }
+
+    @Override
+    public int getSize() {
+        return listadoCuentas.size();
+    }
+
+    @Override
+    public String getElementAt(int index) {
+        return listadoCuentas.get(index).getNombre();
+    }
+
+    public void añadirNuevaCuenta(Cuenta cuentaNueva){
+        listadoCuentas.add(cuentaNueva);
+        fireIntervalAdded(this, 0, 0);
+        
+        
     }
     
     
