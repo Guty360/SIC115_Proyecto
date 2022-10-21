@@ -3209,7 +3209,7 @@
                                           <Component id="jLabel117" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtSalarioSupMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtSalarioOfiMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtManoManteniminetoProductivo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtManoMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtMaterialMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtSumiMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtHerraMantenimientoProductivo" alignment="0" max="32767" attributes="0"/>
@@ -3248,7 +3248,7 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="txtSalarioOfiMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="txtManoManteniminetoProductivo" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtManoMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="txtMaterialMantenimientoProductivo" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -3764,7 +3764,7 @@
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtManoManteniminetoProductivo">
+                    <Component class="javax.swing.JTextField" name="txtManoMantenimientoProductivo">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -4240,7 +4240,7 @@
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="102" attributes="0">
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="jTextField152" min="-2" pref="93" max="-2" attributes="0"/>
+                                              <Component id="txtTotalPresupuesto" min="-2" pref="93" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="1" attributes="0">
@@ -4331,7 +4331,7 @@
                                                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                                           </Group>
                                                           <Group type="102" attributes="0">
-                                                              <Component id="txtTotalVManteniemintoSoft" max="32767" attributes="0"/>
+                                                              <Component id="txtTotalVMantenimientoSoft" max="32767" attributes="0"/>
                                                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
@@ -4350,7 +4350,7 @@
                                                               <Component id="txtSalarioSupInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="txtSalarioOfiInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="txtSumiInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
-                                                              <Component id="txtHerraInfraestrucutraServicio" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="txtHerraInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="txtOtrosInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="txtDepreciacionInfraestructuraServicio" alignment="0" max="32767" attributes="0"/>
                                                               <Component id="jLabel136" alignment="0" max="32767" attributes="0"/>
@@ -4432,7 +4432,7 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="txtTotalServicioPrivado" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField152" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtTotalPresupuesto" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                       <Component id="txtTotalCalidad" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -4531,7 +4531,7 @@
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="txtSumiInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="txtHerraInfraestrucutraServicio" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txtHerraInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="txtOtrosInfraestructuraServicio" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -4592,7 +4592,7 @@
                                   <Component id="txtTotalVInsumo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtTotalTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtTotalVInfraestructura" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtTotalVManteniemintoSoft" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTotalVMantenimientoSoft" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
@@ -4886,7 +4886,7 @@
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtHerraInfraestrucutraServicio">
+                    <Component class="javax.swing.JTextField" name="txtHerraInfraestructuraServicio">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -5007,7 +5007,7 @@
                         <Property name="text" type="java.lang.String" value="TOTALES"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField152">
+                    <Component class="javax.swing.JTextField" name="txtTotalPresupuesto">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -5032,7 +5032,7 @@
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtTotalVManteniemintoSoft">
+                    <Component class="javax.swing.JTextField" name="txtTotalVMantenimientoSoft">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>

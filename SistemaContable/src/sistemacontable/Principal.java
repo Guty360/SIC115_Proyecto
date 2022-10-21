@@ -5,7 +5,7 @@
 package sistemacontable;
 
 
-
+import java.text. DecimalFormat;
 import Controladores.ControladorListadoCuentasDisponibles;
 import ModeloContable.Cuenta;
 import ModeloContable.InformacionContable;
@@ -443,7 +443,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtServicioPublicoMantenimientoProductivo = new javax.swing.JTextField();
         txtSalarioOfiMantenimientoProductivo = new javax.swing.JTextField();
         txtServicioPrivadoMantenimientoProductivo = new javax.swing.JTextField();
-        txtManoManteniminetoProductivo = new javax.swing.JTextField();
+        txtManoMantenimientoProductivo = new javax.swing.JTextField();
         txtMaterialMantenimientoProductivo = new javax.swing.JTextField();
         txtCalidadMantenimientoProductivo = new javax.swing.JTextField();
         txtSumiMantenimientoProductivo = new javax.swing.JTextField();
@@ -552,7 +552,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtCalidadInfraestructuraServicio = new javax.swing.JTextField();
         txtSumiInfraestructuraServicio = new javax.swing.JTextField();
         txtInsumoInfraestructuraServicio = new javax.swing.JTextField();
-        txtHerraInfraestrucutraServicio = new javax.swing.JTextField();
+        txtHerraInfraestructuraServicio = new javax.swing.JTextField();
         txtMantenimientoSoftInfraestructuraServicio = new javax.swing.JTextField();
         txtOtrosInfraestructuraServicio = new javax.swing.JTextField();
         txtInfraestructuraInfraestructuraServicio = new javax.swing.JTextField();
@@ -576,12 +576,12 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtTotalSalarioSup = new javax.swing.JTextField();
         jLabel136 = new javax.swing.JLabel();
         jLabel137 = new javax.swing.JLabel();
-        jTextField152 = new javax.swing.JTextField();
+        txtTotalPresupuesto = new javax.swing.JTextField();
         txtTotalVCalidad = new javax.swing.JTextField();
         txtTotalVInsumo = new javax.swing.JTextField();
         txtTotalTotal = new javax.swing.JTextField();
         txtTotalVInfraestructura = new javax.swing.JTextField();
-        txtTotalVManteniemintoSoft = new javax.swing.JTextField();
+        txtTotalVMantenimientoSoft = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2390,7 +2390,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtServicioPrivadoMantenimientoProductivo.setEditable(false);
 
-        txtManoManteniminetoProductivo.setEditable(false);
+        txtManoMantenimientoProductivo.setEditable(false);
 
         txtMaterialMantenimientoProductivo.setEditable(false);
 
@@ -2557,7 +2557,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                             .addComponent(jLabel117, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtSalarioSupMantenimientoProductivo)
                             .addComponent(txtSalarioOfiMantenimientoProductivo)
-                            .addComponent(txtManoManteniminetoProductivo)
+                            .addComponent(txtManoMantenimientoProductivo)
                             .addComponent(txtMaterialMantenimientoProductivo)
                             .addComponent(txtSumiMantenimientoProductivo)
                             .addComponent(txtHerraMantenimientoProductivo)
@@ -2590,7 +2590,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtSalarioOfiMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtManoManteniminetoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtManoMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtMaterialMantenimientoProductivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -3001,7 +3001,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtInsumoInfraestructuraServicio.setEditable(false);
 
-        txtHerraInfraestrucutraServicio.setEditable(false);
+        txtHerraInfraestructuraServicio.setEditable(false);
 
         txtMantenimientoSoftInfraestructuraServicio.setEditable(false);
 
@@ -3050,7 +3050,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         jLabel137.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel137.setText("TOTALES");
 
-        jTextField152.setEditable(false);
+        txtTotalPresupuesto.setEditable(false);
 
         txtTotalVCalidad.setEditable(false);
 
@@ -3060,7 +3060,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
 
         txtTotalVInfraestructura.setEditable(false);
 
-        txtTotalVManteniemintoSoft.setEditable(false);
+        txtTotalVMantenimientoSoft.setEditable(false);
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -3080,7 +3080,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel22Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jTextField152, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtTotalPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel22Layout.createSequentialGroup()
                                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel22Layout.createSequentialGroup()
@@ -3153,7 +3153,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                                     .addComponent(jLabel135, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE))
                                                 .addGap(25, 25, 25))
                                             .addGroup(jPanel22Layout.createSequentialGroup()
-                                                .addComponent(txtTotalVManteniemintoSoft)
+                                                .addComponent(txtTotalVMantenimientoSoft)
                                                 .addGap(30, 30, 30)))
                                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtTotalVInfraestructura, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3170,7 +3170,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                                 .addComponent(txtSalarioSupInfraestructuraServicio)
                                                 .addComponent(txtSalarioOfiInfraestructuraServicio)
                                                 .addComponent(txtSumiInfraestructuraServicio)
-                                                .addComponent(txtHerraInfraestrucutraServicio)
+                                                .addComponent(txtHerraInfraestructuraServicio)
                                                 .addComponent(txtOtrosInfraestructuraServicio)
                                                 .addComponent(txtDepreciacionInfraestructuraServicio)
                                                 .addComponent(jLabel136, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -3237,7 +3237,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtTotalServicioPrivado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField152, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTotalPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17)
                         .addComponent(txtTotalCalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -3330,7 +3330,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(txtSumiInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(txtHerraInfraestrucutraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtHerraInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(txtOtrosInfraestructuraServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -3384,7 +3384,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                     .addComponent(txtTotalVInsumo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTotalTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTotalVInfraestructura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTotalVManteniemintoSoft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTotalVMantenimientoSoft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
         );
 
@@ -3649,6 +3649,328 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         txtTotalConsumo.setText("" + sumaConsumo);
         txtTotalEmpleado.setText("" + sumaEmpleado);
         txtTotalHoraHombre.setText("" + sumaHora);
+        
+        //Procesos para el llenado de la tabla grande
+        //Varibales de proceso a utilizar
+        //Primera parte de la tabla
+        double salarioSup_Analisis, salarioSup_Diseno, salarioSup_Desarrollo, salarioSup_Prueba, salarioSup_Mantenimiento, salarioSup_Calidad, salarioSup_Insumo, salarioSup_MantenimientoSoft, salarioSup_Infraestructura;
+        double salarioOfi_Calidad, salarioOfi_Insumo, salarioOfi_MantenimientoSoft, salarioOfi_Infraestructura;
+        double mano_Analisis, mano_Diseno, mano_Desarrollo, mano_Prueba, mano_Mantenimiento;
+        double materiales_Analisis, materiales_Diseno, materiales_Desarrollo, materiales_Prueba, materiales_Mantenimiento;
+        double suministros_Analisis, suministros_Diseno, suministros_Desarrollo, suministros_Prueba, suministros_Mantenimiento;
+        double herramientas_Analisis, herramientas_Diseno, herramientas_Desarrollo, herramientas_Prueba, herramientas_Mantenimiento, herramientas_Calidad, herramientas_Insumo, herramientas_MantenimientoSoft, herramientas_Infraestructura;
+        double otros_Analisis, otros_Diseno, otros_Desarrollo, otros_Prueba, otros_Mantenimiento, otros_Calidad, otros_Insumo, otros_MantenimientoSoft, otros_Infraestructura;
+        double depreciacion_Analisis, depreciacion_Diseno, depreciacion_Desarrollo, depreciacion_Prueba, depreciacion_Mantenimiento, depreciacion_Calidad, depreciacion_Insumo, depreciacion_MantenimientoSoft, depreciacion_Infraestructura;
+        double impuestos_Analisis, impuestos_Diseno, impuestos_Desarrollo, impuestos_Prueba, impuestos_Mantenimiento, impuestos_Calidad, impuestos_Insumo, impuestos_MantenimientoSoft, impuestos_Infraestructura;
+        double servicioPublico_Analisis, servicioPublico_Diseno, servicioPublico_Desarrollo, servicioPublico_Prueba, servicioPublico_Mantenimiento, servicioPublico_Calidad, servicioPublico_Insumo, servicioPublico_MantenimientoSoft, servicioPublico_Infraestructura;
+        double servicioPrivado_Analisis, servicioPrivado_Diseno, servicioPrivado_Desarrollo, servicioPrivado_Prueba, servicioPrivado_Mantenimiento, servicioPrivado_Calidad, servicioPrivado_Insumo, servicioPrivado_MantenimientoSoft, servicioPrivado_Infraestructura;
+        double mantenimiento_Analisis, mantenimiento_Diseno, mantenimiento_Desarrollo, mantenimiento_Prueba, mantenimiento_Mantenimiento, mantenimiento_Calidad, mantenimiento_Insumo, mantenimiento_MantenimientoSoft, mantenimiento_Infraestructura;
+        //Segunda parte
+         double calidad_Analisis, calidad_Diseno, calidad_Desarrollo, calidad_Prueba, calidad_Mantenimiento;
+         double insumos_Analisis, insumos_Diseno, insumos_Desarrollo, insumos_Prueba, insumos_Mantenimiento;
+         double mantenimientoSoft_Analisis, mantenimientoSoft_Diseno, mantenimientoSoft_Desarrollo, mantenimientoSoft_Prueba, mantenimientoSoft_Mantenimiento;
+         double infraestructura_Analisis, infraestructura_Diseno, infraestructura_Desarrollo, infraestructura_Prueba, infraestructura_Mantenimiento;
+         //Suma de las columnas
+         double sumaAnalisis, sumaDiseno, sumaDesarrollo, sumaPrueba, sumaMantenimiento, sumaCalidad, sumaInsumo, sumaMantenimientoSoft, sumaInfraestructura; 
+         //Suma de las filas
+         
+        //Procesos y calculos respectivos
+         //Fila de salario supervision
+         salarioSup_Analisis = (analisisEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Diseno = (disenoEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Desarrollo = (desarrolloEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Prueba = (pruebaEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Mantenimiento = (mantenimientoEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Calidad = (calidadEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Insumo = (insumoEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_MantenimientoSoft = (mantenimientoSoftEmpleado/sumaEmpleado)*salarioSup;
+         salarioSup_Infraestructura = (mantenimientoDepaEmpleado/sumaEmpleado)*salarioSup;
+         //Fila de salario oficina
+         salarioOfi_Calidad = (calidadEmpleado/(calidadEmpleado + insumoEmpleado + mantenimientoSoftEmpleado + mantenimientoDepaEmpleado))*salarioOfi;
+         salarioOfi_Insumo = (insumoEmpleado/(calidadEmpleado + insumoEmpleado + mantenimientoSoftEmpleado + mantenimientoDepaEmpleado))*salarioOfi;
+         salarioOfi_MantenimientoSoft = (mantenimientoSoftEmpleado/(calidadEmpleado + insumoEmpleado + mantenimientoSoftEmpleado + mantenimientoDepaEmpleado))*salarioOfi;
+         salarioOfi_Infraestructura = (mantenimientoDepaEmpleado/(calidadEmpleado + insumoEmpleado + mantenimientoSoftEmpleado + mantenimientoDepaEmpleado))*salarioOfi;
+         //Fila Mano de obra indirecta
+         mano_Analisis = (analisisEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*manoObraIndirecta;
+         mano_Diseno = (disenoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*manoObraIndirecta;
+         mano_Desarrollo = (desarrolloEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*manoObraIndirecta;
+         mano_Prueba =  (pruebaEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*manoObraIndirecta;
+         mano_Mantenimiento = (mantenimientoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*manoObraIndirecta;
+         //Fila Materiales Indirectos
+         materiales_Analisis =  (analisisEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*materialesIndirectos;
+         materiales_Diseno =  (disenoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*materialesIndirectos;
+         materiales_Desarrollo =  (desarrolloEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*materialesIndirectos;
+         materiales_Prueba =  (pruebaEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*materialesIndirectos;
+         materiales_Mantenimiento =  (mantenimientoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*materialesIndirectos;
+         //Fila suministros
+         suministros_Analisis =  (analisisEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*suministros;
+         suministros_Diseno =  (disenoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*suministros;
+         suministros_Desarrollo =  (desarrolloEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*suministros;
+         suministros_Prueba =  (pruebaEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*suministros;
+         suministros_Mantenimiento =  (mantenimientoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*suministros;
+         //Fila HERRAMIENTAS
+         herramientas_Analisis = (analisisConsumo/sumaConsumo)*herramientas;
+         herramientas_Diseno = (disenoConsumo/sumaConsumo)*herramientas;
+         herramientas_Desarrollo = (desarrolloConsumo/sumaConsumo)*herramientas;
+         herramientas_Prueba = (pruebaConsumo/sumaConsumo)*herramientas;
+         herramientas_Mantenimiento = (mantenimientoConsumo/sumaConsumo)*herramientas;
+         herramientas_Calidad = (calidadConsumo/sumaConsumo)*herramientas;
+         herramientas_Insumo = (insumoConsumo/sumaConsumo)*herramientas;
+         herramientas_MantenimientoSoft = (mantenimientoSoftConsumo/sumaConsumo)*herramientas;
+         herramientas_Infraestructura = (mantenimientoDepaConsumo/sumaConsumo)*herramientas;
+         //Fila Otros materiales
+         otros_Analisis = (analisisConsumo/sumaConsumo)*otrosMateriales;
+         otros_Diseno = (disenoConsumo/sumaConsumo)*otrosMateriales;
+         otros_Desarrollo = (desarrolloConsumo/sumaConsumo)*otrosMateriales;
+         otros_Prueba = (pruebaConsumo/sumaConsumo)*otrosMateriales;
+         otros_Mantenimiento = (mantenimientoConsumo/sumaConsumo)*otrosMateriales;
+         otros_Calidad = (calidadConsumo/sumaConsumo)*otrosMateriales;
+         otros_Insumo = (insumoConsumo/sumaConsumo)*otrosMateriales;
+         otros_MantenimientoSoft = (mantenimientoSoftConsumo/sumaConsumo)*otrosMateriales;
+         otros_Infraestructura = (mantenimientoDepaConsumo/sumaConsumo)*otrosMateriales;
+         //Fila depreciacion
+         depreciacion_Analisis = (analisisEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Diseno = (disenoEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Desarrollo = (desarrolloEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Prueba = (pruebaEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Mantenimiento = (mantenimientoEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Calidad = (calidadEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Insumo = (insumoEspacio/sumaEspacio)*depreciacion;
+         depreciacion_MantenimientoSoft = (mantenimientoSoftEspacio/sumaEspacio)*depreciacion;
+         depreciacion_Infraestructura = (mantenimientoDepaEspacio/sumaEspacio)*depreciacion;
+         //Fila impuestos
+         impuestos_Analisis = (analisisEspacio/sumaEspacio)*impuestos;
+         impuestos_Diseno = (disenoEspacio/sumaEspacio)*impuestos;
+         impuestos_Desarrollo = (desarrolloEspacio/sumaEspacio)*impuestos;
+         impuestos_Prueba = (pruebaEspacio/sumaEspacio)*impuestos;
+         impuestos_Mantenimiento = (mantenimientoEspacio/sumaEspacio)*impuestos;
+         impuestos_Calidad = (calidadEspacio/sumaEspacio)*impuestos;
+         impuestos_Insumo = (insumoEspacio/sumaEspacio)*impuestos;
+         impuestos_MantenimientoSoft = (mantenimientoSoftEspacio/sumaEspacio)*impuestos;
+         impuestos_Infraestructura = (mantenimientoDepaEspacio/sumaEspacio)*impuestos;
+         //Fila servicios publivos
+         servicioPublico_Analisis = (analisisConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Diseno = (disenoConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Desarrollo = (desarrolloConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Prueba = (pruebaConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Mantenimiento = (mantenimientoConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Calidad = (calidadConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Insumo = (insumoConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_MantenimientoSoft = (mantenimientoSoftConsumo/sumaConsumo)*serviciosPublicos;
+         servicioPublico_Infraestructura = (mantenimientoDepaConsumo/sumaConsumo)*serviciosPublicos;
+         //Fila servicio privados
+         servicioPrivado_Analisis = (analisisConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Diseno = (disenoConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Desarrollo = (desarrolloConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Prueba = (pruebaConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Mantenimiento = (mantenimientoConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Calidad = (calidadConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Insumo = (insumoConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_MantenimientoSoft = (mantenimientoSoftConsumo/sumaConsumo)*serviciosPrivados;
+         servicioPrivado_Infraestructura = (mantenimientoDepaConsumo/sumaConsumo)*serviciosPrivados;
+         //Fila Mantenimiento y reparaciones (NO LLEVA PORQUE SE OMITE EN LA TABLA 01 DEL CIIF)
+         //TOTALES DE LAS COLUMNAS DE CALIDAD, INSUMOS, MANTENIMIENTOSOFT Y INFRAESTRUCTURA PARA USAR EN LAS FILAS DE ABAJO
+         sumaInfraestructura = servicioPrivado_Infraestructura  + servicioPublico_Infraestructura + impuestos_Infraestructura + depreciacion_Infraestructura + otros_Infraestructura +
+                 herramientas_Infraestructura + salarioOfi_Infraestructura + salarioSup_Infraestructura;
+         sumaMantenimientoSoft = servicioPrivado_MantenimientoSoft  + servicioPublico_MantenimientoSoft + impuestos_MantenimientoSoft + depreciacion_MantenimientoSoft + otros_MantenimientoSoft +
+                 herramientas_MantenimientoSoft + salarioOfi_MantenimientoSoft + salarioSup_MantenimientoSoft;
+         sumaInsumo = servicioPrivado_Insumo  + servicioPublico_Insumo + impuestos_Insumo + depreciacion_Insumo + otros_Insumo +
+                 herramientas_Insumo + salarioOfi_Insumo + salarioSup_Insumo;
+         sumaCalidad = servicioPrivado_Calidad  + servicioPublico_Calidad + impuestos_Calidad + depreciacion_Calidad + otros_Calidad +
+                 herramientas_Calidad+ salarioOfi_Calidad + salarioSup_Calidad;
+         
+         //Fila de calidad
+         calidad_Analisis =  (analisisConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInfraestructura;
+         calidad_Diseno =  (disenoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInfraestructura;
+         calidad_Desarrollo =  (desarrolloConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInfraestructura;
+         calidad_Prueba =  (pruebaConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInfraestructura;
+         calidad_Mantenimiento =  (mantenimientoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInfraestructura;
+         //Fila de Insumos
+         insumos_Analisis =  (analisisConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaMantenimientoSoft;
+         insumos_Diseno =  (disenoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaMantenimientoSoft;
+         insumos_Desarrollo =  (desarrolloConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaMantenimientoSoft;
+         insumos_Prueba =  (pruebaConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaMantenimientoSoft;
+         insumos_Mantenimiento =  (mantenimientoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaMantenimientoSoft;
+         //Fila de MantenimientoSoft
+         mantenimientoSoft_Analisis =  (analisisConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInsumo;
+         mantenimientoSoft_Diseno =  (disenoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInsumo;
+         mantenimientoSoft_Desarrollo =  (desarrolloConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInsumo;
+         mantenimientoSoft_Prueba =  (pruebaConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInsumo;
+         mantenimientoSoft_Mantenimiento =  (mantenimientoConsumo/(analisisConsumo + disenoConsumo + desarrolloConsumo + pruebaConsumo + mantenimientoConsumo))*sumaInsumo;
+         //Fila de Infraestructura (MANTENIMIENTODEPA)
+         infraestructura_Analisis =  (analisisEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*sumaCalidad;
+         infraestructura_Diseno =  (disenoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*sumaCalidad;
+         infraestructura_Desarrollo =  (desarrolloEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*sumaCalidad;
+         infraestructura_Prueba =  (pruebaEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*sumaCalidad;
+         infraestructura_Mantenimiento =  (mantenimientoEspacio/(analisisEspacio + disenoEspacio + desarrolloEspacio + pruebaEspacio + mantenimientoEspacio))*sumaCalidad;
+         
+         //TOTALES DE LAS COLUMNAS DE PRODUCTIVO
+         sumaMantenimiento = salarioSup_Mantenimiento + mano_Mantenimiento + materiales_Mantenimiento + suministros_Mantenimiento + herramientas_Mantenimiento + otros_Mantenimiento +
+                 depreciacion_Mantenimiento + impuestos_Mantenimiento + servicioPublico_Mantenimiento + servicioPrivado_Mantenimiento + 
+                 calidad_Mantenimiento + insumos_Mantenimiento + mantenimientoSoft_Mantenimiento + infraestructura_Mantenimiento;
+         sumaPrueba = salarioSup_Prueba + mano_Prueba + materiales_Prueba + suministros_Prueba + herramientas_Prueba + otros_Prueba +
+                 depreciacion_Prueba + impuestos_Prueba + servicioPublico_Prueba + servicioPrivado_Prueba + 
+                 calidad_Prueba + insumos_Prueba + mantenimientoSoft_Prueba + infraestructura_Prueba;
+         sumaDesarrollo = salarioSup_Desarrollo + mano_Desarrollo + materiales_Desarrollo + suministros_Desarrollo + herramientas_Desarrollo + otros_Desarrollo +
+                 depreciacion_Desarrollo + impuestos_Desarrollo + servicioPublico_Desarrollo + servicioPrivado_Desarrollo + 
+                 calidad_Desarrollo + insumos_Desarrollo + mantenimientoSoft_Desarrollo + infraestructura_Desarrollo;
+         sumaDiseno = salarioSup_Diseno + mano_Diseno + materiales_Diseno + suministros_Diseno + herramientas_Diseno + otros_Diseno +
+                 depreciacion_Diseno + impuestos_Diseno + servicioPublico_Diseno + servicioPrivado_Diseno + 
+                 calidad_Diseno + insumos_Diseno + mantenimientoSoft_Diseno + infraestructura_Diseno;
+         sumaAnalisis = salarioSup_Analisis + mano_Analisis + materiales_Analisis + suministros_Analisis + herramientas_Analisis + otros_Analisis +
+                 depreciacion_Analisis + impuestos_Analisis + servicioPublico_Analisis + servicioPrivado_Analisis + 
+                 calidad_Analisis + insumos_Analisis + mantenimientoSoft_Analisis + infraestructura_Analisis;
+         
+         //FORMATO DECIMAL A LA SALIDA
+         DecimalFormat df = new DecimalFormat("#.00");
+         //Colocando todos los valores calculados en los textbox
+         txtSalarioSupAnalisisProductivo.setText(""+ df.format(salarioSup_Analisis));
+         txtSalarioSupDisenoProductivo.setText(""+ salarioSup_Diseno);
+         txtSalarioSupDesarrolloProductivo.setText(""+ salarioSup_Desarrollo);
+         txtSalarioSupPruebaProductivo.setText(""+ salarioSup_Prueba);
+         txtSalarioSupMantenimientoProductivo.setText(""+ salarioSup_Mantenimiento);
+         txtSalarioSupCalidadServicio.setText(""+ salarioSup_Calidad);
+         txtSalarioSupInsumoServicio.setText(""+ salarioSup_Insumo);
+         txtSalarioSupMantenimientoSoftServicio.setText(""+ salarioSup_MantenimientoSoft);
+         txtSalarioSupInfraestructuraServicio.setText(""+ salarioSup_Infraestructura);
+         //
+         txtSalarioOfiCalidadServicio.setText(""+ salarioOfi_Calidad);
+         txtSalarioOfiInsumosServicio.setText(""+ salarioOfi_Insumo);
+         txtSalarioOfiMantenimientoSoftServicio.setText(""+ salarioOfi_MantenimientoSoft);
+         txtSalarioOfiInfraestructuraServicio.setText(""+ salarioOfi_Infraestructura);
+         //
+         txtManoAnalisisProductivo.setText(""+ mano_Analisis);
+         txtManoDisenoProductivo.setText(""+ mano_Diseno);
+         txtManoDesarrolloProductivo.setText(""+ mano_Desarrollo);
+         txtManoPruebaProductivo.setText(""+ mano_Prueba);
+         txtManoMantenimientoProductivo.setText(""+ mano_Mantenimiento);
+         //
+         txtMaterialAnalisisProductivo.setText(""+ materiales_Analisis);
+         txtMaterialDisenoProductivo.setText(""+ materiales_Diseno);
+         txtMaterialDesarrolloProductivo.setText(""+ materiales_Desarrollo);
+         txtMaterialPruebaProductivo.setText(""+ materiales_Prueba);
+         txtMaterialMantenimientoProductivo.setText(""+ materiales_Mantenimiento);
+         //
+         txtSumiAnalisisProductivo.setText(""+ suministros_Analisis);
+         txtSumiDisenoProductivo.setText(""+ suministros_Diseno);
+         txtSumiDesarrolloProductivo.setText(""+ suministros_Desarrollo);
+         txtSumiPruebaProductivo.setText(""+ suministros_Prueba);
+         txtSumiMantenimientoProductivo.setText(""+ suministros_Mantenimiento);
+         //
+         txtHerraAnalisisProductivo.setText(""+ herramientas_Analisis);
+         txtHerraDisenoProductivo.setText(""+ herramientas_Diseno);
+         txtHerraDesarrolloProductivo.setText(""+ herramientas_Desarrollo);
+         txtHerraPruebaProductivo.setText(""+ herramientas_Prueba);
+         txtHerraMantenimientoProductivo.setText(""+ herramientas_Mantenimiento);
+         txtHerraCalidadServicio.setText(""+ herramientas_Calidad);
+         txtHerraInsumoServicio.setText(""+ herramientas_Insumo);
+         txtHerraMantenimientoSoftServicio.setText(""+ herramientas_MantenimientoSoft);
+         txtHerraInfraestructuraServicio.setText(""+ herramientas_Infraestructura);
+         //
+         txtOtrosAnalisisProductivo.setText(""+ otros_Analisis);
+         txtOtrosDisenoProductivo.setText(""+ otros_Diseno);
+         txtOtrosDesarrolloProductivo.setText(""+ otros_Desarrollo);
+         txtOtrosPruebaProductivo.setText(""+ otros_Prueba);
+         txtOtrosMantenimientoProductivo.setText(""+ otros_Mantenimiento);
+         txtOtrosCalidadServicio.setText(""+ otros_Calidad);
+         txtOtrosInsumoServicio.setText(""+ otros_Insumo);
+         txtOtrosMantenimientoSoftServicio.setText(""+ otros_MantenimientoSoft);
+         txtOtrosInfraestructuraServicio.setText(""+ otros_Infraestructura);
+         //
+         txtDepreciacionAnalisisProductivo.setText(""+ depreciacion_Analisis);
+         txtDepreciacionDisenoProductivo.setText(""+ depreciacion_Diseno);
+         txtDepreciacionDesarrolloProductivo.setText(""+ depreciacion_Desarrollo);
+         txtDepreciacionPruebaProductivo.setText(""+ depreciacion_Prueba);
+         txtDepreciacionMantenimientoProductivo.setText(""+ depreciacion_Mantenimiento);
+         txtDepreciacionCalidadServicio.setText(""+ depreciacion_Calidad);
+         txtDepreciacionInsumoServicio.setText(""+ depreciacion_Insumo);
+         txtDepreciacionMantenimientoSoftServicio.setText(""+ depreciacion_MantenimientoSoft);
+         txtDepreciacionInfraestructuraServicio.setText(""+ depreciacion_Infraestructura);
+         //
+         txtImpuestosAnalisisProductivo.setText(""+ impuestos_Analisis);
+         txtImpuestosDisenoProductivo.setText(""+ impuestos_Diseno);
+         txtImpuestosDesarrolloProductivo.setText(""+ impuestos_Desarrollo);
+         txtImpuestosPruebaProductivo.setText(""+ impuestos_Prueba);
+         txtImpuestosMantenimientoProductivo.setText(""+ impuestos_Mantenimiento);
+         txtImpuestosCalidadServicio.setText(""+ impuestos_Calidad);
+         txtImpuestosInsumoServicio.setText(""+ impuestos_Insumo);
+         txtImpuestosMantenimientoSoftServicio.setText(""+ impuestos_MantenimientoSoft);
+         txtImpuestosInfraestructuraServicio.setText(""+ impuestos_Infraestructura);
+         //
+         txtServicioPublicoAnalisisProductivo.setText(""+ servicioPublico_Analisis);
+         txtServicioPublicoDisenoProductivo.setText(""+ servicioPublico_Diseno);
+         txtServicioPublicoDesarrolloProductivo.setText(""+ servicioPublico_Desarrollo);
+         txtServicioPublicoPruebaProductivo.setText(""+ servicioPublico_Prueba);
+         txtServicioPublicoMantenimientoProductivo.setText(""+ servicioPublico_Mantenimiento);
+         txtServicioPublicoCalidadServicio.setText(""+ servicioPublico_Calidad);
+         txtServicioPublicoInsumoServicio.setText(""+ servicioPublico_Insumo);
+         txtServicioPublicoMantenimientoSoftServicio.setText(""+ servicioPublico_MantenimientoSoft);
+         txtServicioPublicoInfraestructuraServicio.setText(""+ servicioPublico_Infraestructura);
+         //
+         txtServicioPrivadoAnalisisProductivo.setText(""+ servicioPrivado_Analisis);
+         txtServicioPrivadoDisenoProductivo.setText(""+ servicioPrivado_Diseno);
+         txtServicioPrivadoDesarrolloProductivo.setText(""+ servicioPrivado_Desarrollo);
+         txtServicioPrivadoPruebaProductivo.setText(""+ servicioPrivado_Prueba);
+         txtServicioPrivadoMantenimientoProductivo.setText(""+ servicioPrivado_Mantenimiento);
+         txtServicioPrivadoCalidadServicio.setText(""+ servicioPrivado_Calidad);
+         txtServicioPrivadoInsumoServicio.setText(""+ servicioPrivado_Insumo);
+         txtServicioPrivadoMantenimientoSoftServicio.setText(""+ servicioPrivado_MantenimientoSoft);
+         txtServicioPrivadoInfraestructuraServicio.setText(""+ servicioPrivado_Infraestructura);
+         //
+         txtCalidadAnalisisProductivo.setText(""+ calidad_Analisis);
+         txtCalidadDisenoProductivo.setText(""+ calidad_Diseno);
+         txtCalidadDesarrolloProductivo.setText(""+ calidad_Desarrollo);
+         txtCalidadPruebaProductivo.setText(""+ calidad_Prueba);
+         txtCalidadMantenimientoProductivo.setText(""+ calidad_Mantenimiento);
+         //
+         txtInsumoAnalisisProductivo.setText(""+ insumos_Analisis);
+         txtInsumoDisenoProductivo.setText(""+ insumos_Diseno);
+         txtInsumoDesarrolloProductivo.setText(""+ insumos_Desarrollo);
+         txtInsumoPruebaProductivo.setText(""+ insumos_Prueba);
+         txtInsumoMantenimientoProductivo.setText(""+ insumos_Mantenimiento);
+         //
+         txtMantenimientoSoftAnalisisProductivo.setText(""+ mantenimientoSoft_Analisis);
+         txtMantenimientoSoftDisenoProductivo.setText(""+ mantenimientoSoft_Diseno);
+         txtMantenimientoSoftDesarrolloProductivo.setText(""+ mantenimientoSoft_Desarrollo);
+         txtMantenimientoSoftPruebaProductivo.setText(""+ mantenimientoSoft_Prueba);
+         txtMantenimientoSoftMantenimientoProductivo.setText(""+ mantenimientoSoft_Mantenimiento);
+         //
+         txtInfraestructuraAnalisisProductivo.setText(""+ infraestructura_Analisis);
+         txtInfraestructuraDisenoProductivo.setText(""+ infraestructura_Diseno);
+         txtInfraestructuraDesarrolloProductivo.setText(""+ infraestructura_Desarrollo);
+         txtInfraestructuraPruebaProductivo.setText(""+ infraestructura_Prueba);
+         txtInfraestructuraMantenimientoProductivo.setText(""+ infraestructura_Mantenimiento);
+         //SETEANDO LOS VALORES DE LOS TOTALES EN LOS TXT FINALES
+         txtTotalAnalisis.setText("" + sumaAnalisis);
+         txtTotalDesarrollo.setText("" + sumaDesarrollo);
+         txtTotalDiseno.setText("" + sumaDiseno);
+         txtTotalPrueba.setText("" + sumaPrueba);
+         txtTotalMantenimiento.setText("" + sumaMantenimiento);
+         txtTotalCalidad.setText("" + sumaCalidad);
+         txtTotalInsumo.setText("" + sumaInsumo);
+         txtTotalMantenimientoSoft.setText("" + sumaMantenimientoSoft);
+         txtTotalInfraestructura.setText("" + sumaInfraestructura);
+         //totales segun cada cuenta, parte derecha
+         txtTotalSalarioSup.setText("" + salarioSup);
+         txtTotalSalarioOfi.setText("" + salarioOfi);
+         txtTotalMano.setText("" + manoObraIndirecta);
+         txtTotalMaterial.setText("" + materialesIndirectos);
+         txtTotalOtros.setText("" + otrosMateriales);
+         txtTotalDepreciacion.setText("" + depreciacion);
+         txtTotalImpuesto.setText("" + impuestos);
+         txtTotalServicioPublico.setText("" + serviciosPublicos);
+         txtTotalServicioPrivado.setText("" + serviciosPrivados);
+         txtTotalSumi.setText("" + suministros);
+         txtTotalHerra.setText("" + herramientas);
+         txtTotalPresupuesto.setText("" + sumaCatalogo);
+         //
+         double sumaTotalTotal;
+         sumaTotalTotal = sumaAnalisis + sumaDiseno + sumaDesarrollo + sumaPrueba + sumaMantenimiento + sumaCalidad + sumaInsumo + sumaMantenimientoSoft + sumaInfraestructura;
+         txtTotalTotal.setText("" + sumaTotalTotal);
+         txtTotalVCalidad.setText("" + sumaCalidad);
+         txtTotalVInsumo.setText("" + sumaInsumo);
+         txtTotalVMantenimientoSoft.setText("" + sumaMantenimientoSoft);
+         txtTotalVInfraestructura.setText("" + sumaInfraestructura);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void txtTotalEspacioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalEspacioActionPerformed
@@ -4033,7 +4355,6 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextField jTextField152;
     private javax.swing.JList<String> lstCuentasDisponibles;
     private javax.swing.JTable tblComprobacion;
     private javax.swing.JTable tblEstadoResultado;
@@ -4098,7 +4419,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtHerraCalidadServicio;
     private javax.swing.JTextField txtHerraDesarrolloProductivo;
     private javax.swing.JTextField txtHerraDisenoProductivo;
-    private javax.swing.JTextField txtHerraInfraestrucutraServicio;
+    private javax.swing.JTextField txtHerraInfraestructuraServicio;
     private javax.swing.JTextField txtHerraInsumoServicio;
     private javax.swing.JTextField txtHerraMantenimientoProductivo;
     private javax.swing.JTextField txtHerraMantenimientoSoftServicio;
@@ -4148,8 +4469,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtManoDisenoProductivo;
     private javax.swing.JTextField txtManoInfraestructuraServicio;
     private javax.swing.JTextField txtManoInsumoServicio;
+    private javax.swing.JTextField txtManoMantenimientoProductivo;
     private javax.swing.JTextField txtManoMantenimientoSoftServicio;
-    private javax.swing.JTextField txtManoManteniminetoProductivo;
     private javax.swing.JTextField txtManoPruebaProductivo;
     private javax.swing.JTextField txtMantenimientoConsumo;
     private javax.swing.JTextField txtMantenimientoEmpleado;
@@ -4285,6 +4606,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtTotalMantenimientoSoft;
     private javax.swing.JTextField txtTotalMaterial;
     private javax.swing.JTextField txtTotalOtros;
+    private javax.swing.JTextField txtTotalPresupuesto;
     private javax.swing.JTextField txtTotalPrueba;
     private javax.swing.JTextField txtTotalSalarioOfi;
     private javax.swing.JTextField txtTotalSalarioSup;
@@ -4295,7 +4617,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     private javax.swing.JTextField txtTotalVCalidad;
     private javax.swing.JTextField txtTotalVInfraestructura;
     private javax.swing.JTextField txtTotalVInsumo;
-    private javax.swing.JTextField txtTotalVManteniemintoSoft;
+    private javax.swing.JTextField txtTotalVMantenimientoSoft;
     private javax.swing.JTextField txtTotales;
     private javax.swing.JTextField txtVacacion;
     // End of variables declaration//GEN-END:variables
