@@ -451,6 +451,11 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         });
 
         btnModificarCuenta.setText("Modificar cuenta");
+        btnModificarCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarCuentaActionPerformed(evt);
+            }
+        });
 
         jLabel51.setText("Categoria:");
 
@@ -573,9 +578,8 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
                 .addGap(17, 17, 17)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnAnadirTransaccion)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -1723,7 +1727,7 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
         
         if(seleccion == JFileChooser.APPROVE_OPTION){
             String ruta = seleccionadorRutaAlmacenamiento.getSelectedFile().getAbsolutePath();
-            String nombreArchivo = JOptionPane.showInputDialog(this,"Ingrese el nombre del archivo.","Ingresar nombre");
+            String nombreArchivo = JOptionPane.showInputDialog(this,"Ingrese el nombre del archivo.");
             persistenciaDeDatos.configurarArchivoNuevoParaAlmacenar(ruta, nombreArchivo);
             
             contenedorPestañas.setEnabled(true);
@@ -1761,6 +1765,10 @@ public class Principal extends javax.swing.JFrame  implements ListSelectionListe
     txtDebe.setText(String.valueOf(totalDebeBalanzaComprobacion));
     txtHaber.setText(String.valueOf(Math.abs(totalHaberBalanzaComprobacion)));
     }//GEN-LAST:event_btnGenerarBalanzaComprobacionActionPerformed
+
+    private void btnModificarCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarCuentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnModificarCuentaActionPerformed
 
     //metodos utilitarios
     public void limpiarTxtPestañaCuentas(){
