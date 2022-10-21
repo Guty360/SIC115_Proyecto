@@ -12,13 +12,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.List;
+
+
 /**
  *
  * @author pc
  * 
  */
 public class PersistenciaDeDatos {
-    private static PersistenciaDeDatos persistenciaDeDatos = new PersistenciaDeDatos();
+    private String ruta;
+    private InformacionContable contexto;
+    private static PersistenciaDeDatos persistenciaDeDatoss;
     
     //Almacenamiento de la informacion contable
     private ObjectOutputStream objectOutputStream;
@@ -28,46 +33,80 @@ public class PersistenciaDeDatos {
     private ObjectInputStream objectInputStream;
     private FileInputStream fileInputStream;
     
-    private File archivo;
-
-   
     private PersistenciaDeDatos(){
+    
     }
     
-    public static PersistenciaDeDatos getPersistenciaDeDatos(){
-        return persistenciaDeDatos;
-    }
-    
-   
-    
-    public void guardarDatos(InformacionContable informacionContable) throws FileNotFoundException, IOException{
+    public static PersistenciaDeDatos getPersistenciaDeDatoss(){
+        if(persistenciaDeDatoss==null) persistenciaDeDatoss = new PersistenciaDeDatos();
         
-        fileOutputStream = new FileOutputStream(archivo);
-        objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        objectOutputStream.writeObject(informacionContable);
-        objectOutputStream.close();
-        objectOutputStream.flush();
+        return persistenciaDeDatoss;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public PersistenciaDeDatos setRuta(String ruta) throws FileNotFoundException{
+        this.ruta = ruta;
+        fileOutputStream = new FileOutputStream(new File(ruta));
+        return this;
+    }
+
+    public InformacionContable getContexto() {
+        return contexto;
+    }
+
+    public PersistenciaDeDatos setContexto(InformacionContable contexto){
+        this.contexto = contexto;
         
+        try {
+          objectOutputStream = new ObjectOutputStream(this.fileOutputStream);  
+        } catch (IOException e) {
+            
+        }
+        
+        return this;
     }
     
-    public InformacionContable recuperarDatos() throws FileNotFoundException, IOException, ClassNotFoundException{
-        fileInputStream = new FileInputStream(archivo);
+    /**
+    * @return Devuelve verdadero si los datos se guardaron correctamente 
+    */
+    public boolean guardarDatos(){
+        boolean datosGuardadosCorrectamente = true;
+        if(contextoNoVacio()){
+            try {
+                objectOutputStream.writeObject(contexto);
+                objectOutputStream.flush();
+                objectOutputStream.close();  
+            } catch (IOException e) {
+            datosGuardadosCorrectamente = false;
+            }
+            
+        }else{
+            datosGuardadosCorrectamente = false;
+        }
+
+        return datosGuardadosCorrectamente;
+    }
+    
+    public InformacionContable recuperarInformacionContable() throws FileNotFoundException,IOException,ClassNotFoundException{
+        
+       
+        fileInputStream = new FileInputStream(new File(ruta));
         objectInputStream = new ObjectInputStream(fileInputStream);
-        
-        InformacionContable info = (InformacionContable) objectInputStream.readObject();
-        
-        return info;
+            
+        contexto = (InformacionContable)objectInputStream.readObject();
+            
+        return contexto;
     }
     
+    public boolean contextoNoVacio(){
+        return !(contexto == null);
+    }
 
     
-    public void configurarArchivo(String ruta){
-        archivo = new File(ruta);
-    }
     
-    public void configurarArchivoNuevoParaAlmacenar(String ruta, String nombre){
-        String directorio = ruta+"\\"+nombre+".txt";
-        archivo = new File(directorio);
-    }
+    
     
 }
